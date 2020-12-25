@@ -335,3 +335,10 @@ source activate mafft_env
 mafft --maxiterate 1000 --localpair --thread 96 $genes > ${genes}.mafft
 source deactivate mafft_env
 ```
+
+
+
+
+
+
+[rna editing](http://prep.unl.edu/)
