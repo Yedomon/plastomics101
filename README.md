@@ -223,6 +223,61 @@ grep -v "^#" ${INF%.gb*}.gff.clean | \
 
 ###cds extraction from genbank files of chloroplast data
 
+##### Install gbseqextractor tool on centos 7
+
+
+```
+
+sudo yum search pip | grep python # to see availeble version
+
+sudo yum install python3-pip.noarch
+
+pip3 install gbseqextractor
+
+
+```
+
+# Indicum
+cd /home/kplee/analysis/0003_extraction/ind
+
+gbseqextractor \
+-f /home/kplee/datafiles/004_extraction/all_gb_files/Sesamum_indicum.gb \
+-prefix indicum -seqPrefix ind -types CDS -cds_translation
+
+
+### formating the gene head names
+cat  indicum.cds.fasta | awk '{gsub(/indSesamum_in;/,"ind_")}1' > ind.cds.formatted.fasta
+
+
+### explode
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+
+
+# alatum
+
+cd /home/kplee/analysis/0003_extraction/ala
+
+
+gbseqextractor \
+-f /home/kplee/datafiles/004_extraction/all_gb_files/Sesamum_alatum.gb \
+-prefix alatum -seqPrefix ala -types CDS -cds_translation
+
+### formating the gene head names
+cat  alatum.cds.fasta | awk '{gsub(/alaSesamum_al;/,"ala_")}1' > ala.cds.formatted.fasta
+
+
+
+### explode
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+
 
 
 ###Sesamum indicum
