@@ -215,6 +215,66 @@ grep -v "^#" ${INF%.gb*}.gff.clean | \
 - #### [Dr swati 2](https://www.mdpi.com/2223-7747/9/5/568/htm)
 
 
+
+## Nucleotide diversity work
+
+I used DNAsp v6. First I aligned using MAFFT all fasta files then import the alignment file into DNAsp > analysis > Polymorphism and Divergence and get the plot by clicking on compute.
+
+Then move to R
+
+I used this code
+
+
+
+
+``` {r}
+
+
+# Libraries
+library(ggplot2)
+# Data
+data_pi = read.csv("pi.csv",sep = "," , h = T)
+
+# Plot
+
+p <- ggplot(data_pi, aes(x=Midpoint, y=Pi, colour = Pi)) +
+  ylim(0,0.033) +
+  geom_line() +
+  scale_colour_gradient2(low = "#0000b3", mid = "#3333ff" , high = "#ff0000", midpoint=median(data_pi$Pi)) +
+  #theme(legend.position="none") +
+  geom_hline(yintercept=0.017, color="#00b300", size=.4, linetype = "dotted" ) +
+  theme_minimal()
+  
+p
+
+
+
+g <- ggplot(data_pi, aes(x=Midpoint, y=Pi, colour = Pi)) +
+  ylim(0,0.033) +
+  geom_line() +
+  scale_colour_gradient2(low = "#0000b3", mid = "#3333ff" , high = "#ff0000", midpoint=0.013) +
+  #theme(legend.position="none") +
+  geom_hline(yintercept=0.015, color="#00b300", size=.4, linetype = "dotted") +
+  labs(y = expression(Nucleotide~diversity~(pi)), x = "Midpoint position") +
+  theme_minimal()+
+  theme(panel.grid.major = element_line(colour = "grey", size = 0.2, linetype = "dotted")) +
+  theme(panel.grid.minor = element_line(colour = "grey", size = 0.2, linetype = "dotted")) +
+  theme(plot.background = element_rect(colour = "white", size = 1))+
+  theme(axis.text = element_text(colour = "black")) +
+  scale_x_continuous(limits=c(0,155000),
+  breaks = seq(0, 155000, by = 25000)) +
+  scale_y_continuous(limits=c(0,0.035),
+                     breaks = seq(0, 0.035, by = 0.005))
+  
+
+
+
+````
+
+and further process with Inkscape for arrow edition and annotation and get this
+
+
+
 ## ka ks work 
 
 
@@ -238,6 +298,9 @@ pip3 install gbseqextractor
 ```
 
 # Indicum
+
+```
+
 cd /home/kplee/analysis/0003_extraction/ind
 
 gbseqextractor \
@@ -255,10 +318,10 @@ cat * | awk '{
         if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
         print $0 > filename }'
 
-
+```
 
 # alatum
-
+```
 cd /home/kplee/analysis/0003_extraction/ala
 
 
@@ -277,6 +340,89 @@ cat * | awk '{
         if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
         print $0 > filename }'
 
+
+```
+
+
+# angolense
+
+
+
+```
+cd /home/kplee/analysis/0003_extraction/ang
+
+
+gbseqextractor \
+-f /home/kplee/datafiles/004_extraction/all_gb_files/Sesamum_angolense.gb \
+-prefix angolense -seqPrefix ang -types CDS -cds_translation
+
+### formating the gene head names
+cat  angolense.cds.fasta | awk '{gsub(/angSesamum_an;/,"ang_")}1' > ang.cds.formatted.fasta
+
+
+
+### explode
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+
+```
+
+# pedaloides
+
+
+
+```
+cd /home/kplee/analysis/0003_extraction/ped
+
+
+gbseqextractor \
+-f /home/kplee/datafiles/004_extraction/all_gb_files/Sesamum_pedaloides.gb \
+-prefix pedaloides -seqPrefix ped -types CDS -cds_translation
+
+### formating the gene head names
+cat  pedaloides.cds.fasta | awk '{gsub(/pedSesamum_pe;/,"ped_")}1' > ped.cds.formatted.fasta
+
+
+
+### explode
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+
+```
+
+
+
+# radiatum
+
+
+
+```
+cd /home/kplee/analysis/0003_extraction/rad
+
+
+gbseqextractor \
+-f /home/kplee/datafiles/004_extraction/all_gb_files/Sesamum_radiatum.gb \
+-prefix radiatum -seqPrefix rad -types CDS -cds_translation
+
+### formating the gene head names
+cat  radiatum.cds.fasta | awk '{gsub(/radSesamum_ra;/,"rad_")}1' > rad.cds.formatted.fasta
+
+
+
+### explode
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+
+```
 
 
 
