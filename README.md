@@ -222,7 +222,7 @@ I used DNAsp v6. First I aligned using MAFFT all fasta files then import the ali
 
 Then move to R
 
-I used this code
+I used the nucleotide diversity [data](https://github.com/Yedomon/plastomics101/blob/main/pi.csv) and ran this code.
 
 
 
@@ -271,7 +271,7 @@ g <- ggplot(data_pi, aes(x=Midpoint, y=Pi, colour = Pi)) +
 
 ````
 
-and further process with Inkscape for arrow edition and annotation and get this
+and further process with Inkscape for arrow edition and annotation and get [this](https://github.com/Yedomon/plastomics101/blob/main/pi3.pdf)
 
 
 
