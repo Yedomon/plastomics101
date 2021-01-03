@@ -437,3 +437,93 @@ source deactivate mafft_env
 
 
 [rna editing](http://prep.unl.edu/)
+
+
+# Installation of PAML on Centos 7
+
+
+```
+$ wget http://abacus.gene.ucl.ac.uk/software/paml4.9j.tgz
+$ tar xf paml4.9j.tgz
+$ cd paml4.9j
+$ rm bin/*.exe
+$ cd src
+$ make -f Makefile
+$ ls -lF
+$ rm *.o
+$ mv baseml basemlg codeml pamp evolver yn00 chi2 ../bin
+$ cd ..
+
+```
+
+
+Install PAL2NAL
+
+
+
+```
+
+wget http://www.bork.embl.de/pal2nal/distribution/pal2nal.v14.tar.gz
+
+tar -xzvf pal2nal.v14.tar.gz
+
+```
+
+
+Install clustal-omaga
+
+
+```
+
+wget http://www.clustal.org/omega/clustalo-1.2.4-Ubuntu-x86_64
+
+chmod u+x clustalo-1.2.4-Ubuntu-x86_64
+
+```
+
+[newpub](https://assets.researchsquare.com/files/rs-128918/v1/71422647-8721-42a2-8f3a-6403142dc53f.pdf)
+[newpub2](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241391)
+[newpub3](https://assets.researchsquare.com/files/rs-128918/v1/71422647-8721-42a2-8f3a-6403142dc53f.pdf)
+[paper genome](https://www.nature.com/articles/s41438-020-00449-z#Sec13)
+
+
+
+Test ka ks calculation following this [tutorial](https://www.protocols.io/view/introduction-to-calculating-dn-ds-ratios-with-code-qhwdt7e?step=2)
+
+
+
+```
+
+git clone https://github.com/faylward/dnds
+
+# Create an amino acid alignment
+
+/home/kplee/program/clustalo/clustalo-1.2.4-Ubuntu-x86_64 -i cluster_1.faa -o cluster_1.aln.faa
+
+# Convert aa alignment to na alignment
+
+/home/kplee/program/pal2nal.v14/pal2nal.pl cluster_1.aln.faa cluster_1.fna -output paml -nogap > cluster_1.pal2nal
+
+# Run codeml
+
+# copy cluster_1.pal2nal and code.ctl into codeml executable file and run
+
+codeml code.ctl
+
+
+# Parse the output file
+# I copied the output.txt into my dnds folder
+
+python parse_codeml_output.py codeml.txt
+
+```
+
+work like a charm!
+
+
+Now I will used my own data
+
+
+
+
+
