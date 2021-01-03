@@ -525,5 +525,39 @@ Now I will used my own data
 
 
 
+```
+
+#!/bin/bash
+
+set -e
+
+for i in *.faa
+
+do
+
+base=$(basename $i .faa)
+
+/home/kplee/program/clustalo/clustalo-1.2.4-Ubuntu-x86_64 -i ${base}.faa -o ${base}.aln.faa
+
+/home/kplee/program/pal2nal.v14/pal2nal.pl ${base}.aln.faa ${base}.fasta -output paml -nogap > ${base}.pal2nal
+
+done
+
+
+
+```
+
+
+then mv all pal2nal file to the codeml path and set for gene one by one and get the results
+
+work well
+
+
+> The synonymous (dS), non-synonymous (dN) nucleotide substitution rates and the dN/dS ratio (ω) were calculated using the codeml in Paml4.7 (Yang, 2007) with branch test model (Nielsen and Yang, 1998). Before analyses, the clade of Sino-Vietnamese species were set as foreground clade, and the others were set as background clade. The options of the two analyses were set to seqtype = 1, NSites = 0, model = 0 or model = 2. The likelihood ratio test (LRT) was used to estimate the quality of each model (Yang and Nielsen, 2002).
+
+from [here](https://www.frontiersin.org/articles/10.3389/fpls.2018.01989/full)
+
+
+
 
 
