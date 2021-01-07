@@ -581,3 +581,98 @@ from [here](https://www.frontiersin.org/articles/10.3389/fpls.2018.01989/full)
 > 4.5. Estimation of Evolutionary Rates
 The nucleotide sequences of 80 protein-coding genes were extracted from five Pogostemon cp genomes. Each gene was codon-aligned using the L-INS-I method in MAFFT v7. Phylogenetically informative characters (PICs) were counted for each gene using a Python script. Given both codon and related protein alignments of each gene, average nonsynonymous (dN) and synonymous (dS) substitution rates were estimated using the *maximum likelihood method [55] with the F3 × 4 model implemented in the codeml program in PAML v4.9* [56]. In addition, protein-coding genes were assigned to nine functional groups according to the conventional classification. The genes within a functional group were concatenated for the above tests as well. The best ML tree based on PCGs was used as a constraint tree.
 
+
+
+
+[Definitively the most comprehensive tutorial about dn/ds logic and practical calculation](https://evosite3d.blogspot.com/2011/09/identifying-positive-selection-in.html)
+
+Theory
+
+> The selective pressure in protein coding genes can be detected within the framework of comparative genomics. 
+>The selective pressure is assumed to be defined by the ratio (ω) dN/dS. dS represents the synonymous rate (keeping  the amino acid) and  dN the non-synonymous rate (changing the amino acid). 
+>In the absence of evolutionary pressure, the synonymous rate and the non-synonymous rate are equal, so the dN/dS ratio is equal to 1. Under purifying selection, natural selection prevents the replacement of amino acids, so the dN will be lower than the dS, and dN/dS < 1. And under positive selection, the replacement rate of amino acid is favoured by selection, and dN/dS > 1.
+
+
+Practical theory 1
+
+
+>CodeML and substitutions models: CodeML is a program from the package PAML, based on Maximum Likelihood, and developed in the lab of Ziheng Yang, University College London. It estimates various parameters (Ts/Tv, dN/dS, branch length) on the codon (nucleotide) alignment, based on a predefined topology (phylogenetic tree).
+
+
+*My note: So a tree topology is a pre-requisite before selection pressure analysis. I need to know the tree topology of my taxa.
+
+
+Practical theory 2
+
+Different codon models exist in CodeML. 
+
+> The model 0 estimates a unique dN/dS ratio for the whole alignment. *Not really interesting, except to define a null hypothesis to test against.*
+
+Ah not really interesting ooohhhhhhhh!!!! Ah
+
+> The branch models estimate different dN/dS among lineages [ie ASPM, a gene expressed in the brain of primates](https://www.genetics.org/content/genetics/165/4/2063/F2.large.jpg?width=800&height=600&carousel=1). 
+
+My case because I want to assess pressure selection among different taxa...So I think I will use thia option...
+
+
+
+
+
+> The site models estimate different dN/dS among sites (ie in the antigen-binding groove of the MHC). 
+
+> The branch-site models estimate different dN/dS among sites and among branches. It can detect episodic evolution in protein sequences, as in the interactions between chains in the avian MHC. In my opinion, this is the most powerful application and this is the one used in the Sectome database (to which I contributed during my PhD).
+
+
+What should I consider first ?
+
+> First, we have to define the branch where we think that position could have occurred *I do not understand the selection criteria of the branch*. We will call this branch the "foreground branch" and all other branches in the tree will be the "background" branches. The background branches share the same distribution of ω = dN/dS value among sites, whereas different values can apply to the foreground branch. 
+
+then
+
+> To compute the likelihood value, two models are computed: a null model, in which the foreground branch may have different proportions of sites under neutral selection to the background (i.e. relaxed purifying selection), and an alternative model, in which the foreground branch may have a proportion of sites under positive selection.
+As the alternative model is the general case, it is easier to present it first.
+
+Theory about the brach-site model
+
+
+```
+ Four categories of sites are assumed in the branch-site model:
+
+Sites with identical dN/dS in both foreground and background branches:
+K0 : Proportion of sites that are under purifying selection (ω0 < 1) on both foreground and background branches.
+K1 : Proportion of sites that are under neutral evolution (ω1 = 1) on both foreground and background branches.
+
+Sites with different dN/dS between  foreground and background branches:
+K2a: Proportion of sites that are under positive selection (ω2 ≥ 1) on the foreground branch and under purifying selection (ω0 < 1) on background branches.
+K2b: Proportion of sites that are under positive selection (ω2 ≥ 1) on the foreground branch and under neutral evolution (ω1 = 1) on background branches.
+
+For each category, we get the proportion of sites and the associated dN/dS values.
+
+In the null model, the dN/dS (ω2) is fixed to 1:
+
+Sites with identical dN/dS in both foreground and background branches:
+K0 : Sites that are under purifying selection (ω0 < 1) on both foreground and background branches.
+K1 : Sites that are under neutral evolution (ω1 = 1) on both foreground and background branches.
+
+Sites with different dN/dS between  foreground and background branches:
+K2a: Sites that are under neutral evolution (ω2 = 1) on the foreground branch and under purifying selection (ω0 < 1) on background branches.
+K2b: Sites that are under neutral evolution (ω2 = 1) on the foreground branch and under neutral evolution (ω1 = 1) on background branches.
+
+
+```
+
+Ah here a very important part  after running codeml is to get Delta and the probability
+
+
+> For each model, we get the log likelihood value (lnL1 for the alternative and lnL0 for the null models), from which we compute the Likelihood Ratio Test (LRT). The 2×(lnL1-lnL0) follows a χ² curve with degree of freedom of 1, so we can get a p-value for this LRT.
+
+
+
+
+The rest of the practical tuto is [here](https://github.com/Yedomon/plastomics101/blob/main/Evosite3D_%20Identifying%20positive%20selection%20in%20genomic%20sequences.pdf)
+
+
+
+
+
+
