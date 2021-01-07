@@ -577,3 +577,7 @@ from [here](https://www.frontiersin.org/articles/10.3389/fpls.2018.01989/full)
 [Question: How to specify a branch in the tree automatically for branch-site model codeml?](https://www.biostars.org/p/165578/)
 
 
+
+> 4.5. Estimation of Evolutionary Rates
+The nucleotide sequences of 80 protein-coding genes were extracted from five Pogostemon cp genomes. Each gene was codon-aligned using the L-INS-I method in MAFFT v7. Phylogenetically informative characters (PICs) were counted for each gene using a Python script. Given both codon and related protein alignments of each gene, average nonsynonymous (dN) and synonymous (dS) substitution rates were estimated using the *maximum likelihood method [55] with the F3 × 4 model implemented in the codeml program in PAML v4.9* [56]. In addition, protein-coding genes were assigned to nine functional groups according to the conventional classification. The genes within a functional group were concatenated for the above tests as well. The best ML tree based on PCGs was used as a constraint tree.
+
