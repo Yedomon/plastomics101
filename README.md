@@ -625,7 +625,23 @@ My case because I want to assess pressure selection among different taxa...So I 
 
 What should I consider first ?
 
-> First, we have to define the branch where we think that position could have occurred *I do not understand the selection criteria of the branch*. We will call this branch the "foreground branch" and all other branches in the tree will be the "background" branches. The background branches share the same distribution of ω = dN/dS value among sites, whereas different values can apply to the foreground branch. 
+> First, we have to define the branch where we think that position could have occurred **. 
+
+
+Note: In my case the foreground will be the branch were with my species of interest segregated. Like Dr Swati work. She wrote:
+
+
+```
+
+**The branch-site model was implemented by defining the Aster genus as foreground branch.**
+
+```
+
+
+the tree topology was [this](https://www.mdpi.com/plants/plants-09-00568/article_deploy/html/images/plants-09-00568-g009.png)
+
+
+We will call this branch the "foreground branch" and all other branches in the tree will be the "background" branches. The background branches share the same distribution of ω = dN/dS value among sites, whereas different values can apply to the foreground branch. 
 
 then
 
