@@ -561,6 +561,19 @@ work well
 from [here](https://www.frontiersin.org/articles/10.3389/fpls.2018.01989/full)
 
 
+[Question: How to interpret LRT < 0 in codeml branch-model based test?](https://www.biostars.org/p/166718/)
 
+> I am running codeml on **orthogroup tree**
+
+
+> The way I did is to set null model with fixed omega *(model=2, NSsites=0, fix_omega=1)* while branch-specific model by labeling branch of interest (foreground) in **tree file** *(model=2, NSsites=0, fix_omega=0)*.
+
+
+> **To found out the significant difference on Kn/Ks values between foreground and background branches**, I calculate LRT by **LRT=2*(lnL1-lnL0)** and corresponding pvalues using [**dchisq function (df =1) in R**](https://rpubs.com/mpfoley73/460935#:~:text=R%20function%20dchisq(x%2C%20df,degrees%20of%20freedom%20is%20df%20.&text=tail)%20is%20the%20cumulative%20probability,TRUE%20for%20left%20tail%2C%20lower.).
+
+
+
+
+[Question: How to specify a branch in the tree automatically for branch-site model codeml?](https://www.biostars.org/p/165578/)
 
 
