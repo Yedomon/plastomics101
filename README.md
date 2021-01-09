@@ -699,4 +699,39 @@ One example of result presentation is [here](https://storage.googleapis.com/plos
 
 
 
+How to concatenate multiple sequence alignment file ?   I was seeking an answr and I found An interesting tutorial on phylogenetic tree construction pipeline [here](http://evomics.org/wp-content/uploads/2016/06/Align_Trim_Concat_Labs_Phylogenomics_2017.pdf). Definitively evomics is a very nice blog for genomics.
+
+I found that `phyutility` is well used. How to download this java based tool? [Here](https://code.google.com/archive/p/phyutility/downloads).
+
+How to install? Just download it and uncompress the file. Since it is a java based tool, just run it by typing: 
+
+```
+
+java -jar phyutility.jar -concat -in test.aln test2.aln -out testall.aln
+
+```
+
+
+an example from the tuto
+
+
+```
+
+phyutility -concat -in ~/workshop_materials/orthologs_concatenation/*.aligned.fa -out workshop_materials/orthologs_concatenation/concatenated_matrix.nexus
+
+
+```
+
+short explanation
+
+
+> Concatenating alignments together is a necessary task but can often be a painful assignment, especially when the same taxa are not found in all alignments. Phyutility will concatenate fasta or nexus files. Sequences will be concatenated as long as they have the same name between files. Each input file is considered a gene. Missing taxa in each gene will be given gaps for each gene in which the taxon is missing. The output is nexus or fasta and each needs to have been aligned separately before running.
+
+
+So a hint: `Make sure to name ideally the gene uniformely to facilitate the data matrix constitution and align eah genes orthologues separately before`
+
+
+
+
+
 
