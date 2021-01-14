@@ -730,7 +730,58 @@ short explanation
 
 So a hint: `Make sure to name ideally the gene uniformely to facilitate the data matrix constitution and align eah genes orthologues separately before`
 
+####  pHYLOGENETIC CONSTRUCTION
 
+Prepare the files
+
+For Adenocalymma_acutissimum.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Adenocalymma_acutissimum.gb \
+-prefix Adenocalymma -seqPrefix ade -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Adenocalymma.cds_translation.fasta | awk '{gsub(/NC_037455.1;/,"_")}1' > Adenocalymma.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+For Amphilophium_carolinae.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Amphilophium_carolinae.gb \
+-prefix Amphilophium -seqPrefix amp -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Amphilophium.cds_translation.fasta | awk '{gsub(/NC_042933.1;/,"_")}1' > Amphilophium.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Anemopaegma_acutifolium.gb
 
 
 
