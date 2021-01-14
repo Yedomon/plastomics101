@@ -784,5 +784,348 @@ cat * | awk '{
 For Anemopaegma_acutifolium.gb
 
 
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Anemopaegma_acutifolium.gb \
+-prefix Anemopaegma -seqPrefix ane -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Anemopaegma.cds_translation.fasta | awk '{gsub(/NC_037226.1;/,"_")}1' > Anemopaegma.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+For Fraxinus_excelsior.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Fraxinus_excelsior.gb \
+-prefix Fraxinus -seqPrefix fra -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Fraxinus.cds_translation.fasta | awk '{gsub(/NC_037446.1;/,"_")}1' > Fraxinus.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+
+For Mentha_longifolia.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Mentha_longifolia.gb \
+-prefix Mentha -seqPrefix men -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Mentha.cds_translation.fasta | awk '{gsub(/NC_032054.1;/,"_")}1' > Mentha.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+For Oleae_europaea.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Oleae_europaea.gb \
+-prefix Oleae -seqPrefix ole -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Oleae.cds_translation.fasta | awk '{gsub(/NC_013707.2;/,"_")}1' > Oleae.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Pedicularis_longiflora.gb
+
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Pedicularis_longiflora.gb \
+-prefix Pedicularis -seqPrefix plo -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Pedicularis.cds_translation.fasta | awk '{gsub(/NC_046852.1;/,"_")}1' > Pedicularis.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Perilla_citriodora.gb
+
+
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Perilla_citriodora.gb \
+-prefix Perilla -seqPrefix pci -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Perilla.cds_translation.fasta | awk '{gsub(/NC_030755.1;/,"_")}1' > Perilla.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+For Salvia_splendens.gb
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Salvia_splendens.gb \
+-prefix Salvia -seqPrefix sal -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Salvia.cds_translation.fasta | awk '{gsub(/NC_050901.1;/,"_")}1' > Salvia.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Vitis_vinifera.gb
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Vitis_vinifera.gb \
+-prefix Vitis -seqPrefix vit -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Vitis.cds_translation.fasta | awk '{gsub(/NC_007957.1;/,"_")}1' > Vitis.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Ansanggae.gb
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Sesamum_indicum_cv_Ansanggae.gb \
+-prefix Ansanggae -seqPrefix ans -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Ansanggae.cds_translation.fasta | awk '{gsub(/NC_016433.2;/,"_")}1' > Ansanggae.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Goenbaek.gb
+
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Goenbaek.gb \
+-prefix Goenbaek -seqPrefix goe -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Goenbaek.cds_translation.fasta | awk '{gsub(/Sesamum_in;/,"_")}1' > Goenbaek.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Alatum.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f alatum.gb \
+-prefix Alatum -seqPrefix ala -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Alatum.cds_translation.fasta | awk '{gsub(/Sesamum_al;/,"_")}1' > Alatum.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Angolense.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Angolense.gb \
+-prefix Angolense -seqPrefix ang -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Angolense.cds_translation.fasta | awk '{gsub(/Sesamum_an;/,"_")}1' > Angolense.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Pedaloides.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Pedaloides.gb \
+-prefix Pedaloides -seqPrefix ped -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Pedaloides.cds_translation.fasta | awk '{gsub(/Sesamum_pe;/,"_")}1' > Pedaloides.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+For Radiatum.gb
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Radiatum.gb \
+-prefix Radiatum -seqPrefix rad -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Radiatum.cds_translation.fasta | awk '{gsub(/Sesamum_ra;/,"_")}1' > Radiatum.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
 
 
