@@ -185,6 +185,35 @@ grep -v "^#" ${INF%.gb*}.gff.clean | \
 - #### [A third example: Evolutionary dynamics of chloroplast genomes in subfamily Aroideae (Araceae)](https://reader.elsevier.com/reader/sd/pii/S0888754319308420?token=02DF5B01DEF65C2E1F4696ADFC4E0C5757E302859EB016BCA306C9882B6983078C077A62658FF6B41F90EB878CDE0F2D)
 
 
+> Chloroplast genomes, in circular form, were annotated using GeSeq [50] with BLAT [51]
+search of 85% identify for annotation of protein-coding genes, rRNAs and tRNAs. The
+annotations of tRNAs were further confirmed by using tRNAscan-SE v.2.0.3 [52] and
+ARAGORN v1.2.38 [53] by selection of default parameters of chloroplast genome. The
+position of start and stop codons were further confirmed by manual visualisation and Blast
+search with homologous genes of chloroplast genomes. Furthermore, the annotations of
+tRNAscan-SE v.2.0.3 [52] were preferred as compared to ARAGORN v1.2.38 [53] due to
+availability of its recently updated version. The five-column tab-delimited table of the
+annotation were generated for submission to National Center for Biotechnology Information
+(NCBI) through GB2sequin [54]. Fully annotated plastome circular diagrams were drawn by
+OrganellarGenomeDRAW (OGDRAW) [55]. These genomes were submitted to GenBank of
+National Center of Biotechnology Information (NCBI) under specific accession numbers
+(Table 1).
+
+
+[First complete chloroplast genomics and comparative phylogenetic analysis of Commiphora gileadensis and C. foliacea: Myrrh producing trees](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208511)
+
+
+> Similarly, a custom Python script (https://www.biostars.org/p/119214/) and DnaSP 5.10.01 [42], were employed to determine single-nucleotide polymorphisms and Indel polymorphisms among the complete genomes respectively. 
+
+
+
+
+
+
+
+> To infer the phylogenetic position of both C. gileadensis and C. foliacea within the order Sapindales, 24 cp genomes were downloaded from the NCBI database for analysis. Multiple alignments were performed using complete cp genomes based on conserved structures and gene order [41] and 4 different methods were used to make the trees: Bayesian-inference (MrBayes v3.1.2 [43]), maximum parsimony (PAUP-4.0[44]), maximum-likelihood and neighbour joining (MEGA7.01[33]) according to the methods of Asaf et al [39,45]. For Bayesian posterior probabilities (PP) in the BI analyses, the best substitution model GTR + G model was tested according to the Akaike information criterion (AIC) by jModelTest verion 2102. The Markov Chain Monto Carlo (MCMC) was run for 1,000,000 generations with 4 incrementally heated chains, starting from random trees and sampling 1 out of every 100 generations. The first 30% of trees were discarded as burn-in to estimate the value of posterior probabilities. Furthermore, parameters for the ML analysis were optimized with a BIONJ tree as the starting tree with 1000 bootstrap replicates using the Kimura 2-parameter model with gamma-distributed rate heterogeneity and invariant sites. MP was run using a heuristic search with 1000 random addition sequence replicates with the tree-bisection-reconnection (TBR) branch-swapping tree search criterion. In the second phylogenetic analysis, 72 shared genes from the cp genomes of the twenty-six members of order Sapindales, were aligned using ClustalX with default settings, followed by manual adjustment to preserve reading frames. Similarly, the above4 mentioned phylogenetic inference models were utilized to build trees using 72 concatenated genes, using the same setting as described above and suggested by Asaf et al [45].
+
+
 - #### Very nice argument | `` Previous studies based on plastid fragments and/or nuclear ribosomal DNA have had limited success resolving relationships within the genus Salvia. This study evaluates the efficacy of complete plastome sequences for phylogenetic inference within Salvia, using the recently established Salvia subg. Glutinaria as a case study. We use these plastomes to identify hypervariable and simple sequence repeat (SSR) regions for future studies within Salvia.`` [The Chloroplast Genome of Salvia: Genomic Characterization and Phylogenetic Analysis](https://www.journals.uchicago.edu/doi/pdf/10.1086/710083)
 
 
