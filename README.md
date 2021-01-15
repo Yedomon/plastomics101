@@ -1127,5 +1127,59 @@ cat * | awk '{
 
 ```
 
+
+For Avicennia_marina.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Avicennia_marina.gb \
+-prefix Avicennia -seqPrefix avi -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat  Avicennia.cds_translation.fasta | awk '{gsub(/NC_047414.1;/,"_")}1' > Avicennia.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+
+
+For Andrographis_paniculata.gb
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Andrographis_paniculata.gb \
+-prefix Andrographis -seqPrefix avi -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat Andrographis.cds_translation.fasta | awk '{gsub(/NC_022451.2;/,"_")}1' > Andrographis.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+
 Get the common genes using [Bioinformatics & Evolutionary Genomics venn diagram web tool](http://bioinformatics.psb.ugent.be/webtools/Venn/)
 
