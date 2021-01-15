@@ -200,6 +200,34 @@ National Center of Biotechnology Information (NCBI) under specific accession num
 (Table 1).
 
 
+
+Assuming that you have your alignment in a file named "fasta.fas" this should get you started
+
+
+
+```python
+
+
+y=0
+alignment = AlignIO.read("fasta.fas", "fasta")
+for r in range(0,len(alignment[1].seq)):
+    if alignment[0,r] != alignment[1,r]:
+        if alignment[0,r] != "-" and alignment[1,r] != "-":
+            y=y+1
+            print r, alignment[0,r], alignment[1,r], y
+        else:
+            y=0
+
+
+
+```
+
+
+This returns position of SNP, nt in seq_A, nt in seq_B, running tally of the number of SNPs upstream of each indel
+
+
+
+
 [First complete chloroplast genomics and comparative phylogenetic analysis of Commiphora gileadensis and C. foliacea: Myrrh producing trees](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208511)
 
 
