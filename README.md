@@ -201,7 +201,7 @@ National Center of Biotechnology Information (NCBI) under specific accession num
 
 
 
-Assuming that you have your alignment in a file named "fasta.fas" this should get you started
+Assuming that you have your alignment in a file named **"fasta.fas"** this should get you started
 
 
 
