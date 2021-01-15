@@ -1163,7 +1163,7 @@ For Andrographis_paniculata.gb
 #--Extraction of CDS
 gbseqextractor \
 -f Andrographis_paniculata.gb \
--prefix Andrographis -seqPrefix avi -types CDS -cds_translation
+-prefix Andrographis -seqPrefix and -types CDS -cds_translation
 
 
 #--Format the header in species_gene style.
