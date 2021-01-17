@@ -1357,3 +1357,5 @@ ycf4
 
 
 ycf15 is not present in Vitis vinifera from a set of: Rad,Ind,Ala,Ped,Ang,Vit,And,Aph.
+
+Note: Need to change *clP1* (from Geseq) ---> to clP and *pbf1* (from Geseq) ---> to psbN
