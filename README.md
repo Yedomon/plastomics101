@@ -1236,7 +1236,124 @@ cat * | awk '{
 ```
 
 
+For Aphelandra knappiae
+
+
+```bash
+
+#--Extraction of CDS
+gbseqextractor \
+-f Aphelandra_knappiae.gb \
+-prefix Aphelandra -seqPrefix aph -types CDS -cds_translation
+
+
+#--Format the header in species_gene style.
+
+cat Aphelandra.cds_translation.fasta | awk '{gsub(/NC_041424.1;/,"_")}1' > Aphelandra.cds_translation_formatted.fasta
+
+#--Explode and renamed with the corresponding header
+
+cat * | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fasta")}
+        print $0 > filename }'
+
+```
+
+
+
+
 
 
 Get the common genes using [Bioinformatics & Evolutionary Genomics venn diagram web tool](http://bioinformatics.psb.ugent.be/webtools/Venn/)
 
+
+
+Got a total of 79 shared genes
+
+
+```
+atpH
+psbK
+ndhI
+rpl20
+matK
+ndhF
+atpF
+psbF
+petN
+rps7
+psbE
+petB
+rpl16
+ycf2
+petG
+petA
+rps12
+rpl2
+ndhH
+clpP
+rps3
+rps2
+atpB
+ndhE
+psaA
+psbT
+psbM
+ycf1
+infA
+rpoB
+rpl36
+psbC
+ndhD
+rpoC1
+atpE
+accD
+psbN
+rps11
+rps4
+psaI
+rps18
+ndhC
+psaJ
+psbL
+rpl33
+ndhA
+petL
+rpl23
+rps19
+ndhG
+ndhK
+rpl32
+rpl14
+psaC
+psbJ
+rpl22
+rps8
+ndhB
+psbH
+rpoC2
+ndhJ
+rbcL
+atpI
+psbB
+rpoA
+ycf3
+psbD
+rps16
+cemA
+ccsA
+psbZ
+rps14
+petD
+atpA
+rps15
+psaB
+psbA
+psbI
+ycf4
+
+```
+
+
+
+ycf15 is not present in Vitis viifera
