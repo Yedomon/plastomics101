@@ -1356,4 +1356,4 @@ ycf4
 
 
 
-ycf15 is not present in Vitis viifera
+ycf15 is not present in Vitis vinifera from a set of: Rad,Ind,Ala,Ped,Ang,Vit,And,Aph.
