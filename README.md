@@ -638,7 +638,7 @@ Great! That works perfectly!
 
 
 
-
+> Furthermore, comparison of the cp genome of C. gileadensis with C. foliacea, C. wightii and B. sacra revealed 3,032, 8,787 and 5,120 SNPs as well as 3,580, 10,460 and 17,122 Indels respectively (Fig 4). Similarly, the C. foliacea cp genome also showed 8,194 and 5,182 SNPs while 7,632 and 17,970 Indel with C. wightii and B. sacra respectively. These Results shows that even the most conserved genome possesses some interspecific mutations which provides an important information in analyzing the phylogenetic and genetic diversity among the species
 
 
 
