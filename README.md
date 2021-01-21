@@ -207,6 +207,7 @@ Assuming that you have your alignment in a file named **"fasta.fas"** this shoul
 
 ```python
 
+from Bio import AlignIO
 
 y=0
 alignment = AlignIO.read("fasta.fas", "fasta")
