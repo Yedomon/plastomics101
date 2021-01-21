@@ -6,6 +6,19 @@
 
 
 
+
+- ### [New  |   Completion of the Chloroplast Genomes of Five Chinese Juglans and Their Contribution to Chloroplast Phylogeny](https://www.frontiersin.org/articles/10.3389/fpls.2016.01955/full)
+
+
+
+
+
+> The Juglans Cpg sequences from the finalized data set were aligned with MAFFT v7.0.0 (Katoh and Standley, 2013). The analyses were carried out based on the following three data sets: (1) the complete cp DNA sequences; (2) protein coding sequences; (3) the introns and spacers. 
+
+
+
+
+
 - Bayesian analysis in R | [Babette github](https://github.com/ropensci/babette) | [Babette demo](https://methodsblog.com/2018/06/25/babette-beast2/) | [The error we make in Bayesian phylogenetics today](https://youtu.be/cp0F3W8KM0I)
 
 - #### REF  [HERE](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1004-2)
