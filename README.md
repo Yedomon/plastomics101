@@ -227,6 +227,428 @@ for r in range(0,len(alignment[1].seq)):
 This returns position of SNP, nt in seq_A, nt in seq_B, running tally of the number of SNPs upstream of each indel
 
 
+I tested this script in my server
+
+First I align two chloroplast genome using mafft following this code
+
+
+```bash
+
+#---Convatenate both sequences
+cat cp1.fasta cp2.fasta > cp1_cp2.fasta
+
+#---Alignment
+mafft --auto --thread 96 cp1_cp2.fata > cp1_cp2.mafft
+
+#---Creating the python script
+vi snp.py
+
+#--Copy and past the python and run
+
+python snp.py
+
+```
+
+I got this error
+
+
+```bash
+
+File "snp.py", line 8
+    (print r, alignment[0,r], alignment[1,r], y)
+           ^
+SyntaxError: invalid syntax
+
+
+```
+
+
+
+So I found a solution [here](https://www.biostars.org/p/478864/)
+
+
+Then I modified the script just a little
+
+
+```python
+
+
+from Bio import AlignIO
+
+y=0
+alignment = AlignIO.read("fasta.fas", "fasta")
+for r in range(0,len(alignment[1].seq)):
+    if alignment[0,r] != alignment[1,r]:
+        if alignment[0,r] != "-" and alignment[1,r] != "-":
+            y=y+1
+            print (r, alignment[0,r], alignment[1,r], y)
+        else:
+            y=0
+
+
+
+```
+
+
+Note: The problem was that I should put in parenthesis all characters after `print` in line `8`.
+
+
+So I tried again 
+
+```bash
+
+python snp.py 
+
+```
+
+
+and I got
+
+
+```
+10 a t 1
+11 a g 2
+92 t c 3
+113 a t 4
+161 a c 1
+234 c t 2
+243 c t 1
+246 a t 2
+247 a t 3
+248 a t 4
+249 a t 5
+266 t c 6
+555 g a 7
+1053 t c 8
+1161 a g 9
+1284 g a 10
+1526 c t 11
+1611 a c 12
+1924 c g 1
+1953 a t 1
+1973 t g 2
+2062 c g 3
+2076 a g 4
+2098 g t 5
+2101 c g 6
+2112 a g 7
+2153 t g 8
+2250 g t 9
+2285 t g 10
+2300 a g 11
+2437 c g 12
+2570 c a 13
+2703 a c 14
+2719 c t 15
+2769 a c 16
+2797 c t 17
+2808 g c 18
+3021 t c 19
+3050 g c 20
+3077 c t 21
+3192 g a 22
+3193 a c 23
+3261 g c 24
+3301 t g 25
+3393 g a 26
+3400 c g 27
+3521 g a 28
+3547 g t 29
+3621 a g 30
+3967 t g 1
+4020 a t 2
+4028 t g 3
+4147 t c 4
+4155 a c 5
+4194 t c 6
+4212 t g 7
+4400 a c 8
+4465 g t 9
+4581 a c 1
+4587 g a 2
+4683 c t 3
+4717 t g 1
+4741 c a 1
+4840 g a 2
+4841 a g 3
+4843 g a 4
+4844 a g 5
+4846 t a 6
+4848 g t 7
+4849 a g 8
+4858 g t 9
+4860 t g 10
+4880 g a 11
+4916 g t 12
+4925 g t 13
+4995 a g 14
+5202 a g 1
+5589 a g 2
+5592 t c 3
+5608 g c 4
+5612 g a 5
+5655 c t 6
+5773 a t 7
+5852 c a 1
+5884 c g 2
+5925 c a 3
+5984 g a 4
+6111 g c 5
+6112 a g 6
+6122 g a 7
+6283 t a 8
+6366 g t 9
+6424 c a 1
+6480 t g 2
+6536 t c 3
+6608 t a 1
+6662 t g 2
+6723 t c 3
+6862 c t 1
+6893 t a 1
+6964 a t 2
+7004 c t 3
+7025 a c 4
+7026 a c 5
+7155 g c 6
+7310 t c 7
+7380 t c 8
+7435 g a 9
+7526 a c 10
+7900 c t 11
+7912 g t 12
+8098 a t 13
+8272 t g 14
+8304 c g 15
+8806 c a 1
+9011 a t 2
+9083 a c 1
+9114 g t 2
+9115 a g 3
+9116 a t 4
+9118 g a 5
+9119 a c 6
+9120 c t 7
+9121 t a 8
+9122 a g 9
+9124 t c 10
+9126 a t 11
+9127 c t 12
+9128 a c 13
+9162 t c 14
+9181 g a 15
+9183 g a 16
+9187 t c 17
+9238 a c 18
+9315 a c 19
+9368 g t 20
+9555 a t 21
+9710 g a 22
+9865 g c 23
+9972 c t 1
+10024 c g 2
+10129 t c 3
+10234 c a 4
+10311 a c 5
+10469 t a 1
+10717 g a 2
+10817 a c 3
+10821 a g 4
+10844 a g 5
+11064 t g 6
+11076 a g 7
+11379 c g 8
+11394 c a 9
+11442 t c 10
+11458 c g 11
+11768 t c 12
+11961 a g 13
+12198 c t 14
+12578 t c 15
+12665 a c 16
+13037 a g 1
+13085 a c 2
+13557 a c 1
+13575 g t 2
+13645 c t 3
+13687 t g 4
+13750 t c 5
+13751 g a 6
+14074 c g 7
+14102 t c 8
+14206 a c 9
+14207 g a 10
+14345 c g 11
+14483 t g 12
+14535 t c 13
+14548 c t 14
+14567 a c 15
+14574 a c 16
+14578 g a 17
+14646 a t 18
+14817 g a 19
+14970 t a 1
+15381 a g 1
+15792 a c 1
+15872 g t 2
+15928 c t 3
+15983 g t 1
+16085 g a 2
+16352 a g 3
+16499 g a 4
+16634 t c 5
+16740 t c 6
+16741 c a 7
+16761 c a 8
+16906 t c 9
+17285 c g 1
+17361 g a 2
+18044 t a 3
+18381 g a 4
+18855 g c 5
+18981 g c 6
+18987 c t 7
+18988 g t 8
+19106 c t 9
+19434 a g 10
+19814 a g 11
+19838 g t 12
+19979 c g 13
+20006 t g 14
+20165 a c 15
+20212 g t 16
+20414 g a 17
+20564 c a 18
+20845 t c 19
+21017 t a 20
+21182 c t 21
+21417 a c 22
+21971 g c 23
+22098 t g 24
+22668 g t 25
+22840 g a 26
+23013 t c 27
+23458 a c 28
+23459 c a 29
+23601 c t 30
+24256 c t 31
+24988 c t 32
+25079 t c 33
+25093 t c 34
+25193 t c 35
+25329 a g 36
+25455 c t 37
+25567 c t 38
+25772 a g 39
+25943 c t 40
+26462 a g 41
+26975 t a 42
+27143 c a 43
+27458 c t 44
+27547 t c 45
+27553 a g 46
+27683 a c 47
+27698 t g 48
+27711 t g 49
+27842 g a 1
+27968 t c 2
+28052 g a 3
+28249 c t 4
+28366 a g 5
+28464 a g 6
+28667 g c 1
+28690 a g 2
+28768 a g 3
+28816 g a 1
+28872 g c 2
+28902 g t 3
+28906 c t 4
+28945 g a 5
+28974 c t 1
+29008 t c 2
+29028 c t 3
+29069 g a 4
+29114 t c 5
+29207 g c 6
+29289 c t 7
+29356 t c 8
+29538 a g 9
+29643 t g 10
+29741 a c 1
+29791 t c 2
+29808 g c 1
+29906 g c 2
+29954 g a 3
+29964 a t 4
+30040 a c 5
+30148 c a 6
+30248 g a 7
+30253 a c 8
+30436 t g 9
+30437 c a 10
+30484 a g 11
+30816 a c 1
+30892 g a 2
+30897 c a 3
+30939 g c 4
+31039 t c 5
+31042 a g 1
+31045 g a 2
+31048 a g 3
+31189 g t 4
+31362 a c 5
+31575 t g 6
+31610 t g 7
+31719 t g 8
+31733 c a 9
+32012 t c 1
+32015 g t 2
+32031 a t 3
+32211 t c 1
+32264 c g 2
+32350 g a 1
+32360 t g 2
+32461 g a 3
+32922 t c 4
+32994 g a 5
+33013 g t 6
+33170 g a 7
+33216 t g 8
+33338 g a 9
+33388 a g 10
+33525 g a 11
+34188 a c 12
+34479 t c 13
+34597 c t 14
+34612 g a 15
+34742 c t 16
+35125 g a 17
+35970 c a 18
+36280 t c 1
+36487 c g 1
+36852 t c 1
+36930 a t 1
+36931 a c 2
+37122 c a 3
+37171 g a 1
+
+```
+
+Great! That works perfectly!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 [First complete chloroplast genomics and comparative phylogenetic analysis of Commiphora gileadensis and C. foliacea: Myrrh producing trees](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208511)
