@@ -1855,3 +1855,12 @@ ycf4
 ycf15 is not present in Vitis vinifera from a set of: Rad,Ind,Ala,Ped,Ang,Vit,And,Aph.
 
 Note: Need to change *clP1* (from Geseq) ---> to clP and *pbf1* (from Geseq) ---> to psbN
+
+
+
+
+
+[extract](https://linuxize.com/post/how-to-extract-unzip-tar-gz-file/#:~:text=gz%20file%20is%20a%20Tar,followed%20by%20the%20archive%20name.)
+
+
+[zip](https://mkyong.com/linux/linux-how-to-gzip-a-folder/)
