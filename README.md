@@ -1227,6 +1227,66 @@ So a hint: `Make sure to name ideally the gene uniformely to facilitate the data
 
 Prepare the files
 
+
+
+I used gbseqextractor tool
+
+
+```bash
+[kplee@localhost ~]$ gbseqextractor --help
+usage: gbseqextractor [-h] -f <STR> -prefix <STR> [-seqPrefix <STR>]
+                      [-types {CDS,rRNA,tRNA,wholeseq,gene} [{CDS,rRNA,tRNA,wholeseq,gene} ...]]
+                      [-cds_translation] [-gi] [-p] [-t] [-s] [-l] [-rv] [-F]
+
+Extract any CDS or rNRA or tRNA DNA sequences of genes from Genbank file.
+
+Seqid will be the value of '/gene=' or '/product=', if they both were not
+present, the gene will not be output!
+
+version 20201128:
+    Now we can handle compounlocation (feature location with "join")!
+    We can also output the translation for each CDS (retrived from '/translation=')
+
+Please cite:
+Guanliang Meng, Yiyuan Li, Chentao Yang, Shanlin Liu,
+MitoZ: a toolkit for animal mitochondrial genome assembly, annotation
+and visualization, Nucleic Acids Research, https://doi.org/10.1093/nar/gkz173
+
+
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f <STR>              Genbank file
+  -prefix <STR>         prefix of output file. required.
+  -seqPrefix <STR>      prefix of each seq id. default: None
+  -types {CDS,rRNA,tRNA,wholeseq,gene} [{CDS,rRNA,tRNA,wholeseq,gene} ...]
+                        what kind of genes you want to extract? wholeseq for
+                        whole fasta seq. WARNING: Each sequence in the result
+                        files corresponds to ONE feature in the GenBank file,
+                        I will NOT combine multiple CDS of the same gene into
+                        ONE! [CDS]
+  -cds_translation      Also output translated CDS (required -types CDS). The
+                        translations are retrived directly from the
+                        '/translation=' key word. [False]
+  -gi                   use gi number as sequence ID instead of accession
+                        number when " gi number is present. (default:
+                        accession number)
+  -p                    output the position information on the ID line.
+                        Warning: the position on ID line is 0 left-most!
+                        [False]
+  -t                    output the taxonomy lineage on ID line [False]
+  -s                    output the species name on the ID line [False]
+  -l                    output the seq length on the ID line [False]
+  -rv                   reverse and complement the sequences if the gene is on
+                        minus strand. Always True!
+  -F                    only output full length genes,i.e., exclude the genes
+                        with '>' or '<' in their location [False]
+
+
+
+```
+
+
 For Adenocalymma_acutissimum.gb
 
 
