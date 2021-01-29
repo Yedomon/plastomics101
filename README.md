@@ -1864,3 +1864,6 @@ Note: Need to change *clP1* (from Geseq) ---> to clP and *pbf1* (from Geseq) ---
 
 
 [zip](https://mkyong.com/linux/linux-how-to-gzip-a-folder/)
+
+
+evomics workshop on [multiple sequence alignement](http://evomics.org/wp-content/uploads/2016/06/Align_Trim_Concat_Labs_Phylogenomics_2017.pdf), [concatenation , parttion and model testing](http://evomics.org/wp-content/uploads/2019/01/Workshop_practical_concatenation_model_testing.pdf) and [phylogenetic tree visualization](http://evomics.org/wp-content/uploads/2016/06/TreeEditingVisualization_WoPhylogenomics_CK2017.pdf)
