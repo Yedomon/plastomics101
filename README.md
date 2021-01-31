@@ -1875,7 +1875,7 @@ evomics workshop on [multiple sequence alignement](http://evomics.org/wp-content
 
 
 
-Amazing tutorials of [Matschiner](https://github.com/mmatschiner/tutorials) for Phylogenetic inference
+Amazing tutorials of [Michael Matschiner](https://github.com/mmatschiner/tutorials) for Phylogenetic inference | [Michael Matschiner Publication](https://scholar.google.com/citations?hl=en&user=R0SHyeUAAAAJ&view_op=list_works&sortby=pubdate)
 
 
 - #### [Bayesian phylogeny](https://github.com/mmatschiner/tutorials/blob/master/bayesian_phylogeny_inference/README.md)
