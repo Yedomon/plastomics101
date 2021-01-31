@@ -1867,3 +1867,18 @@ Note: Need to change *clP1* (from Geseq) ---> to clP and *pbf1* (from Geseq) ---
 
 
 evomics workshop on [multiple sequence alignement](http://evomics.org/wp-content/uploads/2016/06/Align_Trim_Concat_Labs_Phylogenomics_2017.pdf), [concatenation , parttion and model testing](http://evomics.org/wp-content/uploads/2019/01/Workshop_practical_concatenation_model_testing.pdf) and [phylogenetic tree visualization](http://evomics.org/wp-content/uploads/2016/06/TreeEditingVisualization_WoPhylogenomics_CK2017.pdf)
+
+
+
+
+
+
+
+
+Amazing tutorials of [Matschiner](https://github.com/mmatschiner/tutorials) for Phylogenetic inference
+
+- #### []()
+
+- #### [Bayesian phylogeny](https://github.com/mmatschiner/tutorials/blob/master/bayesian_phylogeny_inference/README.md)
+
+- #### [Divergence time estimation](https://github.com/mmatschiner/tutorials/blob/master/divergence_time_estimation/README.md)
