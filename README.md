@@ -5,7 +5,7 @@
 # Chloroplast
 
 
-- #### [Comparative analysis of the complete chloroplast genome sequences of three Amaranthus species](https://www.cambridge.org/core/journals/plant-genetic-resources/article/abs/comparative-analysis-of-the-complete-chloroplast-genome-sequences-of-three-amaranthus-species/EA535B6272D6DB560AE2F12E6F8EA6A0)
+- #### [Comparative analysis of the complete chloroplast genome sequences of three Amaranthus species](https://www.cambridge.org/core/journals/plant-genetic-resources/article/abs/comparative-analysis-of-the-complete-chloroplast-genome-sequences-of-three-amaranthus-species/EA535B6272D6DB560AE2F12E6F8EA6A0)   the PDF [here](https://github.com/Yedomon/plastomics101/blob/main/su_young_hong_2019.pdf)
 
 
 
