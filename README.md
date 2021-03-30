@@ -1,5 +1,26 @@
 # plastomics101
 
+[Analysis of six chloroplast genomes provides insight into the evolution of Chrysosplenium (Saxifragaceae)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec10)
+
+> A total of 66 CDSs presented in all the analysed species, and were used for identification of positive selection using the branch-site model [32]. CDSs of each gene were aligned according to their amino acid sequences with MEGA7 [58]. The branch-site model in the program codeml of the PAML v4.9 package [60] was used to assess potential positive selection in Chrysosplenium that was set as the foreground branch. Selective pressure is measured by the ratio (ω) of the nonsynonymous substitution rate (dN) to the synonymous substitutions rate (dS). A neutral branch-site model (Model = 2, NSsites = 2, Fix = 1, and Fix ω = 1) and an alternative branch-site model (Model = 2, NSsites = 2, and Fix = 0) were applied separately. The right-tailed Chi-square test was used to compute p-values based on the difference of log-likelihood values between the two models with one degree of freedom. Moreover, BEB method [61] was implemented to calculate the posterior probabilities for amino acid sites that are potentially under positive selection. A gene with a p-value < 0.05 and ω > 1 was considered as a positively selected gene. An amino acid site with posterior probabilities > 0.95 was considered as positively selected.
+
+
+
+
+
+
+
+
+
+
+[Phylogenomic Analysis and Dynamic Evolution of Chloroplast Genomes in Salicaceae](https://www.frontiersin.org/articles/10.3389/fpls.2017.01050/full#supplementary-material)
+
+
+> To identify the microstructural mutations of Juglans, the five aligned sequences were further analyzed using DnaSP v5 (Librado and Rozas, 2009) and MEGA v5.0 (Tamura et al., 2011). Indel and SNP events were counted and positioned in the cp genome using DnaSP v5. Signatures of natural selection were studied for every chloroplast gene located outside of the inverted repeats region. Selective pressures (KA/KS) were computed with the codeml tool from PAML package v4.0 (Yang, 2007) using a YN00 model to test every gene sequence. We used the KaKs_calculator program to check the selective pressures (KA/KS) using same model as YN (Zhang et al., 2006). To avoid potential convergence biases, those genes with few mutations were filtered out from selective pressure analysis.
+
+
+
+
 
 
 # Chloroplast
