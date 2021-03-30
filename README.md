@@ -5,6 +5,14 @@
 # Chloroplast
 
 
+
+[Excel Trick#56 : How To Transpose Multiple Columns And Rows Into Single Coluhttps://youtu.be/OG_yNrQNJ6gmn || dptutorials](https://youtu.be/OG_yNrQNJ6g)
+
+
+
+[Re-arrange multiple columns in a data set into one column using R](https://stackoverflow.com/questions/7398998/re-arrange-multiple-columns-in-a-data-set-into-one-column-using-r)
+
+
 - #### [Comparative analysis of the complete chloroplast genome sequences of three Amaranthus species](https://www.cambridge.org/core/journals/plant-genetic-resources/article/abs/comparative-analysis-of-the-complete-chloroplast-genome-sequences-of-three-amaranthus-species/EA535B6272D6DB560AE2F12E6F8EA6A0)   the PDF [here](https://github.com/Yedomon/plastomics101/blob/main/su_young_hong_2019.pdf)
 
 
