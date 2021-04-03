@@ -1,5 +1,183 @@
 # plastomics101
 
+
+
+
+
+## Ka ks analysis
+
+### Prepare the datasets | nucleotide fasta and protein translated fasta files
+
+#### Sesamum indicum faa and fna extraction
+
+gbseqextractor \
+-f Sesamum_indicum.gb \
+-prefix ind -types CDS -cds_translation 
+
+
+### formating the gene head names
+cat  ind.cds.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ind.cds.formatted.fasta
+
+cat  ind.cds_translation.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ind.cds_translation.formatted.fasta
+
+
+#### Explode the sequences
+
+cat ind.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat ind.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+#### Sesamum alatum faa and fna extraction
+
+gbseqextractor \
+-f Sesamum_alatum.gb \
+-prefix ala -types CDS -cds_translation 
+
+cat  ala.cds.fasta | awk '{gsub(/Sesamum_al;/,"")}1' > ala.cds.formatted.fasta
+
+cat  ala.cds_translation.fasta | awk '{gsub(/Sesamum_al;/,"")}1' > ala.cds_translation.formatted.fasta
+
+cat ala.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat ala.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+
+#### Sesamum angolense faa and fna extraction
+
+gbseqextractor \
+-f Sesamum_angolense.gb \
+-prefix ang -types CDS -cds_translation 
+
+cat  ang.cds.fasta | awk '{gsub(/Sesamum_an;/,"")}1' > ang.cds.formatted.fasta
+
+cat ang.cds_translation.fasta | awk '{gsub(/Sesamum_an;/,"")}1' > ang.cds_translation.formatted.fasta
+
+cat ang.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat ang.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+
+#### Sesamum pedaloides faa and fna extraction
+
+gbseqextractor \
+-f Sesamum_pedaloides.gb \
+-prefix ped -types CDS -cds_translation 
+
+cat ped.cds.fasta | awk '{gsub(/Sesamum_pe;/,"")}1' > ped.cds.formatted.fasta
+
+cat ped.cds_translation.fasta | awk '{gsub(/Sesamum_pe;/,"")}1' > ped.cds_translation.formatted.fasta
+
+cat ped.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat ped.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+#### Sesamum radiatum faa and fna extraction
+
+gbseqextractor \
+-f Sesamum_radiatum.gb \
+-prefix rad -types CDS -cds_translation 
+
+cat rad.cds.fasta | awk '{gsub(/Sesamum_ra;/,"")}1' > ra.cds.formatted.fasta
+
+cat rad.cds_translation.fasta | awk '{gsub(/Sesamum_ra;/,"")}1' > ra.cds_translation.formatted.fasta
+
+cat ra.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat ra.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+#### Andrographis paniculata faa and fna extraction
+
+gbseqextractor \
+-f Andrographis_paniculata.gb \
+-prefix and -types CDS -cds_translation 
+
+
+cat and.cds.fasta | awk '{gsub(/NC_022451.2;/,"")}1' > and.cds.formatted.fasta
+
+cat and.cds_translation.fasta | awk '{gsub(/NC_022451.2;/,"")}1' > and.cds_translation.formatted.fasta
+
+
+cat and.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat and.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+#### Aphelandra knappiae faa and fna extraction
+
+gbseqextractor \
+-f Aphelandra_knappiae.gb \
+-prefix aph -types CDS -cds_translation 
+
+cat aph.cds.fasta | awk '{gsub(/NC_041424.1;/,"")}1' > aph.cds.formatted.fasta
+
+cat aph.cds_translation.fasta | awk '{gsub(/NC_041424.1;/,"")}1' > aph.cds_translation.formatted.fasta
+
+cat aph.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat aph.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+#### Vitis vinifera faa and fna extraction 
+
+gbseqextractor \
+-f Vitis_vinifera.gb \
+-prefix vit -types CDS -cds_translation 
+
+cat vit.cds.fasta | awk '{gsub(/NC_007957.1;/,"")}1' > vit.cds.formatted.fasta
+
+cat vit.cds_translation.fasta | awk '{gsub(/NC_007957.1;/,"")}1' > vit.cds_translation.formatted.fasta
+
+
+cat vit.cds.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")}
+        print $0 > filename }'  
+
+cat vit.cds_translation.formatted.fasta | awk '{
+        if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")}
+        print $0 > filename }' 
+
+
+### atpH gene case
+
+/home/yedomon/utils/clustalo1.2.4/clustalo-1.2.4-Ubuntu-x86_64 -i atpH.faa -o atpH.aln.faa 
+
+/home/yedomon/utils/pal2nal.v14/pal2nal.pl atpH.aln.faa atpH.fna -output paml -nogap > atpH.pal2nal
+
+/home/yedomon/utils/paml4.9j/bin/codeml alternative_model.ctl
+
 [Analysis of six chloroplast genomes provides insight into the evolution of Chrysosplenium (Saxifragaceae)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec10)
 
 > A total of 66 CDSs presented in all the analysed species, and were used for identification of positive selection using the branch-site model [32]. CDSs of each gene were aligned according to their amino acid sequences with MEGA7 [58]. The branch-site model in the program codeml of the PAML v4.9 package [60] was used to assess potential positive selection in Chrysosplenium that was set as the foreground branch. Selective pressure is measured by the ratio (ω) of the nonsynonymous substitution rate (dN) to the synonymous substitutions rate (dS). A neutral branch-site model (Model = 2, NSsites = 2, Fix = 1, and Fix ω = 1) and an alternative branch-site model (Model = 2, NSsites = 2, and Fix = 0) were applied separately. The right-tailed Chi-square test was used to compute p-values based on the difference of log-likelihood values between the two models with one degree of freedom. Moreover, BEB method [61] was implemented to calculate the posterior probabilities for amino acid sites that are potentially under positive selection. A gene with a p-value < 0.05 and ω > 1 was considered as a positively selected gene. An amino acid site with posterior probabilities > 0.95 was considered as positively selected.
