@@ -6,7 +6,7 @@
 
 ## Ka ks analysis
 
-
+[Tutorial protocol.io](https://www.protocols.io/view/introduction-to-calculating-dn-ds-ratios-with-code-qhwdt7e?step=4)
 
 [Tutorial for branch model site](https://evosite3d.blogspot.com/2011/09/identifying-positive-selection-in.html) 
 
