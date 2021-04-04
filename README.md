@@ -6,6 +6,15 @@
 
 ## Ka ks analysis
 
+
+
+[Tutorial for branch model site](https://evosite3d.blogspot.com/2011/09/identifying-positive-selection-in.html) 
+
+
+[Tutorial for site model](https://evosite3d.blogspot.com/2016/06/detecting-pervasive-positive-selection.html)
+
+
+
 ### Prepare the datasets | nucleotide fasta and protein translated fasta files
 
 #### Sesamum indicum faa and fna extraction
