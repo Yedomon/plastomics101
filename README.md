@@ -199,6 +199,14 @@ python /home/yedomon/data/01_ka_ks/00_starting_block/dnds-master/parse_codeml_ou
 
 /home/yedomon/utils/paml4.9j/bin/codeml null_model.ctl
 
+
+
+After calculating the LRT go [here](https://www.socscistatistics.com/pvalues/chidistribution.aspx) for p value calculation by pasting the LRT value and the df value also.
+
+
+
+
+
 [Analysis of six chloroplast genomes provides insight into the evolution of Chrysosplenium (Saxifragaceae)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec10)
 
 > A total of 66 CDSs presented in all the analysed species, and were used for identification of positive selection using the branch-site model [32]. CDSs of each gene were aligned according to their amino acid sequences with MEGA7 [58]. The branch-site model in the program codeml of the PAML v4.9 package [60] was used to assess potential positive selection in Chrysosplenium that was set as the foreground branch. Selective pressure is measured by the ratio (ω) of the nonsynonymous substitution rate (dN) to the synonymous substitutions rate (dS). A neutral branch-site model (Model = 2, NSsites = 2, Fix = 1, and Fix ω = 1) and an alternative branch-site model (Model = 2, NSsites = 2, and Fix = 0) were applied separately. The right-tailed Chi-square test was used to compute p-values based on the difference of log-likelihood values between the two models with one degree of freedom. Moreover, BEB method [61] was implemented to calculate the posterior probabilities for amino acid sites that are potentially under positive selection. A gene with a p-value < 0.05 and ω > 1 was considered as a positively selected gene. An amino acid site with posterior probabilities > 0.95 was considered as positively selected.
