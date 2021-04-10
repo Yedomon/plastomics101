@@ -201,8 +201,24 @@ python /home/yedomon/data/01_ka_ks/00_starting_block/dnds-master/parse_codeml_ou
 
 
 
-After calculating the LRT go [here](https://www.socscistatistics.com/pvalues/chidistribution.aspx) for p value calculation by pasting the LRT value and the df value also.
+After calculating the LRT go [here](https://www.socscistatistics.com/pvalues/chidistribution.aspx) for p value calculation by pasting the LRT value and the df value also. Or [here](http://courses.atlas.illinois.edu/spring2016/STAT/STAT200/pchisq.html) is better there is also the R comand. In fact the Tutorial from evo3d used right tail chi square
 
+
+I test it
+
+```python
+Chi-square = 6.024178, df = 1
+
+Right-tail p-value is 0.01411
+
+R command:       *pchisq(6.024178, 1, lower.tail=FALSE)*       or       1-pchisq(6.024178, 1)
+
+
+
+```
+
+
+*pchisq(6.024178, 1, lower.tail=FALSE)*
 
 
 
