@@ -185,11 +185,19 @@ cat vit.cds_translation.formatted.fasta | awk '{
 
 ### atpH gene case
 
-/home/yedomon/utils/clustalo1.2.4/clustalo-1.2.4-Ubuntu-x86_64 -i atpH.faa -o atpH.aln.faa 
+/home/yedomon/utils/mafft-7.475-with-extensions/core/mafft atpH.faa > atpH.aln.mafft
 
-/home/yedomon/utils/pal2nal.v14/pal2nal.pl atpH.aln.faa atpH.fna -output paml -nogap > atpH.pal2nal
+/home/yedomon/utils/pal2nal.v14/pal2nal.pl atpH.aln.mafft atpH.fna -output paml -nogap > atpH.aln.mafft.pal2nal
+
+/home/yedomon/utils/paml4.9j/bin/codeml dn_ds.ctl
+
+
+python /home/yedomon/data/01_ka_ks/00_starting_block/dnds-master/parse_codeml_output.py dn_ds.mlc > results_dn_ds_atpH.txt
+
 
 /home/yedomon/utils/paml4.9j/bin/codeml alternative_model.ctl
+
+/home/yedomon/utils/paml4.9j/bin/codeml null_model.ctl
 
 [Analysis of six chloroplast genomes provides insight into the evolution of Chrysosplenium (Saxifragaceae)](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec10)
 
