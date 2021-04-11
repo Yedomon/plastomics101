@@ -200,6 +200,22 @@ python /home/yedomon/data/01_ka_ks/00_starting_block/dnds-master/parse_codeml_ou
 /home/yedomon/utils/paml4.9j/bin/codeml null_model.ctl
 
 
+# psbK case
+
+/home/yedomon/utils/mafft-7.475-with-extensions/core/mafft psbK.faa > psbK.aln.mafft
+
+/home/yedomon/utils/pal2nal.v14/pal2nal.pl psbK.aln.mafft psbK.fna -output paml -nogap > psbK.aln.mafft.pal2nal
+
+/home/yedomon/utils/paml4.9j/bin/codeml dn_ds.ctl
+
+
+python /home/yedomon/data/01_ka_ks/00_starting_block/dnds-master/parse_codeml_output.py dn_ds.mlc > results_dn_ds_psbK.txt
+
+
+/home/yedomon/utils/paml4.9j/bin/codeml alternative_model.ctl
+
+/home/yedomon/utils/paml4.9j/bin/codeml null_model.ctl
+
 
 After calculating the LRT go [here](https://www.socscistatistics.com/pvalues/chidistribution.aspx) for p value calculation by pasting the LRT value and the df value also. Or [here](http://courses.atlas.illinois.edu/spring2016/STAT/STAT200/pchisq.html) is better there is also the R comand. In fact the Tutorial from evo3d used right tail chi square
 
