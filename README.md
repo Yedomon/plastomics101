@@ -1,6 +1,6 @@
 # plastomics101
 
-#IRSCOPE analysis
+# IRSCOPE analysis
 
 
 Some key points to successfully make Chloroplast junction graph with [IRSCOPE R shiny tool](https://irscope.shinyapps.io/irapp/)
