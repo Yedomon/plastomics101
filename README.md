@@ -7,7 +7,7 @@ Some key points to successfully make Chloroplast junction graph with [IRSCOPE R 
 
 
 
-- Use the gff annotation from chloe or Geseq. 
+- Use the gff annotation from [chloe](https://chloe.plantenergy.edu.au/annotate.html) or [Geseq](https://chlorobox.mpimp-golm.mpg.de/geseq.html). 
 - Change the extension into .txt then copy and paste in Excel. 
 - Filter only by gene. 
 - Arrange the table as follow: start | end | gene name | strand. 
