@@ -1,5 +1,38 @@
 # plastomics101
 
+#IRSCOPE analysis
+
+
+Some key points to successfully make Chloroplast junction graph with [IRSCOPE R shiny tool](https://irscope.shinyapps.io/irapp/)
+
+
+
+- Use the gff annotation from chloe or Geseq. 
+- Change the extension into .txt then copy and paste in Excel. 
+- Filter only by gene. 
+- Arrange the table as follow: start | end | gene name | strand. 
+- Delete IR annotation. 
+- Using chloe gff file is more flexible than geseq because  of duplication of certain gene by Geseq tool
+- save as tab delimitated file
+- Make sure to arrange the fasta file as follow: LLS-IRB-SSC-IRB. Verry important to speed up the process
+- prepare the coordinates of junctions by doing real start of IRB-1basepair, real end of IRB, real start of IRA-1,real end of IRA
+- Go to `https://irscope.shinyapps.io/irapp/` then select upload data > Manual and upload the gff.txt, fasta and write down the coordinnates. Dependeing of the number of species, the process will take less than 10s.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### [Complete chloroplast genome of Myracrodruon urundeuva and its phylogenetics relationships in Anacardiaceae family](https://link.springer.com/article/10.1007/s12298-021-00989-1)
 
