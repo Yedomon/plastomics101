@@ -1,5 +1,62 @@
 # plastomics101
 
+
+# mVista analysis
+
+
+To plot mVista plot please do:
+
+
+- Use the gff file 
+- filter by selecting gene, CDS, tRNA, strand, rRNA
+- keep gene name intact by avoiding additionnal info like -2 or something else
+- use filter fonction to make < and > symbole following strand + or -
+- select a new column and use concatenate fonction to bring requeried field following
+
+
+
+```
+
+
+< 106481 116661 gene1 
+106481 106497 utr 
+107983 108069 exon 
+109884 110033 exon 
+111865 112023 exon 
+
+> 39424 42368 gene2 
+39424 39820 exon 
+41401 42368 exon
+
+> 77817 81088 gene3
+77817 78820 utr 
+79538 80107 exon 
+
+
+```
+
+
+- gene will be the name of the gene
+- utr will be tRNA and rRNA
+- exon will be CDS
+
+
+- then change gene name into utr and exon accordingly and remove < and > sign also just using filter function 
+
+
+
+
+that's it.
+
+
+
+
+
+
+
+
+
+
 # IRSCOPE analysis
 
 
