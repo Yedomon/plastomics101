@@ -1085,7 +1085,8 @@ Great! That works perfectly!
 
 ## Nucleotide diversity work
 
-I used DNAsp v6. First I aligned using MAFFT all fasta files then import the alignment file into DNAsp > analysis > Polymorphism and Divergence and get the plot by clicking on compute. Note: The step size was set to 50 base pairs, and window length was set to 800 base pairs.
+I used DNAsp v6. First I aligned using MAFFT all fasta files then import the alignment file into DNAsp > analysis > DNA Polymorphism > click on compute > set window length to 800 bp and step size to 50 > Click OK.
+
 
 Then move to R
 
