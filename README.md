@@ -2,7 +2,7 @@
 
 
 
-# nucleoride diversity analysis 
+# nucleotide diversity analysis 
 
 
 all codes and figure are [here](https://github.com/Yedomon/plastomics101/tree/main/nucleotide_diversity)
