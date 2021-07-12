@@ -1038,6 +1038,36 @@ Great! That works perfectly!
 > Furthermore, comparison of the cp genome of C. gileadensis with C. foliacea, C. wightii and B. sacra revealed 3,032, 8,787 and 5,120 SNPs as well as 3,580, 10,460 and 17,122 Indels respectively (Fig 4). Similarly, the C. foliacea cp genome also showed 8,194 and 5,182 SNPs while 7,632 and 17,970 Indel with C. wightii and B. sacra respectively. These Results shows that even the most conserved genome possesses some interspecific mutations which provides an important information in analyzing the phylogenetic and genetic diversity among the species
 
 
+# Indels detection
+
+For indel detection I used the alignment file from the two species that I upload in DNAsp software. Then Ananlysis > Indels(Insertion-Deletion) polymorphism . YThen I got the following resut :
+
+
+```
+Input Data File: C:\...\indicum_triloba.mafft
+ Number of sequences: 2    Number of sequences used: 2
+ Selected region: 1-153439   Number of sites: 153439
+ Total number of sites (excluding sites with gaps / missing data): 152762
+ InDel Option: Model 1: Diallelic (non-overlapping)
+
+ Total number of InDel sites analysed: 677
+ Total number of (InDel and non-InDel) sites analysed, 152762 + 677: 153439
+
+ Total number of InDels events analysed, I: 90
+
+ Average InDel length event: 7.522
+ Average InDel length: 7.522
+
+ Number of InDel Haplotypes: 2
+ InDel Haplotype Diversity: 1.000
+
+ InDel Diversity, k(i): 90.000
+ InDel Diversity per site, Pi(i): 0.00059
+ Theta (per sequence) from I, Theta(i)-W: 90.000
+
+```
+
+The total number of indels sites here is 677. It is also possible to save the result in nexus file.
 
 
 
