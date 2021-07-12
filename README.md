@@ -591,6 +591,13 @@ National Center of Biotechnology Information (NCBI) under specific accession num
 
 
 
+
+# Find SNP from an alignment of two seqs
+
+The solution is [here](https://www.biostars.org/p/119214/)
+
+
+
 Assuming that you have your alignment in a file named **"fasta.fas"** this should get you started
 
 
