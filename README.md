@@ -125,11 +125,62 @@ Some key points to successfully make Chloroplast junction graph with [IRSCOPE R 
 
 ### Prepare the datasets | nucleotide fasta and protein translated fasta files
 
+
+#### Ceratotheca sesamoides
+
+
+
+##### Extract the CDS proteins gene
+
+
+```python
+
+
+gbseqextractor \
+-f Ceratotheca_triloba.gb \
+-prefix tri -types CDS -cds_translation 
+
+
+
+```
+
+##### Format
+
+```python
+
+cat tri.cds_translation.fasta | awk '{gsub(/Ceratothec;/,"")}1' > tri.cds_translation.formatted.faa
+
+```
+
+
+
+###### Explode
+
+
+
+
+```python
+
+cat tri.cds_translation.formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
+
+```
+
+
 #### Sesamum indicum faa and fna extraction
+
+
+```python
+
 
 gbseqextractor \
 -f Sesamum_indicum.gb \
 -prefix ind -types CDS -cds_translation 
+
+
+
+```
+
+
 
 
 ### formating the gene head names
