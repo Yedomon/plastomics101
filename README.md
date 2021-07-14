@@ -137,8 +137,8 @@ Some key points to successfully make Chloroplast junction graph with [IRSCOPE R 
 
 
 gbseqextractor \
--f Ceratotheca_triloba.gb \
--prefix tri -types CDS -cds_translation 
+-f sesamum_indicum_yuzhi11.gb \
+-prefix yuz -types CDS -cds_translation 
 
 
 
@@ -148,7 +148,7 @@ gbseqextractor \
 
 ```python
 
-cat tri.cds_translation.fasta | awk '{gsub(/Ceratothec;/,"")}1' > tri.cds_translation.formatted.faa
+cat yuz.cds_translation.fasta | awk '{gsub(/KC569603.1;/,"")}1' > yuz.cds_translation.formatted.faa
 
 ```
 
