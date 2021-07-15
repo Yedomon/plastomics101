@@ -1,6 +1,11 @@
 # plastomics101
 
 
+# ycf1 gene DNA barcoding
+
+/home/yedomon/utils/mafft-7.475-with-extensions/core/mafft all_ycf1.fna > all_ycf1.mafft
+
+
 
 # nucleotide diversity analysis 
 
@@ -137,8 +142,8 @@ Some key points to successfully make Chloroplast junction graph with [IRSCOPE R 
 
 
 gbseqextractor \
--f sesamum_indicum_yuzhi11.gb \
--prefix yuz -types CDS -cds_translation 
+-f ansanggae_GeSeqJob-20210704-200810_Sesamum_indicum_cv_Ansanggae_GenBank.gb \
+-prefix ansan -types CDS -cds_translation 
 
 
 
@@ -148,7 +153,7 @@ gbseqextractor \
 
 ```python
 
-cat yuz.cds_translation.fasta | awk '{gsub(/KC569603.1;/,"")}1' > yuz.cds_translation.formatted.faa
+cat ansan.cds.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ansan.cds_formatted.fna
 
 ```
 
@@ -161,7 +166,7 @@ cat yuz.cds_translation.fasta | awk '{gsub(/KC569603.1;/,"")}1' > yuz.cds_transl
 
 ```python
 
-cat tri.cds_translation.formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
+cat ansan.cds_formatted.fna | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")} print $0 > filename }'
 
 ```
 
