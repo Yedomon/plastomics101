@@ -3,6 +3,15 @@
 
 # ycf1 gene DNA barcoding
 
+- [ycf1, the most promising plastid DNA barcode of land plants](https://www.nature.com/articles/srep08348#Sec12)
+- [ycf1-ndhF genes, the most promising plastid genomic barcode, sheds light on phylogeny at low taxonomic levels in Prunus persica](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7427673/)
+- [A chloroplast genomic strategy for designing taxon specific DNA mini-barcodes: a case study on ginsengs](https://bmcgenomdata.biomedcentral.com/articles/10.1186/s12863-014-0138-z#Sec8)
+
+
+
+
+
+
 /home/yedomon/utils/mafft-7.475-with-extensions/core/mafft all_ycf1.fna > all_ycf1.mafft
 
 Ensuite je suis allez vers Bioedit pour visualiser where il y a des points communs.
