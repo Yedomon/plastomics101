@@ -81,7 +81,7 @@ that's it.
 
 
 
-
+Tip: Later if you have n sequences to compare, enter n+1 and double the first one in order to get your four sequences fully. 
 
 
 
