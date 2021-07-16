@@ -5,6 +5,17 @@
 
 /home/yedomon/utils/mafft-7.475-with-extensions/core/mafft all_ycf1.fna > all_ycf1.mafft
 
+Ensuite je suis allez vers Bioedit pour visualiser where il y a des points communs.
+
+Ensuite j'ai construit un fichier consensus issu de l'alignment avec [emboss cons](https://www.ebi.ac.uk/Tools/msa/emboss_cons/) puis avec [primer 3 online](https://primer3.ut.ee/) j'ai fait le design des marqueurs em mettant comme settings  
+
+`targets : 4950,350`.  J'ai pu avoir un bon resultat en termes de la taille du marqueur (environ 500 bp). C'est deja cool je crois.
+
+
+
+
+
+
 
 
 # nucleotide diversity analysis 
