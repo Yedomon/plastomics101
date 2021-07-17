@@ -126,9 +126,38 @@ done
 
 Work nicely
 
+Note to avoid to do this just do
 
 
 
+
+```python
+
+
+
+#!/bin/bash
+
+set -e
+
+
+for i in *.faa
+
+
+do
+
+
+base=$(basename $i .faa)
+
+
+cat $i | awk '{sub(/>.*/,">cse"); print}' > formatted/${base}.formatted.cse.faa
+
+
+
+done
+
+
+
+```
 
 # ycf1 gene DNA barcoding
 
