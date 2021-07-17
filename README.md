@@ -10,7 +10,8 @@
 
 Tips:
 
-During the annotation process make sure you get the translation of rps12 gene. To get this use reference as third part or include multiple annotator together
+During the annotation process make sure you get the translation of rps12 gene. To get this use reference as third part or include multiple annotator together. 
+Check the genebank file in notebook and Ctrl + H to see if rps12 was translated. Use gbsextractor to get CDS and use my awk script to explode then check some doubling manually. In my case, ndhB, rpl23, rpl2, ycf1, ycf2, rps7 and rps12 were doubled. For ycf1, take the longest.
 
 
 
