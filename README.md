@@ -82,6 +82,35 @@ atpB.formatted.faa:>cse
 
 
 
+
+
+
+
+
+Now I need to rename each file by including the species name in order to easely concatenate later for the tree construction
+
+
+```python
+
+#!/bin/bash
+
+set -e
+
+for f in *.faa; do 
+        mv -- "$f" "${f%.faa}.cse.faa"
+done
+
+
+```
+
+
+
+Work nicely
+
+
+
+
+
 # ycf1 gene DNA barcoding
 
 - [ycf1, the most promising plastid DNA barcode of land plants](https://www.nature.com/articles/srep08348#Sec12)
