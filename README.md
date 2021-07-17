@@ -1,6 +1,25 @@
 # plastomics101
 
 
+
+
+# vERIFICATION OF DOUBLING IN EACH GENE
+
+
+
+
+```python
+
+grep "^>" *.faa 
+
+
+```
+
+
+Remove manually dougling gene with vi  then ...>
+
+
+
 # How to format a set of fatsa file by replace all character begining by  ">" by ">a_single_name (species name). Usefull for tree contruction
 
 
@@ -97,7 +116,7 @@ Now I need to rename each file by including the species name in order to easely 
 set -e
 
 for f in *.faa; do 
-        mv -- "$f" "${f%.faa}.cse.faa"
+        mv -- "$f" "${f%.faa}.ctri.faa"
 done
 
 
