@@ -8,6 +8,19 @@
 
 
 
+Tips:
+
+During the annotation process make sure you get the translation of rps12 gene. To get this use reference as third part or include multiple annotator together
+
+
+
+
+
+
+
+
+
+
 ```python
 
 grep "^>" *.faa 
