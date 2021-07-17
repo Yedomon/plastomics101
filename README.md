@@ -1,6 +1,87 @@
 # plastomics101
 
 
+# How to format a set of fatsa file by replace all character begining by  ">" by ">a_single_name (species name). Usefull for tree contruction
+
+
+
+
+
+
+The synthax is 
+
+
+```python
+
+
+cat test.faa | awk '{sub(/>.*/,">cse"); print}' > test.out.faa # remplacer tout ce qui vient en commencany > par >cse
+
+```
+
+
+
+
+Since I have multiple fileS, I define the following code:
+
+
+
+
+
+```python
+
+
+#!/bin/bash
+
+set -e
+
+
+for i in *.faa
+
+
+do
+
+
+base=$(basename $i .faa)
+
+
+cat $i | awk '{sub(/>.*/,">cse"); print}' > ${base}.formatted.faa
+
+
+
+done
+
+
+
+```
+
+
+
+Verification
+
+
+```python
+
+grep "^>" *.faa
+
+```
+
+Output
+
+
+```python
+
+accD.formatted.faa:>cse
+atpA.formatted.faa:>cse
+atpB.formatted.faa:>cse
+
+
+
+```
+
+
+
+
+
 # ycf1 gene DNA barcoding
 
 - [ycf1, the most promising plastid DNA barcode of land plants](https://www.nature.com/articles/srep08348#Sec12)
