@@ -3,7 +3,66 @@
 
 
 
+##### Extract the CDS proteins gene
+
+
+```python
+
+gbseqextractor \
+-f ansanggae_GeSeqJob-20210700-173115_Sesamum_indicum_cv_Ansanggae_GenBank.gb \
+-prefix ans -types CDS -cds_translation 
+
+
+```
+
+
+
+##### Format
+
+
+```python
+
+cat ans.cds_translation.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ans.cds_translation_formatted.faa
+
+```
+
+#### find duplicated genes
+
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' ans.cds_translation_formatted.faa | grep "^>" | sort 
+
+
+#### count the number 
+
+
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' ans.cds_translation_formatted.faa | grep "^>" | sort | wc -l
+
+Note : divided by 2 later of course
+
+
+
+##### Explode
+
+
+
+
+```python
+
+
+#[yedomon@localhost 04_sesamum_pedaloides]$ mkdir faa
+#[yedomon@localhost 04_sesamum_pedaloides]$ cp ped.cds_translation_formatted.faa faa/
+#[yedomon@localhost 04_sesamum_pedaloides]$ cd faa/
+
+
+cat ans.cds_translation_formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
+
+```
+
+
+
 # vERIFICATION OF DOUBLING IN EACH GENE
+
+
+
 
 
 
@@ -11,7 +70,125 @@
 Tips:
 
 During the annotation process make sure you get the translation of rps12 gene. To get this use reference as third part or include multiple annotator together. 
-Check the genebank file in notebook and Ctrl + H to see if rps12 was translated. Use gbsextractor to get CDS and use my awk script to explode then check some doubling manually. In my case, ndhB, rpl23, rpl2, ycf1, ycf2, rps7 and rps12 were doubled. For ycf1, take the longest.
+Check the genebank file in notebook and Ctrl + H to see if rps12 was translated. Use gbsextractor to get CDS and use my awk script to explode then check some doubling manually.
+
+
+
+
+fOR DOUDLING REMOVING DO
+
+```python
+
+
+awk '{if(NR>2) {print $0}}' accD.faa  # remove lines 1 and 2 of accD gene file
+
+
+```
+
+
+
+
+For looping
+
+
+```
+
+mkdir doubling
+
+mv accD.faa atpF.faa clpP1.faa ndhB.faa ndhK.faa pafI.faa psbC.faa \
+rpl2.faa rpl23.faa rpoC2.faa rps12.faa rps16.faa rps7.faa ycf1.faa ycf15.faa ycf2.faa doubling
+
+
+cd doubling
+
+
+
+for i in *.faa
+
+
+do
+
+
+base=$(basename $i .faa)
+
+
+awk '{if(NR>2) {print $0}}' $i > ${base}.unik.faa
+
+
+
+done
+
+
+```
+
+
+
+reformat
+
+
+
+
+```
+
+mkdir unik
+
+
+cp *.unik.faa unik
+
+
+cd unik
+
+
+
+
+for f in *.unik.faa; do 
+        mv -- "$f" "${f%.unik.faa}.faa"
+done
+
+```
+
+
+
+
+Then
+
+
+
+
+```
+
+cp *.faa /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa
+cd /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa
+
+
+
+for i in *.faa
+
+
+do
+
+
+base=$(basename $i .faa)
+
+
+cat $i | awk '{sub(/>.*/,">ans"); print}' > ${base}.formatted.faa
+
+
+
+done
+
+
+mkdir formatted
+
+
+cp *.formatted.faa formatted/
+
+cd formatted/
+
+
+grep "^>" *.faa | wc -l
+
+grep "^>" *.faa 
 
 
 
@@ -20,7 +197,14 @@ Check the genebank file in notebook and Ctrl + H to see if rps12 was translated.
 
 
 
+```
 
+
+
+
+I got this [How do I make the vi editor display or hide line numbers?](https://kb.iu.edu/d/afcx) in order to see the line number for deletion .
+
+and this [How to remove lines with specific line number from text file with awk or sed in Linux/unix](https://www.linuxcommands.site/linux-text-processing-commands/linux-awk-command/how-to-remove-specific-line-numbers-from-a-text-file-use-awk-sed-in-linux-unix/) for removing quickly the doubling
 
 ```python
 
@@ -359,7 +543,7 @@ cat ansan.cds.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ansan.cds_formatted.fna
 
 ```python
 
-cat ansan.cds_formatted.fna | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fna")} print $0 > filename }'
+cat cse.cds_translation_formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
 
 ```
 
