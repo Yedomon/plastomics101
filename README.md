@@ -9,8 +9,8 @@
 ```python
 
 gbseqextractor \
--f ansanggae_GeSeqJob-20210700-173115_Sesamum_indicum_cv_Ansanggae_GenBank.gb \
--prefix ans -types CDS -cds_translation 
+-f wild_ghana_GeSeqJob-20210701-112928_wild_ghana_GenBank.gb \
+-prefix gha -types CDS -cds_translation 
 
 
 ```
@@ -22,19 +22,19 @@ gbseqextractor \
 
 ```python
 
-cat ans.cds_translation.fasta | awk '{gsub(/Sesamum_in;/,"")}1' > ans.cds_translation_formatted.faa
+cat gha.cds_translation.fasta | awk '{gsub(/wild_ghana;/,"")}1' > gha.cds_translation_formatted.faa
 
 ```
 
 #### find duplicated genes
 
-awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' ans.cds_translation_formatted.faa | grep "^>" | sort 
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' gha.cds_translation_formatted.faa | grep "^>" | sort 
 
 
 #### count the number 
 
 
-awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' ans.cds_translation_formatted.faa | grep "^>" | sort | wc -l
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' gha.cds_translation_formatted.faa | grep "^>" | sort | wc -l
 
 Note : divided by 2 later of course
 
@@ -53,7 +53,7 @@ Note : divided by 2 later of course
 #[yedomon@localhost 04_sesamum_pedaloides]$ cd faa/
 
 
-cat ans.cds_translation_formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
+cat gha.cds_translation_formatted.faa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".faa")} print $0 > filename }'
 
 ```
 
@@ -157,9 +157,8 @@ Then
 
 ```
 
-cp *.faa /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa
-cd /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa
-
+cp *.faa /home/yedomon/data/01_ka_ks/14_wild_ghana/faa
+cd /home/yedomon/data/01_ka_ks/14_wild_ghana/faa
 
 
 for i in *.faa
@@ -171,7 +170,7 @@ do
 base=$(basename $i .faa)
 
 
-cat $i | awk '{sub(/>.*/,">ans"); print}' > ${base}.formatted.faa
+cat $i | awk '{sub(/>.*/,">gha"); print}' > ${base}.formatted.faa
 
 
 
@@ -356,6 +355,125 @@ done
 
 
 ```
+
+
+tree based on ycf1 gene only
+
+I face an issue need to transform ycf1.formatted.faa to ycf1.cse.formatted.faa
+
+
+```python
+
+for f in *.formatted.faa; do 
+        mv -- "$f" "${f%.formatted.faa}.gha.formatted.faa"
+done
+
+
+cp ycf1.gha.formatted.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo
+
+```
+
+The path of each formatted gene
+
+
+```python
+
+cd 09_ceratotheca_sesamoides/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 10_ceratotheca_triloba/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 02_sesamum_alatum/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 03_sesamum_angolense/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 04_sesamum_pedaloides/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 05_sesamum_radiatum/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 01_sesamum_indicum_goenbaek/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 11_sesamum_indicum_yuzhi11/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+cd 12_sesamum_indicum_ansanggae/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+
+
+
+
+```
+
+
+
+prepare the file for tree
+
+
+
+```
+
+cd /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
+mkdir formatted
+for i in *.faa
+
+do
+
+
+base=basename
+
+
+cat ${base}.*.formatted.faa > ${base}.ready.faa
+
+
+
+done
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+Set 2 include this
+
+
+
+```python
+
+cd 09_ceratotheca_sesamoides/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 10_ceratotheca_triloba/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 02_sesamum_alatum/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 03_sesamum_angolense/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 04_sesamum_pedaloides/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 05_sesamum_radiatum/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 01_sesamum_indicum_goenbaek/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 11_sesamum_indicum_yuzhi11/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 12_sesamum_indicum_ansanggae/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 13_sesamum_schinzianum/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd 14_wild_ghana/faa/formatted/
+cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+
+```
+
+
 
 # ycf1 gene DNA barcoding
 
