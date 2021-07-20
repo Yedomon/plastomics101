@@ -1,5 +1,183 @@
 # plastomics101
 
+#### Extract tRNA and rRNA
+
+
+To complete this task I saw a wonderfull tool [available online](http://www.cbs.dtu.dk/services/FeatureExtract/) and also in [command line fashion](http://www.cbs.dtu.dk/services/FeatureExtract/download.php). 
+
+
+Just upload select tRNA and get the fasta file. Very easy. Thanks to FeatureExtract developper.
+
+But wait !!!! tRNA and rRNA are none-coding sequence. So you just need ATGC file! gbsextractor can do this task easily
+
+
+
+
+Let's do it!
+
+```python
+
+gbseqextractor \
+-f Ceratotheca_sesamoides.gb \
+-prefix cse -types tRNA  
+
+
+```
+
+
+#### formating
+
+
+```python
+
+cat cse.trna.fasta | awk '{gsub(/Ceratothec;/,"")}1' > cse.trna.formatted.fa
+
+```
+
+#### find duplicated genes
+
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' cse.trna.formatted.fa | grep "^>" | sort 
+
+
+#### count the number 
+
+
+awk '{if (x[$1]) { x_count[$1]++; print $0; if (x_count[$1] == 1) { print x[$1] } } x[$1] = $0}' cse.trna.formatted.fa | grep "^>" | sort | wc -l
+
+
+##### Explode
+
+
+
+
+```python
+
+
+#[yedomon@localhost 04_sesamum_pedaloides]$ mkdir tRNA
+#[yedomon@localhost 04_sesamum_pedaloides]$ cp cse.trna.formatted.fa tRNA/
+#[yedomon@localhost 04_sesamum_pedaloides]$ cd tRNA/
+
+
+cat cse.trna.formatted.fa | awk '{ if (substr($0, 1, 1)==">") {filename=(substr($0,2) ".fa")} print $0 > filename }'
+
+```
+
+
+
+
+```
+
+mkdir doubling
+
+mv trnA-UGC.fa trnI-CAU.fa trnI-GAU.fa trnL-CAA.fa trnN-GUU.fa trnR-ACG.fa trnV-GAC.fa doubling
+
+cd doubling
+
+
+for i in *.fa
+
+
+do
+
+
+base=$(basename $i .fa)
+
+
+awk '{if(NR>2) {print $0}}' $i > ${base}.unik.fa
+
+
+
+done
+
+
+```
+
+
+
+reformat
+
+
+
+
+```
+
+mkdir unik
+
+
+cp *.unik.fa unik
+
+
+cd unik
+
+
+for f in *.unik.fa; do 
+        mv -- "$f" "${f%.unik.fa}.fa"
+done
+
+```
+
+
+Then
+
+
+
+
+```
+
+cp *.fa /home/yedomon/data/01_ka_ks/09_ceratotheca_sesamoides/tRNA
+cd /home/yedomon/data/01_ka_ks/09_ceratotheca_sesamoides/tRNA
+
+
+for i in *.fa
+
+
+do
+
+
+base=$(basename $i .fa)
+
+
+cat $i | awk '{sub(/>.*/,">cse"); print}' > ${base}.formatted.fa
+
+
+
+done
+
+
+mkdir formatted
+
+
+cp *.formatted.fa formatted/
+
+cd formatted/
+
+
+grep "^>" *.fa | wc -l
+
+grep "^>" *.fa 
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
