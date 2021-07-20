@@ -378,23 +378,23 @@ The path of each formatted gene
 
 ```python
 
-cd 09_ceratotheca_sesamoides/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/09_ceratotheca_sesamoides/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 10_ceratotheca_triloba/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/10_ceratotheca_triloba/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 02_sesamum_alatum/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/02_sesamum_alatum/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 03_sesamum_angolense/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/03_sesamum_angolense/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 04_sesamum_pedaloides/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/04_sesamum_pedaloides/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 05_sesamum_radiatum/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/05_sesamum_radiatum/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 01_sesamum_indicum_goenbaek/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/01_sesamum_indicum_goenbaek/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 11_sesamum_indicum_yuzhi11/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/11_sesamum_indicum_yuzhi11/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
-cd 12_sesamum_indicum_ansanggae/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
 
 
@@ -404,7 +404,7 @@ cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
 
 
 
-prepare the file for tree
+prepare the file for tree set 1 
 
 
 
@@ -412,25 +412,108 @@ prepare the file for tree
 
 cd /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_1
 mkdir formatted
-for i in *.faa
-
-do
-
-
-base=basename
-
-
-cat ${base}.*.formatted.faa > ${base}.ready.faa
-
-
-
-done
-
-
-
+cat accD.* > formatted/accD.ready.faa
+cat atpA.* > formatted/atpA.ready.faa
+cat atpB.* > formatted/atpB.ready.faa
+cat atpE.* > formatted/atpE.ready.faa
+cat atpF.* > formatted/atpF.ready.faa
+cat atpH.* > formatted/atpH.ready.faa
+cat atpI.* > formatted/atpI.ready.faa
+cat ccsA.* > formatted/ccsA.ready.faa
+cat cemA.* > formatted/cemA.ready.faa
+cat clpP1.* > formatted/clpP1.ready.faa
+cat infA.* > formatted/infA.ready.faa
+cat matK.* > formatted/matK.ready.faa
+cat ndhA.* > formatted/ndhA.ready.faa
+cat ndhB.* > formatted/ndhB.ready.faa
+cat ndhC.* > formatted/ndhC.ready.faa
+cat ndhD.* > formatted/ndhD.ready.faa
+cat ndhE.* > formatted/ndhE.ready.faa
+cat ndhF.* > formatted/ndhF.ready.faa
+cat ndhG.* > formatted/ndhG.ready.faa
+cat ndhH.* > formatted/ndhH.ready.faa
+cat ndhI.* > formatted/ndhI.ready.faa
+cat ndhJ.* > formatted/ndhJ.ready.faa
+cat ndhK.* > formatted/ndhK.ready.faa
+cat pafI.* > formatted/pafI.ready.faa
+cat pafII.* > formatted/pafII.ready.faa
+cat pbf1.* > formatted/pbf1.ready.faa
+cat petA.* > formatted/petA.ready.faa
+cat petB.* > formatted/petB.ready.faa
+cat petD.* > formatted/petD.ready.faa
+cat petG.* > formatted/petG.ready.faa
+cat petL.* > formatted/petL.ready.faa
+cat petN.* > formatted/petN.ready.faa
+cat psaA.* > formatted/psaA.ready.faa
+cat psaB.* > formatted/psaB.ready.faa
+cat psaC.* > formatted/psaC.ready.faa
+cat psaI.* > formatted/psaI.ready.faa
+cat psaJ.* > formatted/psaJ.ready.faa
+cat psbA.* > formatted/psbA.ready.faa
+cat psbB.* > formatted/psbB.ready.faa
+cat psbC.* > formatted/psbC.ready.faa
+cat psbD.* > formatted/psbD.ready.faa
+cat psbE.* > formatted/psbE.ready.faa
+cat psbF.* > formatted/psbF.ready.faa
+cat psbH.* > formatted/psbH.ready.faa
+cat psbI.* > formatted/psbI.ready.faa
+cat psbJ.* > formatted/psbJ.ready.faa
+cat psbK.* > formatted/psbK.ready.faa
+cat psbL.* > formatted/psbL.ready.faa
+cat psbM.* > formatted/psbM.ready.faa
+cat psbT.* > formatted/psbT.ready.faa
+cat psbZ.* > formatted/psbZ.ready.faa
+cat rbcL.* > formatted/rbcL.ready.faa
+cat rpl14.* > formatted/rpl14.ready.faa
+cat rpl16.* > formatted/rpl16.ready.faa
+cat rpl20.* > formatted/rpl20.ready.faa
+cat rpl22.* > formatted/rpl22.ready.faa
+cat rpl23.* > formatted/rpl23.ready.faa
+cat rpl2.* > formatted/rpl2.ready.faa
+cat rpl32.* > formatted/rpl32.ready.faa
+cat rpl33.* > formatted/rpl33.ready.faa
+cat rpl36.* > formatted/rpl36.ready.faa
+cat rpoA.* > formatted/rpoA.ready.faa
+cat rpoB.* > formatted/rpoB.ready.faa
+cat rpoC1.* > formatted/rpoC1.ready.faa
+cat rpoC2.* > formatted/rpoC2.ready.faa
+cat rps11.* > formatted/rps11.ready.faa
+cat rps12.* > formatted/rps12.ready.faa
+cat rps14.* > formatted/rps14.ready.faa
+cat rps15.* > formatted/rps15.ready.faa
+cat rps16.* > formatted/rps16.ready.faa
+cat rps18.* > formatted/rps18.ready.faa
+cat rps19.* > formatted/rps19.ready.faa
+cat rps2.* > formatted/rps2.ready.faa
+cat rps3.* > formatted/rps3.ready.faa
+cat rps4.* > formatted/rps4.ready.faa
+cat rps7.* > formatted/rps7.ready.faa
+cat rps8.* > formatted/rps8.ready.faa
+cat ycf15.* > formatted/ycf15.ready.faa
+cat ycf1.* > formatted/ycf1.ready.faa
+cat ycf2.* > formatted/ycf2.ready.faa
 
 
 ```
+
+
+
+
+
+```python
+
+
+# Use this awk code to merge multiple sequence alignment into one
+
+
+cat *.mafft.trimal | awk -v RS=">" -v FS="\n" -v OFS="\n" '{for(i=2; i<=NF; i++) {seq[$1] = seq[$1]$i}}; END {for(id in seq){print ">"id, seq[id]}}' > combined.fasta
+
+
+```
+
+
+
+
 
 
 
@@ -447,31 +530,150 @@ Set 2 include this
 
 
 ```python
-
-cd 09_ceratotheca_sesamoides/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd /home/yedomon/data/01_ka_ks/09_ceratotheca_sesamoides/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 10_ceratotheca_triloba/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/10_ceratotheca_triloba/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 02_sesamum_alatum/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/02_sesamum_alatum/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 03_sesamum_angolense/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/03_sesamum_angolense/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 04_sesamum_pedaloides/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/04_sesamum_pedaloides/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 05_sesamum_radiatum/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/05_sesamum_radiatum/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 01_sesamum_indicum_goenbaek/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/01_sesamum_indicum_goenbaek/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 11_sesamum_indicum_yuzhi11/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/11_sesamum_indicum_yuzhi11/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 12_sesamum_indicum_ansanggae/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/12_sesamum_indicum_ansanggae/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 13_sesamum_schinzianum/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/13_sesamum_schinzianum/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
-cd 14_wild_ghana/faa/formatted/
+cd /home/yedomon/data/01_ka_ks/14_wild_ghana/faa/formatted/
 cp *.faa /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+cd /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+ls *.faa | wc -l
 
 ```
+
+
+
+concatenate genes for the tree construction
+
+
+
+```
+
+cd /home/yedomon/data/01_ka_ks/15_files_for_phylo/set_2
+mkdir formatted
+cat accD.* > formatted/accD.ready.faa
+cat atpA.* > formatted/atpA.ready.faa
+cat atpB.* > formatted/atpB.ready.faa
+cat atpE.* > formatted/atpE.ready.faa
+cat atpF.* > formatted/atpF.ready.faa
+cat atpH.* > formatted/atpH.ready.faa
+cat atpI.* > formatted/atpI.ready.faa
+cat ccsA.* > formatted/ccsA.ready.faa
+cat cemA.* > formatted/cemA.ready.faa
+cat clpP1.* > formatted/clpP1.ready.faa
+cat infA.* > formatted/infA.ready.faa
+cat matK.* > formatted/matK.ready.faa
+cat ndhA.* > formatted/ndhA.ready.faa
+cat ndhB.* > formatted/ndhB.ready.faa
+cat ndhC.* > formatted/ndhC.ready.faa
+cat ndhD.* > formatted/ndhD.ready.faa
+cat ndhE.* > formatted/ndhE.ready.faa
+cat ndhF.* > formatted/ndhF.ready.faa
+cat ndhG.* > formatted/ndhG.ready.faa
+cat ndhH.* > formatted/ndhH.ready.faa
+cat ndhI.* > formatted/ndhI.ready.faa
+cat ndhJ.* > formatted/ndhJ.ready.faa
+cat ndhK.* > formatted/ndhK.ready.faa
+cat pafI.* > formatted/pafI.ready.faa
+cat pafII.* > formatted/pafII.ready.faa
+cat pbf1.* > formatted/pbf1.ready.faa
+cat petA.* > formatted/petA.ready.faa
+cat petB.* > formatted/petB.ready.faa
+cat petD.* > formatted/petD.ready.faa
+cat petG.* > formatted/petG.ready.faa
+cat petL.* > formatted/petL.ready.faa
+cat petN.* > formatted/petN.ready.faa
+cat psaA.* > formatted/psaA.ready.faa
+cat psaB.* > formatted/psaB.ready.faa
+cat psaC.* > formatted/psaC.ready.faa
+cat psaI.* > formatted/psaI.ready.faa
+cat psaJ.* > formatted/psaJ.ready.faa
+cat psbA.* > formatted/psbA.ready.faa
+cat psbB.* > formatted/psbB.ready.faa
+cat psbC.* > formatted/psbC.ready.faa
+cat psbD.* > formatted/psbD.ready.faa
+cat psbE.* > formatted/psbE.ready.faa
+cat psbF.* > formatted/psbF.ready.faa
+cat psbH.* > formatted/psbH.ready.faa
+cat psbI.* > formatted/psbI.ready.faa
+cat psbJ.* > formatted/psbJ.ready.faa
+cat psbK.* > formatted/psbK.ready.faa
+cat psbL.* > formatted/psbL.ready.faa
+cat psbM.* > formatted/psbM.ready.faa
+cat psbT.* > formatted/psbT.ready.faa
+cat psbZ.* > formatted/psbZ.ready.faa
+cat rbcL.* > formatted/rbcL.ready.faa
+cat rpl14.* > formatted/rpl14.ready.faa
+cat rpl16.* > formatted/rpl16.ready.faa
+cat rpl20.* > formatted/rpl20.ready.faa
+cat rpl22.* > formatted/rpl22.ready.faa
+cat rpl23.* > formatted/rpl23.ready.faa
+cat rpl2.* > formatted/rpl2.ready.faa
+cat rpl32.* > formatted/rpl32.ready.faa
+cat rpl33.* > formatted/rpl33.ready.faa
+cat rpl36.* > formatted/rpl36.ready.faa
+cat rpoA.* > formatted/rpoA.ready.faa
+cat rpoB.* > formatted/rpoB.ready.faa
+cat rpoC1.* > formatted/rpoC1.ready.faa
+cat rpoC2.* > formatted/rpoC2.ready.faa
+cat rps11.* > formatted/rps11.ready.faa
+cat rps12.* > formatted/rps12.ready.faa
+cat rps14.* > formatted/rps14.ready.faa
+cat rps15.* > formatted/rps15.ready.faa
+cat rps16.* > formatted/rps16.ready.faa
+cat rps18.* > formatted/rps18.ready.faa
+cat rps19.* > formatted/rps19.ready.faa
+cat rps2.* > formatted/rps2.ready.faa
+cat rps3.* > formatted/rps3.ready.faa
+cat rps4.* > formatted/rps4.ready.faa
+cat rps7.* > formatted/rps7.ready.faa
+cat rps8.* > formatted/rps8.ready.faa
+cat ycf15.* > formatted/ycf15.ready.faa
+cat ycf1.* > formatted/ycf1.ready.faa
+cat ycf2.* > formatted/ycf2.ready.faa
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
