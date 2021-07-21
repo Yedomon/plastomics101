@@ -1,5 +1,20 @@
 # plastomics101
 
+
+### Maximum Likelihood tree inference
+
+
+
+### Bayesian tree inference 
+
+
+For bayesian inference I found an online version of [MrBayes tool](http://www.phylogeny.fr/one_task.cgi?task_type=mrbayes). Amazing! So straithforward!  
+
+
+
+
+
+
 #### Extract tRNA and rRNA
 
 
