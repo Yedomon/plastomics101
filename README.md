@@ -1,6 +1,799 @@
 # plastomics101
 
 
+### ALiTV installation for chloroplast genome comparison
+
+
+I went to the [ALITV github page](https://github.com/AliTVTeam/AliTV-perl-interface/) for checking.
+
+
+External Requirements:
+
+
+```python
+
+perl
+cpanm
+lastz
+
+
+```
+
+So let's install those requirements first.
+
+
+
+```python
+
+# Install perl and cpanm
+
+
+sudo yum install perl-devel
+
+sudo yum install cpanminus
+
+sudo cpanm Bio::Perl # to install bioperl tools
+
+sudo cpanm --force Bio::Perl # force failed installation module
+
+
+# install lastz
+
+
+## Download source code 
+
+
+wget https://github.com/AliTVTeam/AliTV-perl-interface/archive/refs/heads/master.zip
+
+
+## Unzip it
+
+unzip lastz-master.zip # I did it on windows and there was a double folders inside (latsz-master/lastz-master/files) so I just grab the second lastz folder  
+
+## Setting the installation path
+
+LASTZ_INSTALL=/home/yedomon/utils/lastz-master/src
+
+## Open the .bashrc
+
+
+cd $HOME
+
+vi .bashrc
+
+
+## write
+
+export PATH=/home/yedomon/utils/lastz-master/src:$PATH or export PATH=$PATH:/place/with/the/file
+
+## DO
+
+Esc + : + wq
+
+## Then 
+
+source .bashrc
+
+## Then
+
+cd /home/yedomon/utils/lastz-master/src
+make
+make install
+
+
+
+
+```
+
+
+the log file of make and make install
+
+
+```python
+[yedomon@localhost src]$ make
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' lastz.c -o lastz.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' infer_scores.c -o infer_scores.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' seeds.c -o seeds.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' pos_table.c -o pos_table.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' quantum.c -o quantum.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' seed_search.c -o seed_search.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' diag_hash.c -o diag_hash.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' chain.c -o chain.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' gapped_extend.c -o gapped_extend.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' tweener.c -o tweener.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' masking.c -o masking.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' segment.c -o segment.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' edit_script.c -o edit_script.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' identity_dist.c -o identity_dist.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' coverage_dist.c -o coverage_dist.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' continuity_dist.c -o continuity_dist.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' output.c -o output.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' gfa.c -o gfa.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' lav.c -o lav.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' axt.c -o axt.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' maf.c -o maf.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' cigar.c -o cigar.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' sam.c -o sam.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' genpaf.c -o genpaf.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' text_align.c -o text_align.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' align_diffs.c -o align_diffs.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' utilities.c -o utilities.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' dna_utilities.c -o dna_utilities.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' sequences.c -o sequences.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'I\' capsule.c -o capsule.o
+gcc lastz.o infer_scores.o seeds.o pos_table.o quantum.o seed_search.o diag_hash.o chain.o gapped_extend.o tweener.o masking.o segment.o edit_script.o identity_dist.o coverage_dist.o continuity_dist.o output.o gfa.o lav.o axt.o maf.o cigar.o sam.o genpaf.o text_align.o align_diffs.o utilities.o dna_utilities.o sequences.o capsule.o -lm -o lastz
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' lastz.c -o lastz_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' infer_scores.c -o infer_scores_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' seeds.c -o seeds_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' pos_table.c -o pos_table_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' quantum.c -o quantum_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' seed_search.c -o seed_search_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' diag_hash.c -o diag_hash_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' chain.c -o chain_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' gapped_extend.c -o gapped_extend_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' tweener.c -o tweener_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' masking.c -o masking_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' segment.c -o segment_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' edit_script.c -o edit_script_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' identity_dist.c -o identity_dist_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' coverage_dist.c -o coverage_dist_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' continuity_dist.c -o continuity_dist_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' output.c -o output_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' gfa.c -o gfa_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' lav.c -o lav_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' axt.c -o axt_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' maf.c -o maf_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' cigar.c -o cigar_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' sam.c -o sam_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' genpaf.c -o genpaf_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' text_align.c -o text_align_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' align_diffs.c -o align_diffs_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' utilities.c -o utilities_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' dna_utilities.c -o dna_utilities_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' sequences.c -o sequences_D.o
+gcc -c -O3 -Wall -Wextra -Werror -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -DVERSION_MAJOR="\"1"\" -DVERSION_MINOR="\"04"\" -DVERSION_SUBMINOR="\"12"\" -DREVISION_DATE="\"20210209"\" -DSUBVERSION_REV="\""\" -Dscore_type=\'D\' capsule.c -o capsule_D.o
+gcc lastz_D.o infer_scores_D.o seeds_D.o pos_table_D.o quantum_D.o seed_search_D.o diag_hash_D.o chain_D.o gapped_extend_D.o tweener_D.o masking_D.o segment_D.o edit_script_D.o identity_dist_D.o coverage_dist_D.o continuity_dist_D.o output_D.o gfa_D.o lav_D.o axt_D.o maf_D.o cigar_D.o sam_D.o genpaf_D.o text_align_D.o align_diffs_D.o utilities_D.o dna_utilities_D.o sequences_D.o capsule_D.o -lm -o lastz_D
+[yedomon@localhost src]$ make install
+install -d      /home/yedomon/lastz-distrib/bin
+install lastz   /home/yedomon/lastz-distrib/bin
+install lastz_D /home/yedomon/lastz-distrib/bin
+[yedomon@localhost src]$
+
+
+```
+
+
+## Then
+
+
+
+```python
+
+make test
+
+```
+
+
+
+Output
+
+
+
+```
+
+[yedomon@localhost src]$ make test
+[yedomon@localhost src]$
+
+
+```
+
+No error message came. So That is good. LASTZ is well installed.
+
+
+##  Now Let's Install AliTv
+
+
+
+```python
+
+
+cd /home/yedomon/utils # Move to my software installation directory
+
+git clone https://github.com/AliTVTeam/AliTV-perl-interface
+
+cd AliTV-perl-interface/bin/
+
+
+# Both executables are there
+# -rwxrwxr-x. 1 yedomon yedomon 11355 Jul 22 10:18 alitv-filter.pl
+# -rwxrwxr-x. 1 yedomon yedomon  7284 Jul 22 10:18 alitv.pl
+
+
+# I will try to run it 
+
+```python
+
+[yedomon@localhost bin]$ ./alitv.pl --help
+Can't locate FindBin/Real.pm in @INC (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at ./alitv.pl line 6.
+BEGIN failed--compilation aborted at ./alitv.pl line 6.
+
+```
+
+
+So I went back
+
+
+```python
+
+cd ../../
+
+# Then
+
+
+[yedomon@localhost utils]$ cpanm --installdeps .
+!
+! Can't write to /usr/local/share/perl5 and /usr/local/bin: Installing modules to /home/yedomon/perl5
+! To turn off this warning, you have to do one of the following:
+!   - run me as a root or with --sudo option (to install to /usr/local/share/perl5 and /usr/local/bin)
+!   - Configure local::lib your existing local::lib in this shell to set PERL_MM_OPT etc.
+!   - Install local::lib by running the following commands
+!
+!         cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+!
+--> Working on .
+Configuring /home/yedomon/utils ... N/A
+! Configuring . failed. See /home/yedomon/.cpanm/work/1626917121.21810/build.log for details.
+
+
+# I use sudo
+
+
+[yedomon@localhost utils]$ sudo cpanm --installdeps .
+[sudo] password for yedomon:
+--> Working on .
+Configuring /home/yedomon/utils ... N/A
+! Configuring . failed. See /root/.cpanm/work/1626917196.22270/build.log for details.
+
+
+
+# Then I use this 
+
+[yedomon@localhost utils]$ cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
+--> Working on local::lib
+Fetching http://www.cpan.org/authors/id/H/HA/HAARG/local-lib-2.000024.tar.gz ... OK
+Configuring local-lib-2.000024 ... OK
+==> Found dependencies: ExtUtils::MakeMaker
+--> Working on ExtUtils::MakeMaker
+Fetching http://www.cpan.org/authors/id/B/BI/BINGOS/ExtUtils-MakeMaker-7.62.tar.gz ... OK
+Configuring ExtUtils-MakeMaker-7.62 ... OK
+Building and testing ExtUtils-MakeMaker-7.62 ... OK
+Successfully installed ExtUtils-MakeMaker-7.62 (upgraded from 6.68)
+Building and testing local-lib-2.000024 ... OK
+Successfully installed local-lib-2.000024
+2 distributions installed
+Attempting to create directory /home/yedomon/perl5
+[yedomon@localhost utils]$
+
+
+
+Then I run
+
+
+[yedomon@localhost bin]$ perl alitv.pl --help
+Can't locate FindBin/Real.pm in @INC (@INC contains: /home/yedomon/perl5/lib/perl5/5.16.3/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5/5.16.3 /home/yedomon/perl5/lib/perl5/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at alitv.pl line 6.
+BEGIN failed--compilation aborted at alitv.pl line 6.
+
+
+
+[yedomon@localhost bin]$ sudo cpanm install FindBin::Real
+[sudo] password for yedomon:
+--> Working on install
+Fetching http://www.cpan.org/authors/id/D/DA/DAGOLDEN/install-0.01.tar.gz ... OK
+Configuring install-0.01 ... OK
+Building and testing install-0.01 ... OK
+Successfully installed install-0.01
+--> Working on FindBin::Real
+Fetching http://www.cpan.org/authors/id/S/ST/STRO/FindBin-Real-1.05.tar.gz ... OK
+Configuring FindBin-Real-1.05 ... OK
+Building and testing FindBin-Real-1.05 ... OK
+Successfully installed FindBin-Real-1.05
+2 distributions installed
+
+
+
+[yedomon@localhost bin]$ perl alitv.pl --help
+Can't locate Log/Log4perl.pm in @INC (@INC contains: /home/yedomon/utils/AliTV-perl-interface/bin/../lib /home/yedomon/perl5/lib/perl5/5.16.3/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5/5.16.3 /home/yedomon/perl5/lib/perl5/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Base.pm line 4.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Base.pm line 4.
+Compilation failed in require at /usr/share/perl5/vendor_perl/parent.pm line 20.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV.pm line 7.
+Compilation failed in require at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+Compilation failed in require at alitv.pl line 9.
+BEGIN failed--compilation aborted at alitv.pl line 9.
+
+
+
+
+[yedomon@localhost bin]$ sudo cpanm install Log::Log4perl
+install is up to date. (0.01)
+--> Working on Log::Log4perl
+Fetching http://www.cpan.org/authors/id/E/ET/ETJ/Log-Log4perl-1.54.tar.gz ... OK
+Configuring Log-Log4perl-1.54 ... OK
+Building and testing Log-Log4perl-1.54 ... OK
+Successfully installed Log-Log4perl-1.54
+1 distribution installed
+
+
+
+[yedomon@localhost bin]$ perl alitv.pl --help
+Can't locate Hash/Merge.pm in @INC (@INC contains: /home/yedomon/utils/AliTV-perl-interface/bin/../lib /home/yedomon/perl5/lib/perl5/5.16.3/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5/5.16.3 /home/yedomon/perl5/lib/perl5/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV.pm line 12.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV.pm line 12.
+Compilation failed in require at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+Compilation failed in require at alitv.pl line 9.
+BEGIN failed--compilation aborted at alitv.pl line 9.
+
+
+
+[yedomon@localhost bin]$ sudo cpanm install Hash::Merge
+install is up to date. (0.01)
+--> Working on Hash::Merge
+Fetching http://www.cpan.org/authors/id/H/HE/HERMES/Hash-Merge-0.302.tar.gz ... OK
+Configuring Hash-Merge-0.302 ... OK
+==> Found dependencies: Clone::Choose
+--> Working on Clone::Choose
+Fetching http://www.cpan.org/authors/id/H/HE/HERMES/Clone-Choose-0.010.tar.gz ... OK
+Configuring Clone-Choose-0.010 ... OK
+==> Found dependencies: Test::Without::Module
+--> Working on Test::Without::Module
+Fetching http://www.cpan.org/authors/id/C/CO/CORION/Test-Without-Module-0.20.tar.gz ... OK
+Configuring Test-Without-Module-0.20 ... OK
+Building and testing Test-Without-Module-0.20 ... OK
+Successfully installed Test-Without-Module-0.20
+Building and testing Clone-Choose-0.010 ... OK
+Successfully installed Clone-Choose-0.010
+Building and testing Hash-Merge-0.302 ... OK
+Successfully installed Hash-Merge-0.302
+3 distributions installed
+
+
+
+[yedomon@localhost bin]$ perl alitv.pl --help
+Can't locate JSON.pm in @INC (@INC contains: /home/yedomon/utils/AliTV-perl-interface/bin/../lib /home/yedomon/perl5/lib/perl5/5.16.3/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5/5.16.3 /home/yedomon/perl5/lib/perl5/x86_64-linux-thread-multi /home/yedomon/perl5/lib/perl5 /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV.pm line 19.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV.pm line 19.
+Compilation failed in require at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+BEGIN failed--compilation aborted at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 9.
+Compilation failed in require at alitv.pl line 9.
+BEGIN failed--compilation aborted at alitv.pl line 9.
+
+
+
+
+
+[yedomon@localhost bin]$ sudo cpanm install JSON
+install is up to date. (0.01)
+--> Working on JSON
+Fetching http://www.cpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.03.tar.gz ... OK
+Configuring JSON-4.03 ... OK
+Building and testing JSON-4.03 ... OK
+Successfully installed JSON-4.03
+1 distribution installed
+
+
+
+
+[yedomon@localhost bin]$ perl alitv.pl --help
+Usage:
+        # complex configuration via yml file
+        alitv.pl [OPTIONS] options.yml
+
+        # OR
+
+        # easy alternative including the generation of a yml file
+        alitv.pl [OPTIONS] *.fasta
+
+Options:
+    --project Project name
+        The name of the project will be the given argument. If this
+        parameter was not provided, one project name will be auto generated.
+        This will be the base name for the log file, the yml file, and the
+        output file. If a YML file is provided, this value will be
+        overwritten by the basename of the YML file.
+
+    --output Output file
+        The name of the output file. If non is provided, the output file
+        name will be based on the project name. If STDOUT should be used,
+        please set the output filename to "-" via option "alitv.pl --output
+        -".
+
+    --logfile Log file
+        The name of the log file. If non is provided, the log file name will
+        be based on the project name.
+
+    --overwrite or --force Overwrite existing project.yml or output.json
+    files
+        Default behaviour is to keep existing project yml and json files. If
+        "--overwrite" or "--force" is specified, the files will be
+        overwritten. Overwriting can be expicitly disabled by
+        "--no-overwrite" or "--no-force" parameter.
+
+
+
+
+
+
+```
+
+
+
+In summary all those error meassage were due to the missing package, FindBin/Real, log/Log4perl, Hash/Merge and JSON
+So to solve the problem, I did
+
+
+```python
+sudo cpanm install FindBin::Real
+sudo cpanm install Log::Log4perl
+sudo cpanm install Hash::Merge
+sudo cpanm install JSON 
+sudo cpanm install YAML
+
+# and 
+sudo cpanm --installdeps .
+
+```
+
+
+Then It works fine!
+
+Now  I can run the tool with my own data
+
+
+First I will create a folder containing all fasta, genbank files and tree file in netwick format
+
+
+cd /home/yedomon/utils/AliTV-perl-interface/bin/
+perl alitv.pl \
+--project set9 \
+/home/yedomon/utils/AliTV-perl-interface/data/chloro9/*.fasta
+
+
+export PATH=/home/yedomon/utils/AliTV-perl-interface/bin:$PATH
+
+
+
+perl bin/alitv.pl --project set9 --overwrite data/chloro9/set9.yml
+
+
+
+
+
+```python
+
+
+[yedomon@localhost AliTV-perl-interface]$ perl bin/alitv.pl --project set9 --overwrite data/chloro9/set9.yml
+
+***********************************************************************
+*                                                                     *
+*  AliTV perl interface                                               *
+*                                                                     *
+***********************************************************************
+
+You are using version v1.0.6.
+INFO - Sequence names are longer then maximum allowed length (8 characters) and will be replaced by unique sequence names. Failing sequence names are: 'Ceratotheca_sesamoides', 'Ceratotheca_triloba', 'Sesamum_alatum', 'Sesamum_angolense', 'Sesamum_indicum_cv_Ansanggae', 'Sesamum_indicum_cv_Goenbaek', 'Sesamum_indicum_cv_Yuzhi11', 'Sesamum_pedaloides', 'Sesamum_radiatum'
+
+FATAL - Unable to load alignment module 'AliTV::Alignment::lastz' at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 123.
+
+Unable to load alignment module 'AliTV::Alignment::lastz' at /home/yedomon/utils/AliTV-perl-interface/bin/../lib/AliTV/Script.pm line 123.
+[yedomon@localhost AliTV-perl-interface]$ sudo cpanm --installdeps .
+[sudo] password for yedomon:
+--> Working on .
+Configuring /home/yedomon/utils/AliTV-perl-interface ... OK
+==> Found dependencies: Bio::FeatureIO, Test::Warnings, Test::Exit, IPC::System::Simple
+--> Working on Bio::FeatureIO
+Fetching http://www.cpan.org/authors/id/C/CJ/CJFIELDS/Bio-FeatureIO-1.6.905.tar.gz ... OK
+Configuring Bio-FeatureIO-1.6.905 ... OK
+==> Found dependencies: XML::DOM::XPath, Tree::DAG_Node
+--> Working on XML::DOM::XPath
+Fetching http://www.cpan.org/authors/id/M/MI/MIROD/XML-DOM-XPath-0.14.tar.gz ... OK
+Configuring XML-DOM-XPath-0.14 ... OK
+==> Found dependencies: XML::XPathEngine
+--> Working on XML::XPathEngine
+Fetching http://www.cpan.org/authors/id/M/MI/MIROD/XML-XPathEngine-0.14.tar.gz ... OK
+Configuring XML-XPathEngine-0.14 ... OK
+Building and testing XML-XPathEngine-0.14 ... OK
+Successfully installed XML-XPathEngine-0.14
+Building and testing XML-DOM-XPath-0.14 ... OK
+Successfully installed XML-DOM-XPath-0.14
+--> Working on Tree::DAG_Node
+Fetching http://www.cpan.org/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-1.32.tgz ... OK
+Configuring Tree-DAG_Node-1.32 ... OK
+==> Found dependencies: File::Slurp::Tiny
+--> Working on File::Slurp::Tiny
+Fetching http://www.cpan.org/authors/id/L/LE/LEONT/File-Slurp-Tiny-0.004.tar.gz ... OK
+Configuring File-Slurp-Tiny-0.004 ... OK
+Building and testing File-Slurp-Tiny-0.004 ... OK
+Successfully installed File-Slurp-Tiny-0.004
+Building and testing Tree-DAG_Node-1.32 ... OK
+Successfully installed Tree-DAG_Node-1.32
+Building and testing Bio-FeatureIO-1.6.905 ... OK
+Successfully installed Bio-FeatureIO-1.6.905
+--> Working on Test::Warnings
+Fetching http://www.cpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.031.tar.gz ... OK
+Configuring Test-Warnings-0.031 ... OK
+Building and testing Test-Warnings-0.031 ... OK
+Successfully installed Test-Warnings-0.031
+--> Working on Test::Exit
+Fetching http://www.cpan.org/authors/id/A/AR/ARODLAND/Test-Exit-0.11.tar.gz ... OK
+Configuring Test-Exit-0.11 ... OK
+==> Found dependencies: Return::MultiLevel
+--> Working on Return::MultiLevel
+Fetching http://www.cpan.org/authors/id/M/MA/MAUKE/Return-MultiLevel-0.05.tar.gz ... OK
+Configuring Return-MultiLevel-0.05 ... OK
+==> Found dependencies: Data::Munge
+--> Working on Data::Munge
+Fetching http://www.cpan.org/authors/id/M/MA/MAUKE/Data-Munge-0.097.tar.gz ... OK
+Configuring Data-Munge-0.097 ... OK
+Building and testing Data-Munge-0.097 ... OK
+Successfully installed Data-Munge-0.097
+Building and testing Return-MultiLevel-0.05 ... FAIL
+! Installing Return::MultiLevel failed. See /root/.cpanm/work/1626926105.16802/build.log for details. Retry with --force to force install it.
+! Installing the dependencies failed: Module 'Return::MultiLevel' is not installed
+! Bailing out the installation for Test-Exit-0.11.
+--> Working on IPC::System::Simple
+Fetching http://www.cpan.org/authors/id/J/JK/JKEENAN/IPC-System-Simple-1.30.tar.gz ... OK
+Configuring IPC-System-Simple-1.30 ... OK
+Building and testing IPC-System-Simple-1.30 ... OK
+Successfully installed IPC-System-Simple-1.30
+! Installing the dependencies failed: Module 'Test::Exit' is not installed
+! Bailing out the installation for AliTV-v1.0.6.
+8 distributions installed
+[yedomon@localhost AliTV-perl-interface]$ sudo cpanm --force --installdeps .
+--> Working on .
+Configuring /home/yedomon/utils/AliTV-perl-interface ... OK
+==> Found dependencies: Test::Exit
+--> Working on Test::Exit
+Fetching http://www.cpan.org/authors/id/A/AR/ARODLAND/Test-Exit-0.11.tar.gz ... OK
+Configuring Test-Exit-0.11 ... OK
+==> Found dependencies: Return::MultiLevel
+--> Working on Return::MultiLevel
+Fetching http://www.cpan.org/authors/id/M/MA/MAUKE/Return-MultiLevel-0.05.tar.gz ... OK
+Configuring Return-MultiLevel-0.05 ... OK
+Building and testing Return-MultiLevel-0.05 ... FAIL
+! Testing Return-MultiLevel-0.05 failed but installing it anyway.
+Successfully installed Return-MultiLevel-0.05
+Building and testing Test-Exit-0.11 ... OK
+Successfully installed Test-Exit-0.11
+<== Installed dependencies for .. Finishing.
+2 distributions installed
+
+
+
+
+```
+
+
+
+```
+[yedomon@localhost AliTV-perl-interface]$ perl bin/alitv.pl --project set9 --overwrite data/chloro9/set9.yml
+
+***********************************************************************
+*                                                                     *
+*  AliTV perl interface                                               *
+*                                                                     *
+***********************************************************************
+
+You are using version v1.0.6.
+INFO - Sequence names are longer then maximum allowed length (8 characters) and will be replaced by unique sequence names. Failing sequence names are: 'Ceratotheca_sesamoides', 'Ceratotheca_triloba', 'Sesamum_alatum', 'Sesamum_angolense', 'Sesamum_indicum_cv_Ansanggae', 'Sesamum_indicum_cv_Goenbaek', 'Sesamum_indicum_cv_Yuzhi11', 'Sesamum_pedaloides', 'Sesamum_radiatum'
+
+INFO - Created temporary folder at '/tmp/i9SBadbWJC'
+INFO - Starting alignment generation... (45 alignments required)
+INFO - Finished 1. alignment (44 to go; 2.22 % done)
+INFO - Finished 2. alignment (43 to go; 4.44 % done)
+INFO - Finished 3. alignment (42 to go; 6.67 % done)
+INFO - Finished 4. alignment (41 to go; 8.89 % done)
+INFO - Finished 5. alignment (40 to go; 11.11 % done)
+INFO - Finished 6. alignment (39 to go; 13.33 % done)
+INFO - Finished 7. alignment (38 to go; 15.56 % done)
+INFO - Finished 8. alignment (37 to go; 17.78 % done)
+INFO - Finished 9. alignment (36 to go; 20.00 % done)
+INFO - Finished 10. alignment (35 to go; 22.22 % done)
+INFO - Finished 11. alignment (34 to go; 24.44 % done)
+INFO - Finished 12. alignment (33 to go; 26.67 % done)
+INFO - Finished 13. alignment (32 to go; 28.89 % done)
+INFO - Finished 14. alignment (31 to go; 31.11 % done)
+INFO - Finished 15. alignment (30 to go; 33.33 % done)
+INFO - Finished 16. alignment (29 to go; 35.56 % done)
+INFO - Finished 17. alignment (28 to go; 37.78 % done)
+INFO - Finished 18. alignment (27 to go; 40.00 % done)
+INFO - Finished 19. alignment (26 to go; 42.22 % done)
+INFO - Finished 20. alignment (25 to go; 44.44 % done)
+INFO - Finished 21. alignment (24 to go; 46.67 % done)
+INFO - Finished 22. alignment (23 to go; 48.89 % done)
+INFO - Finished 23. alignment (22 to go; 51.11 % done)
+INFO - Finished 24. alignment (21 to go; 53.33 % done)
+INFO - Finished 25. alignment (20 to go; 55.56 % done)
+INFO - Finished 26. alignment (19 to go; 57.78 % done)
+INFO - Finished 27. alignment (18 to go; 60.00 % done)
+INFO - Finished 28. alignment (17 to go; 62.22 % done)
+INFO - Finished 29. alignment (16 to go; 64.44 % done)
+INFO - Finished 30. alignment (15 to go; 66.67 % done)
+INFO - Finished 31. alignment (14 to go; 68.89 % done)
+INFO - Finished 32. alignment (13 to go; 71.11 % done)
+INFO - Finished 33. alignment (12 to go; 73.33 % done)
+INFO - Finished 34. alignment (11 to go; 75.56 % done)
+INFO - Finished 35. alignment (10 to go; 77.78 % done)
+INFO - Finished 36. alignment (9 to go; 80.00 % done)
+INFO - Finished 37. alignment (8 to go; 82.22 % done)
+INFO - Finished 38. alignment (7 to go; 84.44 % done)
+INFO - Finished 39. alignment (6 to go; 86.67 % done)
+INFO - Finished 40. alignment (5 to go; 88.89 % done)
+INFO - Finished 41. alignment (4 to go; 91.11 % done)
+INFO - Finished 42. alignment (3 to go; 93.33 % done)
+INFO - Finished 43. alignment (2 to go; 95.56 % done)
+INFO - Finished 44. alignment (1 to go; 97.78 % done)
+INFO - Finished 45. alignment (0 to go; 100.00 % done)
+INFO - Finished alignment generation
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - Deleting temporary folder
+INFO - Number of bases (1378837) is longer than the maximum allowed (1000000), therefore sequences will be excluded from JSON file
+INFO - Ticks will be drawn every 1000 basepair
+
+
+```
+
+
+Using 9 species is too much. Maximum is 8.
+
+So I just keep one sesamum indicum | The reference one from Korea.
+
+I will do the tree. So I need to prepare the files
+
+```
+[yedomon@localhost set_1]$ cp *tri* ../set_7
+[yedomon@localhost set_1]$ cp *cse* ../set_7
+[yedomon@localhost set_1]$ cp *ans* ../set_7
+[yedomon@localhost set_1]$ cp *ang* ../set_7
+[yedomon@localhost set_1]$ cp *ped* ../set_7
+[yedomon@localhost set_1]$ cp *rad* ../set_7
+[yedomon@localhost set_1]$ cp *ala* ../set_7
+[yedomon@localhost set_1]$ cd ../set_7
+
+
+```
+
+
+
+
+Then make the tree
+
+
+
+```python
+
+
+#/bin/bash
+
+set -e
+
+
+cd /NABIC/HOME/yedomon1/plastomics/20.phylo/set7
+
+for i in *.faa
+
+
+do
+
+
+### Multiple sequence alignment
+
+source activate mafft_env
+
+mafft --thread 32 --auto $i > $i.mafft
+
+source deactivate mafft_env
+
+### Alignment trimming
+
+source activate trimal_env
+
+trimal -automated1 -in $i.mafft -out $i.mafft.trimal
+
+source deactivate trimal_env
+
+
+done
+
+##---Make the matrix
+
+cat *.mafft.trimal | awk -v RS=">" -v FS="\n" -v OFS="\n" '{for(i=2; i<=NF; i++) {seq[$1] = seq[$1]$i}}; END {for(id in seq){print ">"id, seq[id]}}' > combined.awk.fasta
+
+mkdir tree_construction
+
+cd tree_construction
+
+cp ../combined.awk.fasta .
+
+
+source activate iqtree_env
+
+
+iqtree -s combined.awk.fasta -nt AUTO -bb 1000 -alrt 1000 
+
+source deactivate iqtree_env
+
+
+
+## Bye!
+
+
+
+bash run_phylo.sh &> log.phylo &
+
+
+
+
+```
+
+
+
+
+**VERY IMPORTANT Hint: To include the tree in AliTv the name of the chloroplast sequence should match those of the tree**
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Nice inpiration 2021_01| [Comparative and phylogenetic analyses of the chloroplast genomes of species of Paeoniaceae](https://www.nature.com/articles/s41598-021-94137-0#Fig8)
