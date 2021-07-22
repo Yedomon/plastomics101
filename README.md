@@ -787,6 +787,160 @@ bash run_phylo.sh &> log.phylo &
 
 
 
+So I prepare my input.yml file and chloroplast data in one folder
+
+My yaml file is like this
+
+
+
+```r
+
+---
+alignment:
+  parameter:
+    - --format=maf
+    - --noytrim
+    - --ambiguous=iupac
+    - --gapped
+    - --strand=both
+  program: lastz
+genomes:
+  - name: Ceratotheca_sesamoides
+    sequence_files:
+      - data/chloro7/Ceratotheca_sesamoides.fasta
+  - name: Ceratotheca_triloba
+    sequence_files:
+      - data/chloro7/Ceratotheca_triloba.fasta
+  - name: Sesamum_alatum
+    sequence_files:
+      - data/chloro7/Sesamum_alatum.fasta
+  - name: Sesamum_angolense
+    sequence_files:
+      - data/chloro7/Sesamum_angolense.fasta
+  - name: Sesamum_indicum_cv_Ansanggae
+    sequence_files:
+      - data/chloro7/Sesamum_indicum_cv_Ansanggae.fasta
+  - name: Sesamum_pedaloides
+    sequence_files:
+      - data/chloro7/Sesamum_pedaloides.fasta
+  - name: Sesamum_radiatum
+    sequence_files:
+      - data/chloro7/Sesamum_radiatum.fasta
+tree:   data/chloro7/species.tree
+
+
+
+```
+
+
+
+
+then run
+
+
+
+```python
+
+cd /home/yedomon/utils/AliTV-perl-interface # positioning accordingly ....very important ...check the yaml file..That matches perfectely. AliTv can find the files
+
+perl bin/alitv.pl --project set7 data/chloro7/set7.yml
+
+
+```
+
+
+
+log
+
+
+```
+
+***********************************************************************
+*                                                                     *
+*  AliTV perl interface                                               *
+*                                                                     *
+***********************************************************************
+
+You are using version v1.0.6.
+INFO - Sequence names are longer then maximum allowed length (8 characters) and will be replaced by unique sequence names. Failing sequence names are: 'Ceratotheca_sesamoides', 'Ceratotheca_triloba', 'Sesamum_alatum', 'Sesamum_angolense', 'Sesamum_indicum_cv_Ansanggae', 'Sesamum_pedaloides', 'Sesamum_radiatum'
+
+INFO - Created temporary folder at '/tmp/HxNqI4umFD'
+INFO - Starting alignment generation... (28 alignments required)
+INFO - Finished 1. alignment (27 to go; 3.57 % done)
+INFO - Finished 2. alignment (26 to go; 7.14 % done)
+INFO - Finished 3. alignment (25 to go; 10.71 % done)
+INFO - Finished 4. alignment (24 to go; 14.29 % done)
+INFO - Finished 5. alignment (23 to go; 17.86 % done)
+INFO - Finished 6. alignment (22 to go; 21.43 % done)
+INFO - Finished 7. alignment (21 to go; 25.00 % done)
+INFO - Finished 8. alignment (20 to go; 28.57 % done)
+INFO - Finished 9. alignment (19 to go; 32.14 % done)
+INFO - Finished 10. alignment (18 to go; 35.71 % done)
+INFO - Finished 11. alignment (17 to go; 39.29 % done)
+INFO - Finished 12. alignment (16 to go; 42.86 % done)
+INFO - Finished 13. alignment (15 to go; 46.43 % done)
+INFO - Finished 14. alignment (14 to go; 50.00 % done)
+INFO - Finished 15. alignment (13 to go; 53.57 % done)
+INFO - Finished 16. alignment (12 to go; 57.14 % done)
+INFO - Finished 17. alignment (11 to go; 60.71 % done)
+INFO - Finished 18. alignment (10 to go; 64.29 % done)
+INFO - Finished 19. alignment (9 to go; 67.86 % done)
+INFO - Finished 20. alignment (8 to go; 71.43 % done)
+INFO - Finished 21. alignment (7 to go; 75.00 % done)
+INFO - Finished 22. alignment (6 to go; 78.57 % done)
+INFO - Finished 23. alignment (5 to go; 82.14 % done)
+INFO - Finished 24. alignment (4 to go; 85.71 % done)
+INFO - Finished 25. alignment (3 to go; 89.29 % done)
+INFO - Finished 26. alignment (2 to go; 92.86 % done)
+INFO - Finished 27. alignment (1 to go; 96.43 % done)
+INFO - Finished 28. alignment (0 to go; 100.00 % done)
+INFO - Finished alignment generation
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - MAF input file detected, but Bioperl is bugfree... Therefore, workaround for revcom issue is not activated
+INFO - Deleting temporary folder
+INFO - Number of bases (1072161) is longer than the maximum allowed (1000000), therefore sequences will be excluded from JSON file
+INFO - Ticks will be drawn every 1000 basepair
+[yedomon@localhost AliTV-perl-interface]$
+
+
+
+```
+
+
+I upload but it was empty. I tried the default dataset chloroset and try again and it works. So It seems that in case of bug just try the test dataset first.
+
+
+
+
+
+
+
 
 
 
