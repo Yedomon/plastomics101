@@ -5,7 +5,7 @@
 My topic of the day was how to extract intron and intergenic specaer for the phylogenetic tree construction?
 
 
-I got a good discussion on that [here](http://seqanswers.com/forums/archive/index.php/t-23949.html). It is retained that GFF-ex is very nice to do that job. Get the tool here(http://bioinfo.icgeb.res.in/gff/gffdownloads/). How to install  and run here(http://bioinfo.icgeb.res.in/gff/gffdownloads/README_GFF_v2.3.txt)
+I got a good discussion on that [here](http://seqanswers.com/forums/archive/index.php/t-23949.html) or [here](http://seqanswers.com/forums/showthread.php?t=23949). It is retained that GFF-ex is very nice to do that job. Get the tool [here](http://bioinfo.icgeb.res.in/gff/gffdownloads/). How to install  and run [here](http://bioinfo.icgeb.res.in/gff/gffdownloads/README_GFF_v2.3.txt)
 
 
 I will give a try soon.
