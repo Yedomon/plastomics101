@@ -1,5 +1,21 @@
 # plastomics101
 
+24 July 2021
+
+My topic of the day was how to extract intron and intergenic specaer for the phylogenetic tree construction?
+
+
+I got a good discussion on that [here](http://seqanswers.com/forums/archive/index.php/t-23949.html). It is retained that GFF-ex is very nice to do that job. Get the tool here(http://bioinfo.icgeb.res.in/gff/gffdownloads/). How to install  and run here(http://bioinfo.icgeb.res.in/gff/gffdownloads/README_GFF_v2.3.txt)
+
+
+I will give a try soon.
+
+
+
+
+
+
+
 
 
 Just found today 23 july 2021 a tool for plotting phylogenetic tree
