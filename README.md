@@ -99,11 +99,29 @@ bedtools complement -i <(cat exon_sorted.bed intergenic_sorted.bed | sort -k1,1 
 
 
 
+un autre https://davetang.org/muse/2013/01/18/defining-genomic-regions/
 
+un autre http://crazyhottommy.blogspot.com/2013/05/find-exons-introns-and-intergenic.html
 
+un autre https://blog.daum.net/naturelove87/179
 
+un autre http://quinlanlab.org/tutorials/bedtools/bedtools.html
+```
+bedtools complement -i exons.bed -g genome.txt \
+> non-exonic.bed
+head non-exonic.bed
+chr1    0   11873
+chr1    12227   12612
+chr1    12721   13220
+chr1    14829   14969
+chr1    15038   15795
+chr1    15947   16606
+chr1    16765   16857
+chr1    17055   17232
+chr1    17368   17605
+chr1    17742   17914
 
-
+```
 
 
 je vais utiliser ceci voir https://www.reneshbedre.com/blog/gffgtf.html via conda
