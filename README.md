@@ -23,12 +23,12 @@ In my case a have both Bayesian and ML tree based on CDS
 
 Step 2: Find a boundaries times for calibration
 
-Critical point. For my case, I will introduce arabidopsis outgroup , Echinacanthus prendre les trois Closer family Acantacae en bas ) and les trois Torenia (Linderniacae closer famuily en haut).
+Critical point. For my case, I will introduce arabidopsis outgroup , Echinacanthus prendre les trois Closer family Acantacae en bas ) and les trois Torenia (Linderniacae closer famuily en haut). to find the different calibration use timetree.org two species and enter the corresponding pairwise genus to get the CI that will be incorporated in the netwick tree
 
 > The time unit in the analysis is 100 million years (My). Thus, the calibration B(0.075, 0.10) means the node age is constrained to be between 7.5 and 10 million years ago (Ma)
 
-
-rule 1 : no branch length, rule 2 use ATGC alignment instead of protein rule 3 the tree should be in phylipp format use the adapted option from mafft.  
+from these [tuto](https://link.springer.com/protocol/10.1007/978-1-4939-9074-0_10)
+rule 1 : no branch length, rule 2 use ATGC alignment instead of protein .  
 
 
 
