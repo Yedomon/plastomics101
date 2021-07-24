@@ -10,6 +10,76 @@ I got a good discussion on that [here](http://seqanswers.com/forums/archive/inde
 
 I will give a try soon.
 
+```
+
+
+wget http://bioinfo.icgeb.res.in/gff/gffdownloads/GFF_v2.3.tar.gz
+
+gunzip 
+
+tar -vxf 
+
+
+
+[yedomon@localhost utils]$ cd GFF_v2.3/
+[yedomon@localhost GFF_v2.3]$ ll
+total 16
+drwxrwxr-x. 2 yedomon yedomon   90 Oct 13  2014 examples
+drwxrwxr-x. 2 yedomon yedomon 4096 Jan 13  2016 gff_scripts
+-rwxrwxr-x. 1 yedomon yedomon  581 Jan 13  2016 gff_usage.txt
+-rwxrwxr-x. 1 yedomon yedomon 1109 Jan 13  2016 install.sh
+-rwxrwxr-x. 1 yedomon yedomon 3288 Jan 13  2016 README
+[yedomon@localhost GFF_v2.3]$ ./install.sh /home/yedomon/utils/GFF_v2.3/
+cp: ‘/home/yedomon/utils/GFF_v2.3/gff_scripts/’ and ‘/home/yedomon/utils/GFF_v2.3/gff_scripts’ are the same file
+[SUCCESS]:GFF-Ex installation path set to /home/yedomon/utils/GFF_v2.3
+[SUCCESS]:GFF-Ex. files copied to /home/yedomon/utils/GFF_v2.3
+
+[PERFORM]:To use the program, Run -> source /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_profile
+[PERFORM]:Once above command is executed, using same terminal, move to directoty containing your input files and run GFF-Ex as [/home/yedomon/utils/GFF_v2.3/gff_scripts/gffex -in <gfffile> -db <genomefile>]
+[NOTE]:Please remember to run [source /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_profile] everytime, before executing gffex
+[yedomon@localhost GFF_v2.3]$
+
+
+```
+
+
+But the issu the is no gff_profile in that folder /home/yedomon/utils/GFF_v2.3/ so i tried again
+
+```
+[yedomon@localhost GFF_v2.3]$ ./install.sh /home/yedomon/utils/GFF_v2.3/gff_scripts
+copying scripts to /home/yedomon/utils/GFF_v2.3/gff_scripts/
+cp: cannot copy a directory, ‘/home/yedomon/utils/GFF_v2.3/gff_scripts/’, into itself, ‘/home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts’
+[SUCCESS]:GFF-Ex installation path set to /home/yedomon/utils/GFF_v2.3/gff_scripts
+[SUCCESS]:GFF-Ex. files copied to /home/yedomon/utils/GFF_v2.3/gff_scripts
+
+[PERFORM]:To use the program, Run -> source /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts/gff_profile
+[PERFORM]:Once above command is executed, using same terminal, move to directoty containing your input files and run GFF-Ex as [/home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts/gffex -in <gfffile> -db <genomefile>]
+[NOTE]:Please remember to run [source /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts/gff_profile] everytime, before executing gffex
+
+source /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_profile
+```
+
+
+
+Test
+
+```
+
+/home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts/gffex \
+-in goenbaek_GeSeqJob-20210700-161938_Sesamum_indicum_cv_Goenbaek_GFF3.gff3 \
+-db /home/yedomon/data/01_ka_ks/01_sesamum_indicum_goenbaek/Sesamum_indicum_cv_Goenbaek.fasta
+
+```
+
+
+
+blem de gff3 gff2 or gtf je crois.
+
+
+
+je vais utiliser ceci voir https://www.reneshbedre.com/blog/gffgtf.html via conda
+
+
 
 
 Another topic is time divergence estimation
