@@ -66,14 +66,43 @@ Test
 ```
 
 /home/yedomon/utils/GFF_v2.3/gff_scripts/gff_scripts/gffex \
--in goenbaek_GeSeqJob-20210700-161938_Sesamum_indicum_cv_Goenbaek_GFF3.gff3 \
+-in /home/yedomon/data/01_ka_ks/01_sesamum_indicum_goenbaek/goenbaek_GeSeqJob-20210700-161938_Sesamum_indicum_cv_Goenbaek_GFF3.gff3 \
 -db /home/yedomon/data/01_ka_ks/01_sesamum_indicum_goenbaek/Sesamum_indicum_cv_Goenbaek.fasta
-
 ```
 
 
 
 blem de gff3 gff2 or gtf je crois.
+
+Ici on me propoe une soluition https://www.biostars.org/p/112251/
+
+```
+
+# step1
+awk 'OFS="\t" {print $1, "0", $2}' chromSizes.txt | sort -k1,1 -k2,2n > chromSizes.bed
+
+
+# step2
+cat in.gff | awk '$1 ~ /^#/ {print $0;next} {print $0 | "sort -k1,1 -k4,4n -k5,5n"}' > in_sorted.gff
+
+
+# get intergenic region
+bedtools complement -i in_sorted.gff -g chromSizes.txt > intergenic_sorted.bed
+
+# get intron
+
+awk 'OFS="\t", $1 ~ /^#/ {print $0;next} {if ($3 == "exon") print $1, $4-1, $5}' in_sorted.gff > exon_sorted.bed
+
+bedtools complement -i <(cat exon_sorted.bed intergenic_sorted.bed | sort -k1,1 -k2,2n) -g chromSizes.txt > intron_sorted.bed
+
+```
+
+
+
+
+
+
+
 
 
 
