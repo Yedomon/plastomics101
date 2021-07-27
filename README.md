@@ -57,6 +57,9 @@ I chage a little bit by just change this .......cleandata = 0     to this ......
 And I got thos
 
 
+
+```
+
      seed = -1
        seqfile = test1/sequence.txt
       treefile = test1/tree.txt
@@ -90,7 +93,7 @@ And I got thos
 
 *** Note: Make your window wider (100 columns) before running the program.
 
-
+```
 
 thank to this tuorial to guide me throught the output management 
 
