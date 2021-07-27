@@ -1,5 +1,110 @@
 # plastomics101
 
+
+
+MCMCTree inference
+
+
+After doing multiple sequence alignment , trimming and potting the tree with MAFFT , tRIMaL AND iq-tREE . i HAVE CHECK WITH fIGTREE THE POSITIONNING AND THEN SET THE CLOCK INTERVAL. tHANKS TO TIMETREE.ORG FOR PROVIDING THIS WEBSITE. aFTER CHECKING i MANUUALLY SET SIT IN THE TREE LIKE THIS 
+
+
+
+
+
+
+
+```python
+        16 1
+((((tco,tbe),tfo)'B(0.41,0.66)',((((((sra,ago),cse),(spe,ctr)),((syu,sgo),san)),sal)'B(0.34,0.70)'(eat,(elo:,eon)))),vit);
+
+
+```
+
+
+Key note. first line should define the num of taxon ...here 6 and 1 for number of tree I think... Not sure...
+
+
+the second file that we need is the sequence alignment file in some  like  file.....I use this website to convert in nexus file http://phylogeny.lirmm.fr/phylo_cgi/data_converter.cgiike
+
+
+then I mannually set thet he format by removing the header and just get this
+
+
+```
+
+
+
+       16    55609
+vit          atggaaaaatggtggttcaattcgatgttgtctaacgagaagttagaatacaggtgtgggctaagtaaatcaacggacagtcctgatcctaccagtggaagtgaagaccgggttataaataatacggataaaaacattaataattggagtcaaattaagagttctagttatagtaatgttgatcatttattcggcatcagggacattcggaatttcatctctgatgacacttttttagttagggataggaatggggtcagttatttcatatattttgatattgaaaatcaaatttttgagattgataacgatcagtcttttttgagtgaactagaaagttttttttatagttatcgaaattctagttatctgaataatgtatctaagagtaatcatccccactatgatcgttacatgtatgatactaaatatagttggaataagcacattaatagttgcattaataattacattt---------------------
+
+```
+
+
+The key point here is that the first line should provide the information  relative to the number of taxon and the number of nucleotide
+
+then in the second line, the name of the taxon 2 or more space the the sequence itself...
+
+do the same for the remaining sequences....
+
+
+then set the mcmc.ctl file
+
+
+I chage a little bit by just change this .......cleandata = 0     to this .......cleandata = 1
+
+
+
+And I got thos
+
+
+     seed = -1
+       seqfile = test1/sequence.txt
+      treefile = test1/tree.txt
+       outfile = out1
+
+         ndata = 1
+       seqtype = 0  * 0: nucleotides; 1:codons; 2:AAs
+       usedata = 1    * 0: no data; 1:seq like; 2:use in.BV; 3: out.BV
+         clock = 3    * 1: global clock; 2: independent rates; 3: correlated rates
+       RootAge = <1.0  * safe constraint on root age, used if no fossil for root.
+
+         model = 0    * 0:JC69, 1:K80, 2:F81, 3:F84, 4:HKY85
+         alpha = 0    * alpha for gamma rates at sites
+         ncatG = 5    * No. categories in discrete gamma
+
+     cleandata = 1    * remove sites with ambiguity data (1:yes, 0:no)?
+
+       BDparas = 1 1 0    * birth, death, sampling
+   kappa_gamma = 6 2      * gamma prior for kappa
+   alpha_gamma = 1 1      * gamma prior for alpha
+
+   rgene_gamma = 2 2   * gamma prior for overall rates for genes
+  sigma2_gamma = 1 10    * gamma prior for sigma^2     (for clock=2 or 3)
+
+      finetune = 1: 0.1  0.1  0.1  0.01 .5  * auto (0 or 1) : times, musigma2, rates, mixing, paras, FossilErr
+
+         print = 1
+        burnin = 2000
+      sampfreq = 2
+       nsample = 20000
+
+*** Note: Make your window wider (100 columns) before running the program.
+
+
+
+thank to this tuorial to guide me throught the output management 
+
+http://abacus.gene.ucl.ac.uk/software/MCMCtree.Tutorials.pdf
+
+
+and
+
+
+http://www.jcsantosresearch.org/Class_2014_Spring_Comparative/pdf/week_6/Feb_12_2015_Chronograms.pdf
+
+
+To gat this I firstly use 
+
 24 July 2021
 
 My topic of the day was how to extract intron and intergenic specaer for the phylogenetic tree construction?
