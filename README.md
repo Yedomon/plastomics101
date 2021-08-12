@@ -2,6 +2,28 @@
 
 
 
+
+[BarcodingR: an integrated r package for species identification using DNA barcodes](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12682)
+
+> 4.3. DNA Barcode Development
+DNA barcodes have been widely used in evolutionary and phylogenetical studies for
+both plants and animals [49]. We compared cp genomes of Castanea using slideAnalyses to
+calculate genetic distance across a moving 800 bp window [47]. This method identified
+five regions of the Castanea genome that might be useful for barcoding: trnK-UUU-rps16,
+psbM-trnD-GUU, rbcL-accD, petA-psbJ, and rpl2 (Figures 4 and 5). We suggest the sequence
+of rbcL, matK, petA-psbJ as a barcode. The lengths of the three selected sequences are
+respectively 1428 bp, 1508 bp, and 1072 bp. There are 4, 14, and 75 mutation sites and 4, 10,
+and 68 informative sites within these loci. The barcode would be useful for distinguishing
+American chestnut (C. dentata) and Chinese chestnuts, and as such could provide a method
+to track the source of hybrids used in breeding. Simple sequence repeats (SSRs) were highly
+variable among and within Castanea species. As such, these have value for population
+genetics and other applications requiring high levels of polymorphism
+
+
+[Comparative Analysis of the Complete Chloroplast Genomes of Four Chestnut Species (Castanea)](https://www.mdpi.com/1999-4907/12/7/861)
+
+
+
 MCMCTree inference
 
 
