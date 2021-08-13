@@ -1,6 +1,6 @@
 # plastomics101
 
-
+[A Beginners Guide to Estimating the Non-synonymous to Synonymous Rate Ratio of all Protein-Coding Genes in a Genome](https://www.researchgate.net/publication/268231340_A_Beginners_Guide_to_Estimating_the_Non-synonymous_to_Synonymous_Rate_Ratio_of_all_Protein-Coding_Genes_in_a_Genome)
 
 
 [BarcodingR: an integrated r package for species identification using DNA barcodes](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12682)
