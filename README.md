@@ -2,7 +2,7 @@
 
 
 
-[sesamum species](https://www.wikiwand.com/en/Sesamum)
+[sesamum species list ](https://www.wikiwand.com/en/Sesamum) | Here is the folower of Sesamum triphyllum
 
 ![img](https://upload.wikimedia.org/wikipedia/commons/8/87/Sesamum_triphyllum.jpg?1630545102376)
 
