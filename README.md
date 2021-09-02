@@ -1,5 +1,12 @@
 # plastomics101
 
+
+
+[sesamum species](https://www.wikiwand.com/en/Sesamum)
+
+![img](https://upload.wikimedia.org/wikipedia/commons/8/87/Sesamum_triphyllum.jpg?1630545102376)
+
+
 [A Beginners Guide to Estimating the Non-synonymous to Synonymous Rate Ratio of all Protein-Coding Genes in a Genome](https://www.researchgate.net/publication/268231340_A_Beginners_Guide_to_Estimating_the_Non-synonymous_to_Synonymous_Rate_Ratio_of_all_Protein-Coding_Genes_in_a_Genome)
 
 
