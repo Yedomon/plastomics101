@@ -4,6 +4,7 @@ J'avais find un papier avant fait par la compagnie Phyzen. Le voici. Je pourrai 
 
 [The Complete Chloroplast Genomes of Six Ipomoea Species and Indel Marker Development for the Discrimination of Authentic Pharbitidis Semen (Seeds of I. nil or I. purpurea)](https://www.frontiersin.org/articles/10.3389/fpls.2018.00965/full)
 
+![img](https://www.frontiersin.org/files/Articles/379292/fpls-09-00965-HTML/image_m/fpls-09-00965-g001.jpg)
 
 
 
