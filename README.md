@@ -1,5 +1,10 @@
 # plastomics101
 
+J'avais find un papier avant fait par la compagnie Phyzen. Le voici. Je pourrai publier le mien aussi dans Frontiers in Plant Science Section Evolutionnary and population Genetics IF 5.753 en 2021
+
+[The Complete Chloroplast Genomes of Six Ipomoea Species and Indel Marker Development for the Discrimination of Authentic Pharbitidis Semen (Seeds of I. nil or I. purpurea)](https://www.frontiersin.org/articles/10.3389/fpls.2018.00965/full)
+
+
 
 
 [sesamum species list ](https://www.wikiwand.com/en/Sesamum) | Here is the folower of Sesamum triphyllum
