@@ -6,6 +6,15 @@ J'avais find un papier avant fait par la compagnie Phyzen. Le voici. Je pourrai 
 
 ![img](https://www.frontiersin.org/files/Articles/379292/fpls-09-00965-HTML/image_m/fpls-09-00965-g001.jpg)
 
+Un autre avec une autre approache. Tres interessant pour argumenter plus tard.
+
+
+[Highly Diverse Shrub Willows (Salix L.) Share Highly Similar Plastomes](https://www.frontiersin.org/articles/10.3389/fpls.2021.662715/full)
+
+
+
+![img](https://www.frontiersin.org/files/Articles/662715/fpls-12-662715-HTML-r2/image_m/fpls-12-662715-g002.jpg)
+
 
 
 [sesamum species list ](https://www.wikiwand.com/en/Sesamum) | Here is the folower of Sesamum triphyllum
