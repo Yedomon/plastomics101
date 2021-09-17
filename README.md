@@ -1,5 +1,26 @@
 # plastomics101
 
+affaire de copy number
+
+
+[definituion](https://www.genome.gov/genetics-glossary/Copy-Number-Variation)
+
+
+
+
+[Complete Chloroplast Genome Sequences and Comparative Analysis of Chenopodium quinoa and C. album](https://www.frontiersin.org/articles/10.3389/fpls.2017.01696/full#h3)
+
+
+[The complete chloroplast genome sequence with a novel 24-bp deletion of a Korean solid green-type cucumber variety (Cucumis sativus var. sativus)](https://www.frontiersin.org/articles/10.3389/fpls.2017.01696/full#h3)
+
+
+
+
+[Comparative Analyses of Five Complete Chloroplast Genomes from the Genus Pterocarpus (Fabacaeae)](https://www.mdpi.com/1422-0067/21/11/3758/htm)
+
+
+
+
 J'avais find un papier avant fait par la compagnie Phyzen. Le voici. Je pourrai publier le mien aussi dans Frontiers in Plant Science Section Evolutionnary and population Genetics IF 5.753 en 2021
 
 [The Complete Chloroplast Genomes of Six Ipomoea Species and Indel Marker Development for the Discrimination of Authentic Pharbitidis Semen (Seeds of I. nil or I. purpurea)](https://www.frontiersin.org/articles/10.3389/fpls.2018.00965/full)
