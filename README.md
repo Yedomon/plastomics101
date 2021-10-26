@@ -1,5 +1,11 @@
 # plastomics101
 
+Interspecific hybridization
+mecanism of plant speciation
+homoploid hybrids
+allopolyploid
+
+
 [popart: full-feature software for haplotype network construction](https://www.youtube.com/watch?v=8F7mCIhMbTA)
 
 May be used for but the number here is very small however may be take ploidy-wise   
