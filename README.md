@@ -1,8 +1,12 @@
 # plastomics101
 
 
+[Hybridization History and Repetitive Element Content in the Genome of a Homoploid Hybrid, Yucca gloriosa (Asparagaceae)](https://www.frontiersin.org/articles/10.3389/fpls.2020.573767/full)
+
+> Homoploid hybrid species, which have no change in chromosome number relative to their parents, offer an opportunity to study the genomic consequences of hybridization in the absence of change in ploidy.
 
 
+> Hybridization can result in allopolyploid individuals, in which hybridization occurs at the same time as chromosome doubling, as well as homoploids, in which there is no change in chromosome number
 
 
 
