@@ -13,7 +13,22 @@ Cholorplast genome datasets from close relative species belonging to Acanthacae 
 
 ## Discussion
 
-### Axis one: Our data provided a high-resolution view for delineation of pedaliaceae species in the sesame speciation continuum
+### Our data provided a high-resolution view for delineation of pedaliaceae species in the sesame speciation continuum
+
+Delineating species is quite challenging aspect in taxonomy since the  methodolgy is quite heterogenous depending on not only of the taxa but also the scientists. Pedaliaceae family exhibits a complex species encompassing Sesamum, Josephinia and Cerathoteca species. Earlier tentative delineation using  trnLF, ndhF, and ETS datasets revealed that Sesamum tribe (in Pedaliaceae family) is not monophyletic in contrast with other Lamiales representatives belonging to Martyniaceae and Plantaginaceae families. In fact, the authors highlithed that Pedaliaceae s.l. contains three families including Sesamothamneae, Sesameae, and pedalieae.
+
+
+### Interspecific hybridization might drives speciation in Sesamum genus through chromosome number change
+
+hybridization event is widely frequent in Planta lresulting in the occurence of multiple species()
+. In regards with the number of chromosome set from ourin the present study, a clear classification rised with grouping diploid 2n = 26 as well as putative polyploid 2n = 32 and 2n = 64. More importantly, S. radiatum, S. angolense and C. sesamoides form a clan suggesting hybridization event resulting into the advent of the S. radiatum species (2n = 64). This observation is in line with Karyotyping and on field hybridization test previously perforemed. Moreover, whole genome alignment of near chromosomal-grade assemblies of these five wild species (unpublished data)  confirmed the presence of two sub-genomes from S. radiatum with the sub-genome A as Cerathoteca sesamoides and the subgenomeB as S. angolense. . Therefore, the we postulate that the nomenclature C. sesamoides might change into Sesamum sesamoides. However, this conclusion is temporary since In thin sesamum family has not been clearly investigated for their chromosome set.e absence of others sesamum representative
+
+
+
+
+### Limits and prospects
+
+The present study has the merit to provide dataset for elucidating the delineation between Sesamum and Cerathoteca. However,owing the large diversity observed in Sesamum, additionnal genomic datasets from Indian subcontinent including potential progenitor and others relatives species in Pepedaliaceae will help to resolve the origin of Sesamum indicum as well as a clear delination among Pedaliaceae s.l. members. Moreover, inaccurate species boundaries can negatively impact fundamental and applied research. Therefore speciation genomics at large scale in Pedaliacae family might shed light on speciation patterns in this singular group. Our study pave the way for eluctowards the elucidation of pedaliaceae family. 
 
 
 
