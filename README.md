@@ -1,5 +1,34 @@
 # plastomics101
 
+
+### Includethis in comparative plastome section
+
+Arabidopsis thaliana chloroplast genome (Genebank accession:  NC_000932.1) was included as outgroup.
+
+
+### Include this in the phylogenetic tree section
+
+Cholorplast genome datasets from close relative species belonging to Acanthacae and Linderniacae (Table x) were retrieved from NCBI. Vitis vinifera was used as outgroup. A total of 75 common coding protein genes (Supplementary table x: gene_per_species excel file) served for the phylogeny and time divergence inference.
+
+
+## Discussion
+
+### Axis one: Our data provided a high-resolution view for delineation of pedaliaceae species in the sesame speciation continuum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Interspecific hybridization
 mecanism of plant speciation
 homoploid hybrids
