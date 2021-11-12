@@ -1,6 +1,13 @@
 # plastomics101
 
 
+####
+
+Change S. pedaloides chromosome number is unknown
+
+grosse decouverte sur  sesamum angolense genre pedalium Aptera  apparente au Cerathoteca ...blablabla
+
+
 ### Includethis in comparative plastome section
 
 Arabidopsis thaliana chloroplast genome (Genebank accession:  NC_000932.1) was included as outgroup.
@@ -19,12 +26,12 @@ Delineating species is quite challenging aspect in taxonomy since the  methodolg
 
 
 IR contraction
-DNA barcoding
+DNA barcoding with example of the well known application 
 good topology with respect to old data sets
 ka ks
 however ndh gene is stable but divergent gene
 
-rna editing sites phenotyic plasticity, genetic diversity, speciation
+rna editing sites phenotyic plasticity, genetic diversity, speciation force driver of phenotypic plasticucity
 ### Interspecific hybridization might drives speciation in Sesamum genus through chromosome number change
 
 hybridization event is widely frequent in Planta lresulting in the occurence of multiple species()
