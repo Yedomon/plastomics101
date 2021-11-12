@@ -18,6 +18,13 @@ Cholorplast genome datasets from close relative species belonging to Acanthacae 
 Delineating species is quite challenging aspect in taxonomy since the  methodolgy is quite heterogenous depending on not only of the taxa but also the scientists. Pedaliaceae family exhibits a complex species encompassing Sesamum, Josephinia and Cerathoteca species. Earlier tentative delineation using  trnLF, ndhF, and ETS datasets revealed that Sesamum tribe (in Pedaliaceae family) is not monophyletic in contrast with other Lamiales representatives belonging to Martyniaceae and Plantaginaceae families. In fact, the authors highlithed that Pedaliaceae s.l. contains three families including Sesamothamneae, Sesameae, and pedalieae.
 
 
+IR contraction
+DNA barcoding
+good topology with respect to old data sets
+ka ks
+however ndh gene is stable but divergent gene
+
+rna editing sites phenotyic plasticity, genetic diversity, speciation
 ### Interspecific hybridization might drives speciation in Sesamum genus through chromosome number change
 
 hybridization event is widely frequent in Planta lresulting in the occurence of multiple species()
