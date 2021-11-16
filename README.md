@@ -1,6 +1,24 @@
 # plastomics101
 
 
+Discussion
+
+Plastome evolution between Sesamum and Cerathoteca genus
+
+We reported the first whole chloroplast genome of six African native wild sesame species including S. alatum, S. angolense, S. pedaloides, S. radiatum, C. sesamoides, and C. triloba. The information from the generated plastome sequences served for comparative analysis. A typical quadripartite chloroplast structure including LSC, SSC and two IRs was observed. In-depth comparative analysis revealed contraction and expansion events within all species. IR expansion and contraction of chloroplast parts is a common phenomenon observed in land plants resulting in the variation of chloroplast length at both intra- and inter- species level (Ref). As expected, the chloroplast genome was highly converved among Sesamum and Cerathotheca separately. Considering both genus, the gene content is suprisingly also higly conserved suggesting that both genus representatives plastome are higly conserved despite the difference of systematic nomenclature. This first glance into the plastome genome organization
+
+
+
+
+
+
+
+
+
+
+
+
+
 ####
 
 Change S. pedaloides chromosome number is unknown
