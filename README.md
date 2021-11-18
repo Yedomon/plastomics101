@@ -8,6 +8,24 @@
 
 
 
+Discusion suite one word on time divergence
+
+
+In this study, Cerathoteca is robustly resolved as sister species species of Sesamum genus.  Based on the time divergence infrence, we observed that S. radiatum and S. angolense appeared almost concomitantly alongside 2 = 32 representatives (C. sesamoides more specifically); suggesting the hydbridization event leading to 2n = 64 might involved both Sesamum angolense  and Cerathoteca sesamoides. 
+
+
+Inclure ceci avant le fait des alignment
+
+Interestingly, a relatively long branch of S. alatum was observed implying its long evolutionary occurence compared to  the other ones; which is consistent with tree topology from Gormley et al. 2015 and our time divergence estimation inference (14.46 MYA).
+
+
+
+
+
+Revoir la section family and trive les trois familles donnees dans le texte sont des tribes attention attention corriger dans le texte
+
+
+
 Discussion
 
 Plastome evolution between Sesamum and Cerathoteca genus
