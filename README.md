@@ -16,13 +16,25 @@ In this study, Cerathoteca is robustly resolved as sister species species of Ses
 
 Inclure ceci avant le fait des alignment
 
-Interestingly, a relatively long branch of S. alatum was observed implying its long evolutionary occurence compared to  the other ones; which is consistent with tree topology from Gormley et al. 2015 and our time divergence estimation inference (14.46 MYA).
+Interestingly, a relatively long branch of S. alatum was observed implying its long evolutionary occurence compared to  the other ones; which is consistent with tree topology from Gormley et al. 2015, biogeographic and morphological data [Ref Bedigian], and our time divergence estimation inference (14.46 MYA). 
+
+Globaly from the present study, we speculate that since many wild sesame are originated from Africa, the continent might be the origin of species diversification with the presence of 2n = 26, 2n = 32 and 2n = 64 species. The cultivated species might occured later on the Idian sub-continent where the domestication took place (Figure). Ethnobabic studies revealed that the  2n = 26, 2n = 32, and 2n = 64 wild species are widely used by local populations as medicine and food ([Bedigian, 2019](https://link.springer.com/article/10.1007%2Fs12231-018-9437-z)) while the cultivated type is predominently employed in South East-Asian as food decoration (seeds) and therapeutic or nutraceutical (oil) complement ([Kim et al. 2016](https://www.sciencedirect.com/science/article/pii/S2352618116300099); [Kim et al 2020](https://www.mdpi.com/2304-8158/9/4/394/htm), [Miyake et al 2005)](https://pubs.acs.org/doi/abs/10.1021/jf048743h). Although S. malabirum, an Indian native wild is suggested as progenitor [Pathack et al. 2015](https://onlinelibrary.wiley.com/doi/10.1111/plb.12327), genomics-based evidence is required since many others Sesamum species are still not well characterized.
 
 
 
 
 
-Revoir la section family and trive les trois familles donnees dans le texte sont des tribes attention attention corriger dans le texte
+
+
+
+
+
+
+
+
+
+
+Revoir la section family and tribe les trois familles donnees dans le texte sont des tribes attention attention corriger dans le texte
 
 
 
