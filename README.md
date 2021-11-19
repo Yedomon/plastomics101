@@ -1,10 +1,5 @@
 # plastomics101
 
-[State-of-the-art structural variant calling: What went conceptually wrong and how to fix it?](https://www.biorxiv.org/content/10.1101/2021.01.12.426317v2.full.pdf)
-
-![img](https://www.biorxiv.org/content/biorxiv/early/2021/01/18/2021.01.12.426317/F1.large.jpg?width=800&height=600&carousel=1)
-
-
 
 
 
