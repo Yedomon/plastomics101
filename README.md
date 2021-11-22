@@ -3,6 +3,8 @@
 
 Results
 
+The assembled chloroplast genomes resulted in a single circular quadripartite genome with typical two IRs separeted by LSC and SSC (Figure 2. Chloroplast genome map). The plastome sizes were 153089 bp, 153096 bp, 153217 bp, 153285 bp, 153338 bp, 153287 bp, 153863 bp for S. angolense, S. alatum, S. pedaloides, S. radiatum, S. indicum cv Goenbaek, C. sesamoides, and C. triloba respectively (Table 1. Features of plastome genome). IR contraction and expansion was revealed by comparative IR length assessment. The IR length ranged from 25096 bp to 25190 bp while LSC varied from 84872 bp to 85185 bp. SSC sized from 17719 bp to 17874 bp. The seven genomes contained 114 unique genes including 80 coding-proteins, 30 tranfert RNA and four ribosomal RNA genes as previously found by [Yi and Kim (2012)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0035872) and [Zhang et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080508) using S. indicum cv Ansanggae and S. indicum Yuzhi 11 as plant model respectively. The GC contents were similar in IR (43.39 +/- 0.01 % ), LSC (36.40 +/- 0.03 %), SSC (32.62 +/- 0.08 %), and whole chloroplast genome scale (38.26 +/- 0.03 %) (Table 1. Features of plastome genome).
+Parler du nombre de duplicated genes in IR pour chaque species et aussi the nombre de gene ayant d'introns pour chaque especies.
 
 
 
