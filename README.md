@@ -31,7 +31,10 @@ Parler du nombre de duplicated genes in IR pour chaque species et aussi the nomb
 
 Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias referred to those codons with RSCU values close to 1. Globally, slight variation of RSCU were found within Sesamum and Cerathoteca species (Figure Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.). A total of 27 core codons exhibited RSCU > 1, of which 24 were adenine/thymine-ending codons, one guanine-ending codons and two cytosine-ending codons. In contrast, guanine- or cytosine-ending codons mostly exhibited RSCU < 1. The most biased codon was found for the stop codon TAA (RSCU = 1.55 +/- 0.01) while the less biased was detected for the stop codon TAG (RSCU = 0.69 +/- 0.01). Similar trend of A-T biased condon usgae was observed for others plant species []
 
-Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating a close relatioship between, S. angolense (2n = 32) and S. radiatum (2n = 64). The inference of the species taxonomic placement and phylogenetic relationship using RSCU have been used for Biebersteiniaceae, Nitrariaceae, and members [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817). Therefore, investigation RSCu could help to estimate thephylogenetic relationship in a species complex.  
+Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide rnge of families [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
+
+
+
 
 
 
