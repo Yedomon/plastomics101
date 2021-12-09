@@ -23,9 +23,7 @@ To figure out the evolutionary relationship between Sesamum, Cerathoteca, and th
 
 ## Time divergent analysis
 
-
-It is worth to note that the subclade 1 indicates a potential hybridization event between S. angolense and C. sesamoides, leading a new species  S. radiatum (2n = 64).    
-
+In order to understand the speciation occurrence time among Sesamum and Cerathoteca, a time divergence analysis was performed (Fiugure tree with time divergence). Firstly, S. alatum (Sub-clade4 in the tree), the unique seed with winges in our plant material, have occurred 14.46 Million years ago (Mya). Secondly, the sub-clade 2 members (Sesamum pedaloides and C. triloba) split concomitantly from the Sub-clade 1 and 2 block at about 5.26 Mya. Thirdly, C. sesamoides (member of the sub-clade1) was inferred to have occured 6.11 Mya, a little bit early than S. pedaloides and C. triloba. As expected, the cultivated type (S. indicum) have been occured lastly at 0.01 Mya. Interestingly, the time divergence inference revealed that S. radiatum (2n = 64) and C. sesamoides (2n = 32) have concomitantly occured recently at about 0.05 Mya. Taking together, the time divergence inference indicates recent hybridization between C. sesamoides (2n = 32) and S. angolense (2n = 32) leading to the new species S. radiatum (2n = 64).   
 
 
 ## Codon usage analysis
@@ -35,6 +33,8 @@ Codon usage bias was examined by computing the Relative Synonymous Codon Usage (
 Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide range of families [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
 
 
+
+## Variation Hotspots within chloroplast genomes of Sesamum and Cerathoteca species
 
 
 
