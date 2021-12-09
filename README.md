@@ -16,10 +16,50 @@ The assembled chloroplast genomes resulted in a single circular quadripartite ge
 Parler du nombre de duplicated genes in IR pour chaque species et aussi the nombre de gene ayant d'introns pour chaque especies.
 
 
+
+## Phylogenetic Analysis of Sesamum and Ceratotheca Chloroplast Genomes
+
+
+
+
+
+
+
+
+
 ## Codon usage analysis
 
-Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias is noted for the RSCU values close to 1. The highest RSCU values superior to 1 were observed in ...... The majority were adeniiine codons while the RSCU values < 1 correspond to guianine-  or cyosine ending codons. (fIGURE x, supplementary file x). 
+Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias referred to those codons with RSCU values close to 1. Globally, slight variation of RSCU were found within Sesamum and Cerathoteca species (Figure Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.). A total of 27 core codons exhibited RSCU > 1, of which 24 were adenine/thymine-ending codons, one guanine-ending codons and two cytosine-ending codons. In contrast, guanine- or cytosine-ending codons mostly exhibited RSCU < 1. The most biased codon was found for the stop codon TAA (RSCU = 1.55 +/- 0.01) while the less biased was detected for the stop codon TAG (RSCU = 0.69 +/- 0.01). Similar trend of A-T biased condon usgae was observed for others plant species []
+
+Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating a close relatioship between, S. angolense (2n = 32) and S. radiatum (2n = 64). The inference of the species taxonomic placement and phylogenetic relationship using RSCU have been used for Biebersteiniaceae, Nitrariaceae, and members [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817). Therefore, investigation RSCu could help to estimate thephylogenetic relationship in a species complex.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+. The highest RSCU values superior to 1 were observed in ...... The majority were adeniiine codons while the RSCU values < 1 correspond to guianine-  or cyosine ending codons. (fIGURE x, supplementary file x). 
 By examining the heatmap with species cluster, a close relatioship between, S. angolense (2n = 32) and S. radiatum (2n = 64) was noted, indicating a potential evolutionnary relationship with regards to codon usage rate.  
+
+
+
+Slight differences were found in the relative synonymous codon usage (RSCU) among the five
+species (Figure 4). RSCU > 1 was found for 30 identical codons, of which 29 were A/T‐ending codons
+(except for UUG) and RSCU < 1 for 32 identical codons, of which 29 were C/G‐ending codons (except
+AUA, CUA and UGA). The highest RSCU value was recorded for UUA and the lowest for CUC, both
+encode leucine. To conclude, UUA was positively biased, while CUC was negatively biased.
+Figure 4. Heat map of relative synonymous codon usage (RSCU) values among the five species.
+
+
+
+
 
 
 
