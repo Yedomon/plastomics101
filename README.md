@@ -34,22 +34,24 @@ Interestingly, by examining the heatmap with species cluster, the phylogenetic t
 
 
 
-## Comparative plastome analysis
+## Boundary Regions and Comparative plastome analysis 
 
-Include syntheny and IR contraction and expansion here
+Do like [here](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec2) | and [here](https://acsess.onlinelibrary.wiley.com/doi/full/10.3835/plantgenome2019.04.0032) and [here](https://www.frontiersin.org/articles/10.3389/fgene.2020.00802/full#h3)
+
+Include mVista, Mauve, AliTv
+Include and IR contraction and expansion here
+Include comparative SNP analysis
 
 
 ## Variation Hotspots within Chloroplast Genomes of Sesamum and Cerathoteca species
 
-Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerathoteca species, substancial variations were noted mainly in SSC regions (Figure Nucleotide diversity). The sequence divergence revealed by nucleotide diversity calculation revealed a peak value located in the ycf1 followed by ndhA, ndhE, psaC, ndh-D and ndhF regions. To estimate their discrimiatory power, we inferred the phylogenetic tree using each gene. As a result,....
-
-Therefore, they could be used as usefull marker to delineate Sesamum and Cerathotheca species since several species are not yet well characterized at both morphologic and cytogenetic levels.   
+Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerathoteca species, substancial variations were noted mainly in SSC regions (Figure Nucleotide diversity). The nucleotide diversity calculation revealed a peak value located in the ycf1 followed by ndhA, ndhE, psaC, ndh-D and ndhF regions. To estimate their discrimiatory power, we inferred the phylogenetic tree using each gene. As a result, the ycf1 gene clearly distinguished the taxon as depicted earlier with a set of 75 and 80 coding genes respectively. Therefore, they could be used as a marker to delineate Sesamum and Cerathotheca species since several species are not yet well characterized at both morphologic and cytogenetic levels.   
 
 
+## Simple sequence and long repeats
 
 
-
-
+## Selective pressure analysis
 
 
 
@@ -57,17 +59,18 @@ Therefore, they could be used as usefull marker to delineate Sesamum and Ceratho
 
 
 
-. The highest RSCU values superior to 1 were observed in ...... The majority were adeniiine codons while the RSCU values < 1 correspond to guianine-  or cyosine ending codons. (fIGURE x, supplementary file x). 
-By examining the heatmap with species cluster, a close relatioship between, S. angolense (2n = 32) and S. radiatum (2n = 64) was noted, indicating a potential evolutionnary relationship with regards to codon usage rate.  
 
 
 
-Slight differences were found in the relative synonymous codon usage (RSCU) among the five
-species (Figure 4). RSCU > 1 was found for 30 identical codons, of which 29 were A/T‐ending codons
-(except for UUG) and RSCU < 1 for 32 identical codons, of which 29 were C/G‐ending codons (except
-AUA, CUA and UGA). The highest RSCU value was recorded for UUA and the lowest for CUC, both
-encode leucine. To conclude, UUA was positively biased, while CUC was negatively biased.
-Figure 4. Heat map of relative synonymous codon usage (RSCU) values among the five species.
+
+
+
+
+
+
+
+
+
 
 
 
