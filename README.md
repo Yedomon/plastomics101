@@ -34,8 +34,16 @@ Interestingly, by examining the heatmap with species cluster, the phylogenetic t
 
 
 
-## Variation Hotspots within chloroplast genomes of Sesamum and Cerathoteca species
+## Comparative plastome analysis
 
+Include syntheny and IR contraction and expansion here
+
+
+## Variation Hotspots within Chloroplast Genomes of Sesamum and Cerathoteca species
+
+Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerathoteca species, substancial variations were noted mainly in SSC regions (Figure Nucleotide diversity). The sequence divergence revealed by nucleotide diversity calculation revealed a peak value located in the ycf1 followed by ndhA, ndhE, psaC, ndh-D and ndhF regions. To estimate their discrimiatory power, we inferred the phylogenetic tree using each gene. As a result,....
+
+Therefore, they could be used as usefull marker to delineate Sesamum and Cerathotheca species since several species are not yet well characterized at both morphologic and cytogenetic levels.   
 
 
 
