@@ -33,7 +33,7 @@ In order to understand the speciation occurrence time among Sesamum and Cerathot
 
 Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias referred to those codons with RSCU values close to 1. Globally, slight variation of RSCU were found within Sesamum and Cerathoteca species (Figure Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.). A total of 27 core codons exhibited RSCU > 1, of which 24 were adenine/thymine-ending codons, one guanine-ending codons and two cytosine-ending codons. In contrast, guanine- or cytosine-ending codons mostly exhibited RSCU < 1. The most biased codon was found for the stop codon TAA (RSCU = 1.55 +/- 0.01) while the less biased was detected for the stop codon TAG (RSCU = 0.69 +/- 0.01). Similar trend of A-T biased condon usgae was observed for others plant species [Biju et al 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.3835/plantgenome2019.04.0032), [Wang et al., 2017](https://www.mdpi.com/1422-0067/18/11/2288).
 
-Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide range of families [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
+Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide range of families [Wu et al. 2021](https://www.nature.com/articles/s41598-021-94137-0#Sec2) [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
 
 
 
@@ -51,8 +51,11 @@ Include comparative SNP analysis
 Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerathoteca species, substancial variations were noted mainly in SSC regions (Figure Nucleotide diversity). The nucleotide diversity calculation revealed a peak value located in the ycf1 followed by ndhA, ndhE, psaC, ndh-D and ndhF regions. To estimate their discrimiatory power, we inferred the phylogenetic tree using each gene. As a result, the ycf1 gene clearly distinguished the taxon as depicted earlier with a set of 75 and 80 coding genes respectively. Therefore, they could be used as a marker to delineate Sesamum and Cerathotheca species since several species are not yet well characterized at both morphologic and cytogenetic levels.   
 
 
-## Simple sequence and long repeats
+## Long and Simple Sequence Repeats
 
+Long repeats constitute a driving force for chloroplast genome rearragement and has been used for phylogenetic inference between species [Park et al. 2017](https://doi.org/10.3390/molecules22112012). It induces genetic diversity by promoting intermolecular recombination in the chloroplast genome [Park et al. 2018], [Luo et al. 2021](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-021-07807-8#Sec2). Long repeats encompass forward,reverse, palindrome, and complement types. In the present study, the mean count of long repeats was 25.71 +/- 3.24 bp. It ranged from 21 to 31 identified long repeats, among which palindromic ()d forward types are the most abundant. 
+ 
+ 
 
 ## Selective pressure analysis
 
