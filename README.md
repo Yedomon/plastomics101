@@ -53,7 +53,8 @@ Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerat
 
 ## Long and Simple Sequence Repeats
 
-Long repeats constitute a driving force for chloroplast genome rearragement and has been used for phylogenetic inference between species [Park et al. 2017](https://doi.org/10.3390/molecules22112012). It induces genetic diversity by promoting intermolecular recombination in the chloroplast genome [Park et al. 2018], [Luo et al. 2021](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-021-07807-8#Sec2). Long repeats encompass forward,reverse, palindrome, and complement types. In the present study, the mean count of long repeats was 25.71 +/- 3.24 bp. It ranged from 21 to 31 identified long repeats, among which palindromic ()d forward types are the most abundant. 
+Long repeats constitute a driving force for chloroplast genome rearragement and has been used for phylogenetic inference between species [Park et al. 2017](https://doi.org/10.3390/molecules22112012)-[Luo et al. 2021](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-021-07807-8#Sec2). It induces genetic diversity by promoting intermolecular recombination in the chloroplast genome [Park et al. 2018](https://www.frontiersin.org/articles/10.3389/fpls.2018.00965/full). Long repeats encompass forward,reverse, palindrome, and complement types. In the present study, the mean count of long repeats was 25.71 +/- 3.24 bp. The number of long repeats ranged from 21 to 31, among which palindromic (12-18) and forward (9-13) types are the most abundant. 
+
  
  
 
