@@ -2155,15 +2155,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="494.16773"
-     inkscape:cy="200.88151"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="-297.22417"
+     inkscape:cy="675.53493"
      inkscape:document-units="mm"
      inkscape:current-layer="g823"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="3"
@@ -3031,13 +3031,14 @@
                  y="-229.78"
                  x="68.900002"
                  sodipodi:role="line"
-                 id="tspan1227"><tspan
-   id="tspan3195"
-   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic'">Sesamum radiatum</tspan>
- <tspan
-   id="tspan3199"
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'">(2n=64)</tspan>
-</tspan>
+                 id="tspan1227">
+                <tspan
+                   id="tspan3195"
+                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic'">Sesamum radiatum</tspan>
+                <tspan
+                   id="tspan3199"
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'">(2n=64)</tspan>
+              </tspan>
             </text>
           </g>
         </g>
@@ -3241,14 +3242,13 @@
                  x="73.860001"
                  y="-659.92999"
                  sodipodi:role="line"
-                 id="tspan1407">
-                <tspan
-                   id="tspan3072"
-                   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold Italic'">Sesamum indicum (2n = 26)</tspan>
-                <tspan
-                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold'"
-                   id="tspan3082" />
-              </tspan>
+                 id="tspan1407"><tspan
+   style="-inkscape-font-specification:'Arial Bold Italic';font-family:Arial;font-weight:bold;font-style:italic;font-stretch:normal;font-variant:normal"
+   id="tspan2024">Sesamum indicum</tspan>
+ <tspan
+   style="-inkscape-font-specification:'Arial Bold';font-family:Arial;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan2030">(2n = 26)</tspan>
+</tspan>
             </text>
           </g>
         </g>
