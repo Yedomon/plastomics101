@@ -1,0 +1,54 @@
+library(ggplot2)
+library(ggrepel)
+
+
+getwd()
+setwd("C:/Users/ange_/Downloads/")
+data_ssr = read.csv("ssr_pc.csv", h = T, sep = ";")
+View(data_ssr)
+names(data_ssr)
+data_ssr$Species <- factor(data_ssr$Species,
+                             levels = c("Sesamum indicum", 
+                                        "Sesamum alatum",
+                                        "Sesamum angolense",
+                                        "Sesamum pedaloides",
+                                        "Cerathoteca sesamoides",
+                                        "Cerathoteca triloba",
+                                        "Sesamum radiatum"))
+
+# Plot
+
+ggplot(data = data_ssr, aes(x=Motif, y=Counts, label = Counts,  fill = "red" )) +
+  geom_bar(stat="identity") +
+  coord_flip() +
+  theme_bw() + 
+  geom_text_repel()+
+  facet_wrap(~Species)
+
+
+
+
+
+# plot2
+
+data_motif = read.csv("motif_ssr_count.csv", h = T, sep = ";")
+View(data_motif)
+names(data_motif)
+data_motif$Species <- factor(data_motif$Species,
+                             levels = rev(c("Sesamum indicum", 
+                                        "Sesamum alatum",
+                                        "Sesamum angolense",
+                                        "Sesamum pedaloides",
+                                        "Cerathoteca sesamoides",
+                                        "Cerathoteca triloba",
+                                        "Sesamum radiatum")))
+
+
+ggplot(data = data_motif, aes(x=Species, y=count, label = count , fill = "red")) +
+  geom_bar(stat="identity") +
+  coord_flip() +
+  theme_bw() + 
+  geom_text_repel()
+ 
+
+
