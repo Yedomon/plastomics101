@@ -61,12 +61,9 @@ The most dominant motif (A) count ranged from 19 to 27 and spaning 208-277 bp (F
 
 
  
- 
- 
- 
-
 ## Selective pressure analysis
 
+The pairwise ratios of the rate of non-synonymous substitutions (Ka) to the rate of synonymous substitutions (Ks) analysis is presented in the Figure xxx. Ka/Ks ratios with Ks < 0.1 or K > 0.2 were changed into zero for a reliable estimation of the selection pressure. The results revealed that  the NAD(P)H-quinone oxidoreductase subunit I (ndhI) has undergone strong positive selection in S. angolense and S. radiatum. Similar trends were observed for the photosystem I gene ycf4 mainly in S. radiatum, S. alatum and C. sesamoides. The rpl20 gene also exhibited positive selection only in S. alatum. However, the matK, ndhF, and ycf1 Ka/ks values were around 1, implying neutral selection pressure. 
 
 
 
