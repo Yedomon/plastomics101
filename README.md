@@ -12,9 +12,9 @@ Suivre simplement ceci pour rediger
 
 Results
 
-## Chloroplast genome features 
+## Chloroplast genome general features 
 
-The assembled chloroplast genomes resulted in a single circular quadripartite genome with typical two IRs separeted by LSC and SSC (Figure 2. Chloroplast genome map). The plastome sizes were 153089 bp, 153096 bp, 153217 bp, 153285 bp, 153338 bp, 153287 bp, 153863 bp for S. angolense, S. alatum, S. pedaloides, S. radiatum, S. indicum cv Goenbaek, C. sesamoides, and C. triloba respectively (Table 1. Features of plastome genome). IR contraction and expansion was revealed by comparative IR length assessment. The IR length ranged from 25096 bp to 25190 bp while LSC varied from 84872 bp to 85185 bp. SSC sized from 17719 bp to 17874 bp. The seven genomes contained 114 unique genes including 80 coding-proteins, 30 tranfert RNA and four ribosomal RNA genes as previously found by [Yi and Kim (2012)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0035872) and [Zhang et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080508) using S. indicum cv Ansanggae and S. indicum Yuzhi 11 as plant model respectively. The GC contents were similar in IR (43.39 +/- 0.01 % ), LSC (36.40 +/- 0.03 %), SSC (32.62 +/- 0.08 %), and whole chloroplast genome scale (38.26 +/- 0.03 %) (Table 1. Features of plastome genome).
+The assembled chloroplast genomes resulted in a single circular quadripartite genome with typical two IRs separeted by LSC and SSC (Figure 2. Chloroplast genome map). The plastome sizes were 153089 bp, 153096 bp, 153217 bp, 153285 bp, 153338 bp, 153287 bp, 153863 bp for S. angolense, S. alatum, S. pedaloides, S. radiatum, S. indicum cv Goenbaek, C. sesamoides, and C. triloba respectively (Table 1. Features of plastome genome).  The seven genomes contained 114 unique genes including 80 coding-proteins, 30 tranfert RNA and four ribosomal RNA genes as previously found by [Yi and Kim (2012)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0035872) and [Zhang et al. (2013)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0080508) using S. indicum cv Ansanggae and S. indicum Yuzhi 11 as plant model respectively. The GC contents were similar in IR (43.39 +/- 0.01 % ), LSC (36.40 +/- 0.03 %), SSC (32.62 +/- 0.08 %), and whole chloroplast genome scale (38.26 +/- 0.03 %) (Table 1. Features of plastome genome).
 
 Parler du nombre de duplicated genes in IR pour chaque species et aussi the nombre de gene ayant d'introns pour chaque especies.
 
@@ -37,13 +37,11 @@ Interestingly, by examining the heatmap with species cluster, the phylogenetic t
 
 
 
-## Boundary Regions and Comparative plastome analysis 
+## Comparative plastome analysis 
 
 Do like [here](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-07045-4#Sec2) | and [here](https://acsess.onlinelibrary.wiley.com/doi/full/10.3835/plantgenome2019.04.0032) and [here](https://www.frontiersin.org/articles/10.3389/fgene.2020.00802/full#h3)
 
-Include mVista, Mauve, AliTv
-Include and IR contraction and expansion here
-Include comparative SNP analysis
+By comparing the chloroplast genomes boundaries of Sesamum and Cerathoteca species, we noted that the IRb/LSC junction is sited between rpl2 and rsp19 genes (Fgure IRscope). The pseudogene ycf1 is located exclusively in IRb for S. indicum cv Ansanggae, S. indicum cv Yuzhii11 and at the border IRb/SSC the the other species. The ndhF genes is maily in the SSC region for all species exepted for S. angolense. The ycf1 genes of all species were located at the SSC/IRa junctions with a gene size ranging from 5312 to 5369 bp. The trnH genes were localized in the LSC region, 1-16 bp away from the the IRa-LSC border. Overall the chloroplast genome structure at different junctions was highly conserved among Sesamum and Cerathoteca species. When comparing the whole genome structure using mVista (Shuffle-LAGAN) (Figure x), MAuve (progressiveMauve alignment) (Figure y) and AliTv (lastz all-vs-all alignments) (Figure z), the conservative genome structure in coding and non-coding regions was also confirmed. However, IR contraction and expansion has been revealed with length ranging from 25096 bp to 25190 bp while LSC varied from 84872 bp to 85185 bp. SSC sized from 17719 bp to 17874 bp.
 
 
 ## Variation Hotspots within Chloroplast Genomes of Sesamum and Cerathoteca species
