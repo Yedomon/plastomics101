@@ -1,5 +1,25 @@
 # plastomics101
 
+
+
+
+```
+
+## with legend;
+!Title	bootstrap
+!Groups	<=40,41~80,81~100
+!Colors	grey,gold,red
+!LegendStyle	circle
+
+!bootstrapValueStyle	show=1,style=circle
+40	color=darkgrey
+41,80	color=gold
+81,100	color=red
+
+```
+
+
+
 Mots cles pour discuter
 [Dated tribe-wide whole chloroplast genome phylogeny indicates recurrent hybridizations within Triticeae](https://bmcecolevol.biomedcentral.com/articles/10.1186/s12862-017-0989-9#Sec2)
 
