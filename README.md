@@ -1,8 +1,9 @@
 # plastomics101
 
 
-1- Perler dans la discussion de sesamum trilobum = Cerathoteca triloba et que Sesamum sesamoides = Cerathoteca sesamoides
-2- Enlever novoplasty du document et agrder seulement getorganelle
+- Perler dans la discussion de sesamum trilobum = Cerathoteca triloba et que Sesamum sesamoides = Cerathoteca sesamoides
+
+- Enlever novoplasty du document et agrder seulement getorganelle
 
 ## Tables legends:
 
