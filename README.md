@@ -1,10 +1,13 @@
 # plastomics101
 
 
+Perler dans la discussion de sesamum trilobum = Cerathoteca triloba et que Sesamum sesamoides = Cerathoteca sesamoides
+
+
 ## Tables legends:
 
 
-Table 1: Comparative chloroplast genome features statistics between Sesamum and Cerathoteca species. 
+Table 1: Complete chloroplast genome statistics of wild sesame species. 
 
 Table 2:
 
