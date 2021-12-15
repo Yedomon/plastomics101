@@ -1,5 +1,9 @@
 # plastomics101
+```
+Implications for diversity center of Sesamum
+The present study exclusively dealt with African native Sesamum wild species. From our analyses, we speculate that since many wild sesame species are originated from Africa, the continent might be the origin of species diversification with the presence of diverse chromosome number sets. The cultivated species might occur later in the Indian sub-continent where the domestication took place (Figure x). Ethnobotanic studies are in agreement with this hypothesis since the 2n = 26, 2n = 32, and 2n = 64 wild species are widely used by local populations as medicine and food (Bedigian, 2018) while the cultivated type is predominantly employed in South East-Asian as food decoration (seeds) and therapeutic or nutraceutical (oil) complement (Miyake et al., 2005; Kim et al., 2016, 2020). 
 
+```
 
 - Perler dans la discussion de sesamum trilobum = Cerathoteca triloba et que Sesamum sesamoides = Cerathoteca sesamoides
 
