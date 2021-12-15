@@ -33,7 +33,15 @@ Retrieved 15 December 2021."
 [Figure 6](https://github.com/Yedomon/plastomics101/blob/main/IRscope_final/irscope.jpg): Chloroplast juctions sites view showing genes distribution alongside the boundaries and IR contraction and expansion within the Sesamum and Cerathoteca species. Arabidopsis thaliana was set as outgroup.
 
 
-[Figure 7]()
+[Figure 7](https://github.com/Yedomon/plastomics101/blob/main/nucleotide_diversity/pi_nucleotide_diversity.jpg): Nucleotide diversity variation with chloroplast genomes of Sesamum and Cerathoteca species. Highest values above 0.18 (in green) indicates candidates genes for population genetics purpose.
+
+
+
+[Figure 8](https://github.com/Yedomon/plastomics101/blob/main/additionnal_trees/additionnal_tree.jpg): Evaluation of the discriminatory power of the candidate regions with the high nucleotide diversity index. The tree topology of ycf1 (A), psaC-ndhD (D), and ndhF (E) was consistent with the maximum likehood phylogenetic tree based on the 75 coding-genes. Discrepancies were noted for ndhA- and ndhE-based tree inference. Vitis vinifera was set as an outgroup. Squares and circles were colored following the ploidy and the bootstrap values respectively.
+
+
+
+[Figure 9]()
 
 
 
