@@ -15,10 +15,12 @@ Retrieved 15 December 2021."
 
 
 
+[Figure 3](https://github.com/Yedomon/plastomics101/blob/main/Time_divergence_final/Time_divergence_tree_MEGAX_final.jpg): Phylogeny placement of newly constructed chloroplast genomes within Lamiales members. The phylogenetic tree was inferred from maximum likelihood and bayesian analyses of 75 conserved coding-genes. The closest Lamiales species cover Ancanthaceae and Linderniaceae species. Vitis vinifera was set as outgroup. Numbers above nodes are support values with maximum likelihood bootstrap values on the left, bayesian bootstrap values in the middle, and divergence times (in millions of years) estimated using RelTime approach implimented in MEGA X software. The assembled chloroplast genomes are indicated in blue.
 
 
 
-[Figure 3](https://github.com/Yedomon/plastomics101/blob/main/Time_divergence_final/Time_divergence_tree_MEGAX_final.jpg): Phylogeny placement of newly constructed chloroplast genomes within Lamiales members. The phylogenetic tree was inferred from maximum likelihood and bayesian analyses of 75 conserved coding-genes. The closest Lamiales species cover Ancanthaceae and Linderniaceae species. Vitis vinifera was set as outgroup. The bootstrap values 
+
+[Figure 4]():
 
 
 
