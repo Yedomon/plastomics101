@@ -50,7 +50,7 @@ Retrieved 15 December 2021."
 
 [Figure 12](https://github.com/Yedomon/plastomics101/blob/main/motif_figure/motif_length.jpg): Microsatellite motifs count within Sesamum and Cerathoteca species chloroplast genomes
 
-[Figure 13](https://github.com/Yedomon/plastomics101/blob/main/kaks/ka_ks_1441_756.jpg): Heat map of pairwise Ka/ks values among wild relatives and the cultivated type Sesamum indicum. Non-applicable Ka/Ks and ratio with Ks < 0.1 and Ks> 2 were changed into zero.
+[Figure 13](https://github.com/Yedomon/plastomics101/blob/main/kaks/ka_ks_1441_756.jpg): Heat map of pairwise Ka/ks values among wild relatives and the cultivated type Sesamum indicum. Non-applicable (with Ks = 0) Ka/Ks and ratio with Ks < 0.1 and Ks> 2 were changed into zero.
 
 
 
