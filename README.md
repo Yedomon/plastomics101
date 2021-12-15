@@ -80,11 +80,6 @@ To figure out the evolutionary relationship between Sesamum, Cerathoteca, and th
 In order to understand the speciation occurrence time among Sesamum and Cerathoteca, a time divergence analysis was performed (Fiugure tree with time divergence). Firstly, S. alatum (Sub-clade4 in the tree), the unique seed with winges in our plant material, have occurred 14.46 Million years ago (Mya). Secondly, the sub-clade 2 members (Sesamum pedaloides and C. triloba) split concomitantly from the Sub-clade 1 and 2 block at about 5.26 Mya. Thirdly, C. sesamoides (member of the sub-clade1) was inferred to have occured 6.11 Mya, a little bit early than S. pedaloides and C. triloba. As expected, the cultivated type (S. indicum) have been occured lastly at 0.01 Mya. Interestingly, the time divergence inference revealed that S. radiatum (2n = 64) and C. sesamoides (2n = 32) have concomitantly occured recently at about 0.05 Mya. Taking together, the time divergence inference indicates recent hybridization between C. sesamoides (2n = 32) and S. angolense (2n = 32) leading to the new species S. radiatum (2n = 64).   
 
 
-## Codon usage analysis
-
-Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias referred to those codons with RSCU values close to 1. Globally, slight variation of RSCU were found within Sesamum and Cerathoteca species (Figure Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.). A total of 27 core codons exhibited RSCU > 1, of which 24 were adenine/thymine-ending codons, one guanine-ending codons and two cytosine-ending codons. In contrast, guanine- or cytosine-ending codons mostly exhibited RSCU < 1. The most biased codon was found for the stop codon TAA (RSCU = 1.55 +/- 0.01) while the less biased was detected for the stop codon TAG (RSCU = 0.69 +/- 0.01). Similar trend of A-T biased condon usgae was observed for others plant species [Biju et al 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.3835/plantgenome2019.04.0032), [Wang et al., 2017](https://www.mdpi.com/1422-0067/18/11/2288).
-
-Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide range of families [Wu et al. 2021](https://www.nature.com/articles/s41598-021-94137-0#Sec2) [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
 
 
 
@@ -98,6 +93,18 @@ By comparing the chloroplast genomes boundaries of Sesamum and Cerathoteca speci
 ## Variation Hotspots within Chloroplast Genomes of Sesamum and Cerathoteca species
 
 Despite the high-colinearity of the chloroplast genomes within Sesamum and Cerathoteca species, substancial variations were noted mainly in SSC regions (Figure Nucleotide diversity). The nucleotide diversity calculation revealed a peak value located in the ycf1 followed by ndhA, ndhE, psaC-ndh-D and ndhF regions. To estimate their discrimiatory power, we inferred the phylogenetic tree using each gene. As a result, ycf1, psaC-ndhD, and ndhF genes clearly distinguished the taxon as depicted earlier with a set of 75 and 80 coding genes respectively. Therefore, they could be used as a marker to delineate Sesamum and Cerathotheca species since several species are not yet well characterized at both morphologic and cytogenetic levels. Besides, C. sesamoides and S. radiatum exhibited a consistent monophylentic pattern for all divergent genes except ndhE, confirming the evolutionnary relationship (hybridization) between these two specific species.   
+
+
+
+
+
+## Codon usage analysis
+
+Codon usage bias was examined by computing the Relative Synonymous Codon Usage (RSCU) ([Sharp and Cowe (1991)](https://onlinelibrary.wiley.com/doi/10.1002/yea.320070702)). RSCU represents the observed frequency of a codon divided by the expected frequency. A lack of bias referred to those codons with RSCU values close to 1. Globally, slight variation of RSCU were found within Sesamum and Cerathoteca species (Figure Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.). A total of 27 core codons exhibited RSCU > 1, of which 24 were adenine/thymine-ending codons, one guanine-ending codons and two cytosine-ending codons. In contrast, guanine- or cytosine-ending codons mostly exhibited RSCU < 1. The most biased codon was found for the stop codon TAA (RSCU = 1.55 +/- 0.01) while the less biased was detected for the stop codon TAG (RSCU = 0.69 +/- 0.01). Similar trend of A-T biased condon usgae was observed for others plant species [Biju et al 2019](https://acsess.onlinelibrary.wiley.com/doi/full/10.3835/plantgenome2019.04.0032), [Wang et al., 2017](https://www.mdpi.com/1422-0067/18/11/2288).
+
+Interestingly, by examining the heatmap with species cluster, the phylogenetic tree topology is concordant with the coding sequence based tree inferencwe; indicating the robust estimation of phylogenetic relationship based on codon usage as observed in a wide range of families [Wu et al. 2021](https://www.nature.com/articles/s41598-021-94137-0#Sec2) [(Chi et al 2020)](https://www.mdpi.com/2223-7747/9/11/1605), [(Gao et al 2019)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218817), [(Wang et al 2016)](https://www.frontiersin.org/articles/10.3389/fpls.2016.00280/full)
+
+
 
 
 ## Long and Simple Sequence Repeats
