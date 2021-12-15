@@ -46,7 +46,7 @@ Retrieved 15 December 2021."
 
 [Figure 10](https://github.com/Yedomon/plastomics101/tree/main/long_repeats): Long-repeats count within Sesamum and Cerathoteca species chloroplast genomes.
 
-[Figure 11](https://github.com/Yedomon/plastomics101/blob/main/SSR_STATISTICS/ssr_statistics_figure.jpg): Microsatellites within Sesamum and Cerathoteca species chloroplast genomes
+[Figure 11](https://github.com/Yedomon/plastomics101/blob/main/SSR_STATISTICS/ssr_statistics_figure.jpg): Microsatellites count within Sesamum and Cerathoteca species chloroplast genomes
 
 [Figure 12](https://github.com/Yedomon/plastomics101/blob/main/motif_figure/motif_length.jpg): Microsatellite motifs count within Sesamum and Cerathoteca species chloroplast genomes
 
