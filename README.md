@@ -41,7 +41,17 @@ Retrieved 15 December 2021."
 
 
 
-[Figure 9]()
+[Figure 9](https://github.com/Yedomon/plastomics101/blob/main/rscu_final/RSCU_IND_CERA.jpg): Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.
+
+
+[Figure 10](): SSR
+
+[Figure 11](): SSR
+
+[Figure 12](): long repeats
+
+[Figure 13](): ka ks
+
 
 
 
