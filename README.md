@@ -11,7 +11,7 @@ Table 2:
 
 Supplementary Table 1: SSRs identification report in the assembled chloroplast genomes
 
-Supplementary Table 2: 
+Supplementary Table 2: Collection sites 
 
 
 
