@@ -9,9 +9,15 @@ Table 1: Comparative chloroplast genome features statistics between Sesamum and 
 Table 2:
 
 
-Supplementary Table 1: SSRs identification report in the assembled chloroplast genomes
+Supplementary Table 1: Species collection sites
 
-Supplementary Table 2: Collection sites 
+Supplementary Table 2: List of chloroplast genomes retrieved from NCBI
+
+Supplementary Table 3: List of 75 chloroplast genomes genes used for phylogenetic tree inference
+
+Supplementary Table 4: SSRs identification report in the assembled chloroplast genomes
+
+
 
 
 
