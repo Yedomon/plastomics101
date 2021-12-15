@@ -1,7 +1,31 @@
 # plastomics101
 
+## Figures legends:
+
+[Figure 1](https://github.com/Yedomon/plastomics101/blob/main/geographic_map_final/map_sesamum_species.jpg): Map showing the geographical distibution of the studied species in their native (in green) and host habitat (in purple). (A): Sesamum indicum distribution. The native region covers Assam, Bangladesh, India, West Himalaya. It has a worldwide distribution. (B): Sesamum radiatum is native to Angola, Benin, Burkina, Cameroon, Cape Verde, Central African Repu, Chad, Congo, Gabon, Gambia, Ghana, Guinea, Gulf of Guinea Is., Ivory Coast, Liberia, Mali, Niger, Nigeria, Senegal, Sierra Leone, Togo, Zaïre. It has been introduced in Borneo, Guinea-Bissau, India, Malaya, Sri Lanka, Sumatera. (C): Sesamum pedaloides is originated from Angola and Namibia. (D): Sesamum angolense is exclusively originated from Souh Africa area covering Angola, Burundi, Kenya, Malawi, Mozambique, Namibia, Rwanda, Tanzania, Uganda, Zambia, Zaïre, Zimbabwe
+
+Adapted from POWO (2021).
+
+```
+POWO (2021). "Plants of the World Online. Facilitated by the Royal Botanic Gardens, Kew. Published on the Internet; http://www.plantsoftheworldonline.org/
+Retrieved 15 December 2021."
+
+```
+
+[Figure 2](https://github.com/Yedomon/plastomics101/blob/main/chloroplast_annotation_map/annotation_map_updated.jpg): Chloroplast genome map of Sesamum and Cerathoteca species. Intron-containing genes are marked with asteriks symbol*. Dashed grey area in the inner circular map indicates the GC content. Different functionnal genes category are colored as indicated in the lower part of the genome map.
 
 
+
+
+
+
+
+
+
+
+
+
+Code for evolview
 
 ```
 
