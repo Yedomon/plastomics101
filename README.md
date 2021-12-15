@@ -20,8 +20,7 @@ Retrieved 15 December 2021."
 
 
 
-[Figure 4](https://github.com/Yedomon/plastomics101/blob/main/AliTV_final/Ali_TV_Tree_Image.jpg): Morphological and plastome-based comparative analysis between Sesamum and Cerathoteca species. (A): Phylogenetic tree inferred from maximum likelihood and bayesian analyses of 80 coding-genes. Bootstrap values were placed on each node with ML bootstrap values at left and bayesian bootstrap values at left. The ploidy, seed capsule anf flower photo are depicted in the center of the figure. (B): Alignment view of the chloroplast genomes using all-vs-all alignment approach implimented in AliTv software.
-
+[Figure 4](https://github.com/Yedomon/plastomics101/blob/main/AliTV_final/Ali_TV_Tree_Image.jpg): Morphological and plastome-based comparative analysis between Sesamum and Cerathoteca species. (A): Phylogenetic tree inferred from maximum likelihood and bayesian analyses of 80 coding-genes. Bootstrap values were placed on each node with ML bootstrap values at left and bayesian bootstrap values at left. The ploidy, seed capsule anf flower photo are depicted in the center of the figure. (B): Alignment view of the chloroplast genomes using all-vs-all alignment approach implimented in AliTv software. The purple arrow represent the IR region. Each genome are colored following the link identity percentage as shown in right corner.
 
 
 
