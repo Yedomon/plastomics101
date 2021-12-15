@@ -10,8 +10,15 @@ Retrieved 15 December 2021."
 
 ```
 
+
 [Figure 2](https://github.com/Yedomon/plastomics101/blob/main/chloroplast_annotation_map/annotation_map_updated.jpg): Chloroplast genome map of Sesamum and Cerathoteca species. Intron-containing genes are marked with asteriks symbol*. Dashed grey area in the inner circular map indicates the GC content. Different functionnal genes category are colored as indicated in the lower part of the genome map.
 
+
+
+
+
+
+[Figure 3](https://github.com/Yedomon/plastomics101/blob/main/Time_divergence_final/Time_divergence_tree_MEGAX_final.jpg): Phylogeny placement of newly constructed chloroplast genomes within Lamiales members. The phylogenetic tree was inferred from maximum likelihood and bayesian analyses of 75 conserved coding-genes. The closest Lamiales species cover Ancanthaceae and Linderniaceae species. Vitis vinifera was set as outgroup. The bootstrap values 
 
 
 
