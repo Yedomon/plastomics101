@@ -44,13 +44,13 @@ Retrieved 15 December 2021."
 [Figure 9](https://github.com/Yedomon/plastomics101/blob/main/rscu_final/RSCU_IND_CERA.jpg): Heat map of relative synonymous codon usage (RSCU) values among Sesamum and Cerathoteca species.
 
 
-[Figure 10](): SSR
+[Figure 10](https://github.com/Yedomon/plastomics101/tree/main/long_repeats): Long-repeats count within Sesamum and Cerathoteca species chloroplast genomes.
 
-[Figure 11](): SSR
+[Figure 11](https://github.com/Yedomon/plastomics101/blob/main/SSR_STATISTICS/ssr_statistics_figure.jpg): Microsatellites within Sesamum and Cerathoteca species chloroplast genomes
 
-[Figure 12](): long repeats
+[Figure 12](https://github.com/Yedomon/plastomics101/blob/main/motif_figure/motif_length.jpg): Microsatellite motifs count within Sesamum and Cerathoteca species chloroplast genomes
 
-[Figure 13](): ka ks
+[Figure 13](https://github.com/Yedomon/plastomics101/blob/main/kaks/ka_ks_1441_756.jpg): Heat map of pairwise Ka/ks values among wild relatives and the cultivated type Sesamum indicum. Non-applicable Ka/Ks and ratio with Ks < 0.1 and Ks> 2 were changed into zero.
 
 
 
