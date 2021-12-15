@@ -9,7 +9,9 @@ Table 1: Comparative chloroplast genome features statistics between Sesamum and 
 Table 2:
 
 
-Supplementary Table 1:
+Supplementary Table 1: SSRs identification report in the assembled chloroplast genomes
+
+Supplementary Table 2: 
 
 
 
