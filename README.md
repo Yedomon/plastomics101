@@ -1,5 +1,12 @@
 # plastomics101
 
+Changer le titre
+
+Cytogenetic and plastome phylogenomics indicate ascending dysploidy and recent hybridization as driven force of speciation in Sesamum species complex
+
+
+
+
 
 Abstract
 
@@ -16,22 +23,59 @@ Materials and Methods
 
 Fluorescence In Situ Hybridization Karyoptyping of Sesamum pedaloides
 
-To unveil the chromosome number set of S. pedaloides, a triple color FISH karyotyping was performed following [Nguyen et al method] (https://link.springer.com/content/pdf/10.1007/s13580-021-00364-9.pdf). Briefly, young and healthy root tips from S. pedaloides seedlings were collected and treated with 2mM of oxine at 12*C* for five hours. A Carnoy's solution was employed to fixed the pre-treated root tips at room temperature for two hours. The fixed root tips was then stored in 70% ethanol until the somatic chromosome spreads preparation step. Probes of Arabidopsis telomeric repeats, 5SrDNA, 45S rDNA were used for the FISH followed by the slide visualization with the Olympus BX53 microscope (Leica Microsystems Inc., Germany). The resulting image was processed with CytoVision v 7.2 (Leica Microsystem Inc., Germany) and Adobe Photoshop CS6.
+To unveil the chromosome number set of S. pedaloides, a triple color FISH karyotyping was performed following [Nguyen et al method] (https://link.springer.com/content/pdf/10.1007/s13580-021-00364-9.pdf). Briefly, young and healthy root tips from S. pedaloides seedlings were collected and treated with 2mM of oxine at 12*C* for five hours. A Carnoy's solution was employed to fixed the pre-treated root tips at room temperature for two hours. The fixed root tips was then stored in 70% ethanol until the somatic chromosome spreads preparation step. Probes of Arabidopsis telomeric repeats, 5SrDNA, 45S rDNA were used for the FISH followed by the slide visualization with the Olympus BX53 microscope (Leica Microsystems Inc., Germany). The resulting image was processed with CytoVision v 7.2 (Leica Microsystem Inc., Germany) and Adobe Photoshop CS6. The same procedure was applied for Sesamum altum (2n = 26) and Sesamum radiatum (2n = 64) for comparative cytogenetic analysis of the three set set of chromosome number.
 
 
 Results
 
-FISH result
+FISH analysis 
 
-The triple-color FISH karyotyping analysis resulted a total of 16 paired chromosomes for S. pedaloides. One pair of interstitial 5S rDNA locus (green) have been observed at chromosome pair No 5 and No 13 respectively.  A set of three 45S rDNA loci (red) were detected at distal chromosomal regions at chromosome pair No 2, No 3, and No 4. While the majority of chromosome exhibited strong signals of Aradidopsis-type telomeric repeats, weak signals were detected for the chromosome pair No 1, 10, 14, and 16.
+The FISH karyotype are presented in the Figure x.
+
+The triple-color FISH karyotyping analysis resulted a total of 16 paired chromosomes for S. pedaloides. One pair of interstitial 5S rDNA locus (green) have been observed at chromosome pair No 5 and No 13 respectively.  A set of three 45S rDNA loci (red) were detected at distal chromosomal regions at chromosome pair No 2, No 3, and No 4. While the majority of chromosome exhibited strong signals of Aradidopsis-type telomeric repeats (blue), weak signals were detected for the chromosome pair No 1, 10, 14, and 16.
+
+S. alatum karyotype showed one strong pair of 45S rDNA loci at the chromosome pair No 10 while a colocalization  of 5S rDNA and 45S rDNA was observed at the chomosome pair No 4. 
+
+As expected, S. radiatum karyoype revealed 32 pairs of chromosomes with clearly visible 45S rDNA signals (red) at the chromosome pairs No 1, 7, and 29. The chromosomes No 8, 9, and 13 exhibited 5S rDNA signals while a colocalization of 45S rDNA and 5S rDNA was observed at the chromosomes No 4and 5.
+
 
 
 Discussion
 
-Sesamum pedaloides is diploid
+Ascending dysploidy and hybridization event as speciation driving forces in Sesamum species complex
 
-We provided for in the present study the first glance of S. pedaloides karyotype showing diploid genome pattern with 32 chromosomes, which is consistent with the tree topology. Meanwhile, the chromosome number variation from the diploid 2n = 26 to 2n = 32 is still a mystery. Altogether, the present karyotyping provides a comprehensive preliminary data for cytotaxonomic studies in the Sesamum species complex. 
+We provided for in the present study the first glance of S. pedaloides karyotype showing diploid genome pattern with 32 chromosomes, which is consistent with the tree topology. Meanwhile, the chromosome number variation from the diploid 2n = 26 to 2n = 32 is still a mystery. While the ancient species in the present study (S. alatum) and the cultivated type (S. indicum) are also diploid with 2 = 26 chromosomes, the group of 2n = 32 might have undergone chromosomal rearrangements, altering their karyotype. We speculate here that the 2n = 32 members including S. pedaloides, S. angolense, C. sesamoides (or S. sesamum), and C. triloba (S. trilobum) are the result of an ascending dysploidy event leading to their chromosome number change. 
 
+
+
+chromosome fission, fusion, or acquisition can  leads to the increase of ploidy as termed as ascending dysploidy 
+
+or,
+
+in contrast,
+
+descending dysploidy.[Udall et al. 2019](https://www.frontiersin.org/articles/10.3389/fpls.2019.01541/full) [Mayrose and Lysak 2021](https://academic.oup.com/gbe/article/13/2/evaa220/5923296)
+
+
+
+
+
+
+
+
+
+
+
+As a consequence, this evolutionary event might be one of the source of speciation leading to the sister species C. sesamoides and C. triloba also known as S. sesamoides and S. triolobum.
+
+
+Similar ascending disploidy events have been also observed in Marantaceae [Winterfeld et al. 2020](https://link.springer.com/content/pdf/10.1007/s00606-020-01663-x.pdf) and Fabaceae [Ta et al. 2021](https://link.springer.com/article/10.1007%2Fs13258-021-01051-w), [Waminal et al. 2021](https://www.frontiersin.org/articles/10.3389/fpls.2021.629898/full) species complex.
+
+
+
+Altogether, the present karyotyping provides a comprehensive preliminary data for cytotaxonomic studies in the Sesamum species complex. 
+
+Ajouter le volet hybridization apres.
 
 
 
