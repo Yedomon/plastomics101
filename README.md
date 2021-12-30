@@ -11,12 +11,12 @@ Cytogenetic and plastome phylogenomics indicate ascending dysploidy and recent h
 Abstract
 
 - Enlever les parentheses avec les nombre de chromosomes au debut alors
-- We also provided the first Fluorescence In Situ Hybridization (FISH) karyotyping of S. pedaloides revealing the chromosome number as 2n = 2x = 32. 
+- We also provided the first Fluorescence In Situ Hybridization (FISH) karyotyping of S. pedaloides revealing the chromosome number as 2n = 2x = 32. Comparative cytogenetic coupled with chroloplast genomes assessment unveiled that ascending dysploidy followed by hybridization contributed to the speciation in Sesamum genus.
 
 
 Introduction
 
-Among the studied species, the chromosome number of S. pedaloides was indertermined. Therefore, we took advantage of multifluor FISH karyotyping and whole.... for (i) identify the chromosome number set of S. pedaloides (ii)...
+Among the studied species, the chromosome number of S. pedaloides was indertermined. Therefore, we took advantage of multifluor FISH karyotyping and whole.... for (i) comparative cytogenetic within Sesamum species (ii)...
 
 
 Materials and Methods
