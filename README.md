@@ -1,4 +1,48 @@
 # plastomics101
+
+
+Abstract
+
+- Enlever les parentheses avec les nombre de chromosomes au debut alors
+- We also provided the first Fluorescence In Situ Hybridization (FISH) karyotyping of S. pedaloides revealing the chromosome number as 2n = 2x = 32. 
+
+
+Introduction
+
+Among the studied species, the chromosome number of S. pedaloides was indertermined. Therefore, we took advantage of multifluor FISH karyotyping and whole.... for (i) identify the chromosome number set of S. pedaloides (ii)...
+
+
+Materials and Methods
+
+Fluorescence In Situ Hybridization Karyoptyping of Sesamum pedaloides
+
+To unveil the chromosome number set of S. pedaloides, a triple color FISH karyotyping was performed following [Nguyen et al method] (https://link.springer.com/content/pdf/10.1007/s13580-021-00364-9.pdf). Briefly, young and healthy root tips from S. pedaloides seedlings were collected and treated with 2mM of oxine at 12*C* for five hours. A Carnoy's solution was employed to fixed the pre-treated root tips at room temperature for two hours. The fixed root tips was then stored in 70% ethanol until the somatic chromosome spreads preparation step. Probes of Arabidopsis telomeric repeats, 5SrDNA, 45S rDNA were used for the FISH followed by the slide visualization with the Olympus BX53 microscope (Leica Microsystems Inc., Germany). The resulting image was processed with CytoVision v 7.2 (Leica Microsystem Inc., Germany) and Adobe Photoshop CS6.
+
+
+Results
+
+FISH result
+
+The triple-color FISH karyotyping analysis resulted a total of 16 paired chromosomes for S. pedaloides. One pair of interstitial 5S rDNA locus (green) have been observed at chromosome pair No 5 and No 13 respectively.  A set of three 45S rDNA loci (red) were detected at distal chromosomal regions at chromosome pair No 2, No 3, and No 4. While the majority of chromosome exhibited strong signals of Aradidopsis-type telomeric repeats, weak signals were detected for the chromosome pair No 1, 10, 14, and 16.
+
+
+Discussion
+
+Sesamum pedaloides is diploid
+
+We provided for in the present study the first glance of S. pedaloides karyotype showing diploid genome pattern with 32 chromosomes, which is consistent with the tree topology. Meanwhile, the chromosome number variation from the diploid 2n = 26 to 2n = 32 is still a mystery. Altogether, the present karyotyping provides a comprehensive preliminary data for cytotaxonomic studies in the Sesamum species complex. 
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 Implications for diversity center of Sesamum
 The present study exclusively dealt with African native Sesamum wild species. From our analyses, we speculate that since many wild sesame species are originated from Africa, the continent might be the origin of species diversification with the presence of diverse chromosome number sets. The cultivated species might occur later in the Indian sub-continent where the domestication took place (Figure x). Ethnobotanic studies are in agreement with this hypothesis since the 2n = 26, 2n = 32, and 2n = 64 wild species are widely used by local populations as medicine and food (Bedigian, 2018) while the cultivated type is predominantly employed in South East-Asian as food decoration (seeds) and therapeutic or nutraceutical (oil) complement (Miyake et al., 2005; Kim et al., 2016, 2020). 
