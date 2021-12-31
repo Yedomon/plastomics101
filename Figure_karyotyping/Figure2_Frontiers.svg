@@ -186,8 +186,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.7375"
-     inkscape:cx="471.9619"
-     inkscape:cy="270.28672"
+     inkscape:cx="302.7466"
+     inkscape:cy="179.43627"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -244,43 +244,51 @@
            id="g4200"><text
              id="text4208"
              style="font-style:italic;font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial, BoldItalic';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,132.38,451.87)"><tspan
+             transform="scale(1,-1)"
+             x="150.38"
+             y="-451.87"><tspan
                id="tspan4206"
                sodipodi:role="line"
-               y="0"
-               x="0 9.3646803 13.30992">S. </tspan></text>
+               y="-451.87"
+               x="150.38 159.74467 163.68993">S. </tspan></text>
 </g></g><g
          id="g4210"><g
            clip-path="url(#clipPath4216)"
            id="g4212"><text
              id="text4220"
              style="font-style:italic;font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial, BoldItalic';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,149.54,451.87)"><tspan
+             transform="scale(1,-1)"
+             x="167.53999"
+             y="-451.87"><tspan
                id="tspan4218"
-               y="0"
-               x="0">a</tspan></text>
+               y="-451.87"
+               x="167.53999">a</tspan></text>
 </g></g><g
          id="g4222"><g
            clip-path="url(#clipPath4228)"
            id="g4224"><text
              id="text4232"
              style="font-style:italic;font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial, BoldItalic';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,157.34,451.87)"><tspan
+             transform="scale(1,-1)"
+             x="175.34"
+             y="-451.87"><tspan
                id="tspan4230"
                sodipodi:role="line"
-               y="0"
-               x="0 3.94524 11.75148 16.4268 24.94908 37.430641">latum </tspan></text>
+               y="-451.87"
+               x="175.34 179.28523 187.09148 191.7668 200.28908 212.77065">latum </tspan></text>
 </g></g><g
          id="g4234"><g
            clip-path="url(#clipPath4240)"
            id="g4236"><text
              id="text4244"
              style="font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,198.38,451.87)"><tspan
+             transform="scale(1,-1)"
+             x="216.38"
+             y="-451.87"><tspan
                id="tspan4242"
                sodipodi:role="line"
-               y="0"
-               x="0 4.6753201 12.48156 21.003839 24.72444 32.923801 36.728642 44.534882 52.341122">(2n = 26)</tspan></text>
+               y="-451.87"
+               x="216.38 221.05531 228.86156 237.38383 241.10445 249.3038 253.10864 260.91489 268.72113">(2n = 26)</tspan></text>
 </g></g><g
          id="g4246"><g
            clip-path="url(#clipPath4252)"
@@ -288,12 +296,12 @@
              id="text4256"
              style="font-style:italic;font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial, BoldItalic';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
              transform="scale(1,-1)"
-             x="135.28999"
+             x="151.78999"
              y="-323.5"><tspan
                id="tspan4254"
                sodipodi:role="line"
                y="-323.5"
-               x="135.28999 144.65468 148.61397 152.46092 161.03935 168.8456 177.36787 185.17412 189.13339 197.71184 201.61496 210.19339 217.88731 225.69356">S. pedaloides </tspan></text>
+               x="151.78999 161.15468 165.11397 168.96092 177.53935 185.3456 193.86787 201.67412 205.63339 214.21184 218.11496 226.69339 234.38731 242.19356">S. pedaloides </tspan></text>
 </g></g><g
          id="g4258"><g
            clip-path="url(#clipPath4264)"
@@ -301,34 +309,38 @@
              id="text4268"
              style="font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
              transform="scale(1,-1)"
-             x="229.03"
+             x="245.53"
              y="-323.5"><tspan
                id="tspan4266"
                sodipodi:role="line"
                y="-323.5"
-               x="229.03 233.70532 241.51157 250.03384 253.75443 261.9538 265.85693 273.66315 281.46939">(2n = 32)</tspan></text>
+               x="245.53 250.20532 258.01157 266.53384 270.25443 278.4538 282.35693 290.16315 297.96939">(2n = 32)</tspan></text>
 </g></g><g
          id="g4270"><g
            clip-path="url(#clipPath4276)"
            id="g4272"><text
              id="text4280"
              style="font-style:italic;font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial, BoldItalic';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,137.06,196.08)"><tspan
+             transform="scale(1,-1)"
+             x="155.06"
+             y="-196.08"><tspan
                id="tspan4278"
                sodipodi:role="line"
-               y="0"
-               x="0 9.3646803 13.30992 17.156879 22.660561 30.466801 38.97504 42.92028 50.726521 55.40184 63.924122 76.405678">S. radiatum </tspan></text>
+               y="-196.08"
+               x="155.06 164.42468 168.36992 172.21687 177.72057 185.52679 194.03503 197.98029 205.78651 210.46184 218.98412 231.46568">S. radiatum </tspan></text>
 </g></g><g
          id="g4282"><g
            clip-path="url(#clipPath4288)"
            id="g4284"><text
              id="text4292"
              style="font-variant:normal;font-weight:bold;font-size:14.03999996px;font-family:Arial;-inkscape-font-specification:'Arial Bold';writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="matrix(1,0,0,-1,217.13,196.08)"><tspan
+             transform="scale(1,-1)"
+             x="235.13"
+             y="-196.08"><tspan
                id="tspan4290"
                sodipodi:role="line"
-               y="0"
-               x="0 4.6753201 12.48156 21.003839 24.72444 32.923801 36.728642 44.534882 52.341122">(2n = 64)</tspan></text>
+               y="-196.08"
+               x="235.13 239.80531 247.61156 256.13385 259.85446 268.0538 271.85864 279.66489 287.47113">(2n = 64)</tspan></text>
 </g></g><path
          inkscape:connector-curvature="0"
          id="path4294"
@@ -480,4 +492,40 @@
                x="620.48004"
                id="tspan4362-0"
                sodipodi:role="line">Colocalized signals</tspan></text>
-</g></g></g></g></svg>
+</g></g></g><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="122.38985"
+       y="-452.54239"
+       id="text4586"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4584"
+         x="122.38985"
+         y="-452.54239"
+         style="fill:#ffffff;stroke-width:0.75">(A)</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="121.96398"
+       y="-323.83459"
+       id="text4586-9"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4584-3"
+         x="121.96398"
+         y="-323.83459"
+         style="fill:#ffffff;stroke-width:0.75">(B)</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="122.37076"
+       y="-197.75832"
+       id="text4586-9-2"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan4584-3-8"
+         x="122.37076"
+         y="-197.75832"
+         style="fill:#ffffff;stroke-width:0.75">(C)</tspan></text>
+</g></svg>
