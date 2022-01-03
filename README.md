@@ -1,5 +1,28 @@
 # plastomics101
 
+
+
+Echelle du temps
+
+
+
+![img](https://github.com/Yedomon/plastomics101/blob/main/gssm-svt-img22-bis.png)
+
+
+
+
+
+
+
+Donc l'apparition de Sesamum radiatum est vraiment recente.
+
+
+
+
+
+
+
+
 Changer le titre
 
 Cytogenetic and plastome phylogenomics indicate ascending dysploidy and recent hybridization as driven forces of speciation in Sesamum species complex
