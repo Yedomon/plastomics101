@@ -1,6 +1,9 @@
 # plastomics101
 
 
+Un papier interessant d'une equipe belge. I like the [preprint](https://www.biorxiv.org/content/10.1101/2021.01.05.421016v1.full.pdf) image incorporating geographical and inflorescence type here is the [final](https://www.sciencedirect.com/science/article/pii/S1055790322000173) version.
+
+
 
 Echelle du temps
 
