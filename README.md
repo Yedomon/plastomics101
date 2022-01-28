@@ -1,6 +1,21 @@
 # plastomics101
 
 
+```python
+
+
+## to hide the bootstrap values based on range
+0,75	show=0
+## to color bootstrap values based on range
+80,90	color=red,size=12
+100,120	color=darkred,size=14
+
+
+
+```
+
+
+
 Un papier interessant d'une equipe belge. I like the [preprint](https://www.biorxiv.org/content/10.1101/2021.01.05.421016v1.full.pdf) image incorporating geographical and inflorescence type here is the [final](https://www.sciencedirect.com/science/article/pii/S1055790322000173) version. Mais l'espece endemique au Benin n'est pas dans la liste des especes utilisees **Dracaena specksii**
 
 
