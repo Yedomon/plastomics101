@@ -2,7 +2,7 @@
 
 [Chloroplast phylogenomics in Camelina (Brassicaceae) reveals multiple origins of polyploid species and the maternal lineage of C. sativa](https://academic.oup.com/hr/article/doi/10.1093/hr/uhab050/6497793?login=true)
 
-![img]()
+![img](https://github.com/Yedomon/plastomics101/blob/main/uhab050f4.jpeg)
 
 
 
