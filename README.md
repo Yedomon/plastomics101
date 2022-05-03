@@ -1,5 +1,16 @@
 # plastomics101
 
+[Comparative Analyses of 35 Complete Chloroplast Genomes from the Genus Dalbergia (Fabaceae) and the Identification of DNA Barcodes for Tracking Illegal Logging and Counterfeit Rosewood](https://www.mdpi.com/1999-4907/13/4/626)
+
+![img](https://www.mdpi.com/forests/forests-13-00626/article_deploy/html/images/forests-13-00626-g001.png)
+
+
+[Comparative Analyses of Chloroplast Genomes Provide Comprehensive Insights into the Adaptive Evolution of Paphiopedilum (Orchidaceae)](https://www.mdpi.com/2311-7524/8/5/391)
+
+![img](https://www.mdpi.com/horticulturae/horticulturae-08-00391/article_deploy/html/images/horticulturae-08-00391-g001.png)
+
+
+
 [Chloroplast phylogenomics in Camelina (Brassicaceae) reveals multiple origins of polyploid species and the maternal lineage of C. sativa](https://academic.oup.com/hr/article/doi/10.1093/hr/uhab050/6497793?login=true)
 
 ![img](https://github.com/Yedomon/plastomics101/blob/main/uhab050f4.jpeg)
