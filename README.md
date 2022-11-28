@@ -1,5 +1,17 @@
 # plastomics101
 
+
+
+
+the handling editor  [Shu-Miaw Chaw](https://loop.frontiersin.org/people/454953/overview)
+
+un bon papier [redcube](https://www.readcube.com/articles/10.3389/fpls.2020.00901)
+
+
+
+
+
+
 [Comparative Analyses of 35 Complete Chloroplast Genomes from the Genus Dalbergia (Fabaceae) and the Identification of DNA Barcodes for Tracking Illegal Logging and Counterfeit Rosewood](https://www.mdpi.com/1999-4907/13/4/626)
 
 ![img](https://www.mdpi.com/forests/forests-13-00626/article_deploy/html/images/forests-13-00626-g001.png)
