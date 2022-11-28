@@ -5,7 +5,10 @@
 
 the handling editor  [Shu-Miaw Chaw](https://loop.frontiersin.org/people/454953/overview)
 
-un bon papier [redcube](https://www.readcube.com/articles/10.3389/fpls.2020.00901)
+un bon papier [redcube](https://www.readcube.com/articles/10.3389/fpls.2020.00901) | une autre belle idee [ici](https://academic.oup.com/gbe/article/11/6/1691/5423182?login=false)
+
+
+comme quoi il faut juste une belle idee
 
 
 
